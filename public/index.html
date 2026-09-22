@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>LoganPedia</title>
+<meta name="description" content="LoganPedia — frases simples y vocabulario con pictogramas para peques">
+<meta name="theme-color" content="#FFB347">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="LoganPedia">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- HOME -->
+  <section id="screen-home" class="screen active">
+    <div class="home-wrap">
+      <h1 class="logo">
+        <span class="logo-logan">Logan</span><span class="logo-pedia">Pedia</span>
+      </h1>
+      <p class="tagline">¡Aprende jugando!</p>
+      <div class="home-cards">
+        <button class="home-card card-frases" data-go="frases">
+          <span class="home-card-emoji" aria-hidden="true">💬</span>
+          <span class="home-card-label">Frases simples</span>
+        </button>
+        <button class="home-card card-vocab" data-go="vocab-dificultad">
+          <span class="home-card-emoji" aria-hidden="true">🔤</span>
+          <span class="home-card-label">Vocabulario</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRASES SIMPLES -->
+  <section id="screen-frases" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="home" aria-label="Volver al inicio">⟵</button>
+      <h2 class="topbar-title">Frases simples</h2>
+      <button class="btn-speak" id="frase-speak" aria-label="Escuchar la frase">🔊</button>
+    </header>
+    <div class="frase-content">
+      <div class="pictos-row" id="frase-pictos"></div>
+      <p class="frase-text" id="frase-text"></p>
+    </div>
+    <footer class="nav-footer">
+      <button class="btn-nav" id="frase-prev" aria-label="Frase anterior">⟵</button>
+      <div class="dots" id="frase-dots"></div>
+      <button class="btn-nav" id="frase-next" aria-label="Siguiente frase">⟶</button>
+    </footer>
+  </section>
+
+  <!-- VOCABULARIO: DIFICULTAD -->
+  <section id="screen-vocab-dificultad" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="home" aria-label="Volver al inicio">⟵</button>
+      <h2 class="topbar-title">Vocabulario</h2>
+      <span class="topbar-spacer"></span>
+    </header>
+    <div class="dificultad-wrap">
+      <p class="dificultad-pregunta">¿Cómo quieres jugar?</p>
+      <div class="dificultad-cards">
+        <button class="dificultad-card facil" data-go="vocab-letras" data-nivel="facil">
+          <span class="dificultad-emoji" aria-hidden="true">🌟</span>
+          <span>Fácil</span>
+          <small>La palabra empieza por la letra</small>
+        </button>
+        <button class="dificultad-card dificil" data-go="vocab-letras" data-nivel="dificil">
+          <span class="dificultad-emoji" aria-hidden="true">🚀</span>
+          <span>Difícil</span>
+          <small>La letra está dentro de la palabra</small>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOCABULARIO: LETRAS -->
+  <section id="screen-vocab-letras" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="vocab-dificultad" aria-label="Volver">⟵</button>
+      <h2 class="topbar-title" id="letras-title">Elige una letra</h2>
+      <span class="topbar-spacer"></span>
+    </header>
+    <div class="letras-grid" id="letras-grid"></div>
+  </section>
+
+  <!-- VOCABULARIO: PALABRA -->
+  <section id="screen-vocab-palabra" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="vocab-letras" aria-label="Volver a las letras">⟵</button>
+      <h2 class="topbar-title" id="palabra-letra-title"></h2>
+      <button class="btn-speak" id="palabra-speak" aria-label="Escuchar la palabra">🔊</button>
+    </header>
+    <div class="palabra-content">
+      <div class="palabra-picto-wrap">
+        <img id="palabra-picto" class="palabra-picto" alt="">
+      </div>
+      <p class="palabra-text" id="palabra-text"></p>
+    </div>
+    <footer class="nav-footer">
+      <button class="btn-nav" id="palabra-prev" aria-label="Palabra anterior">⟵</button>
+      <div class="dots" id="palabra-dots"></div>
+      <button class="btn-nav" id="palabra-next" aria-label="Siguiente palabra">⟶</button>
+    </footer>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
