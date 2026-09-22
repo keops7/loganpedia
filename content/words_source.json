@@ -66,16 +66,16 @@
     "Z": { "facil": ["zapato", "zorro", "zanahoria", "zumo", "zapatilla"], "dificil": ["taza", "cabeza", "lápiz"] }
   },
   "sonidos": [
-    { "word": "perro", "onomatopeya": "Guau, guau" },
-    { "word": "gato", "onomatopeya": "Miau" },
-    { "word": "vaca", "onomatopeya": "Muuu" },
-    { "word": "oveja", "onomatopeya": "Beee" },
-    { "word": "pato", "onomatopeya": "Cuac, cuac" },
-    { "word": "coche", "onomatopeya": "Pii, pii" },
-    { "word": "tren", "onomatopeya": "Chuu, chuu" },
-    { "word": "abeja", "onomatopeya": "Bzzz, bzzz" },
-    { "word": "campana", "onomatopeya": "Nin, non" },
-    { "word": "reloj", "onomatopeya": "Tic, tac" }
+    { "word": "perro", "onomatopeya": "Guau, guau", "sound": "perro.mp3" },
+    { "word": "gato", "onomatopeya": "Miau", "sound": "gato.mp3" },
+    { "word": "vaca", "onomatopeya": "Muuu", "sound": "vaca.mp3" },
+    { "word": "oveja", "onomatopeya": "Beee", "sound": "oveja.mp3" },
+    { "word": "pato", "onomatopeya": "Cuac, cuac", "sound": "pato.mp3" },
+    { "word": "coche", "onomatopeya": "Pii, pii", "sound": "coche.mp3" },
+    { "word": "tren", "onomatopeya": "Chuu, chuu", "sound": "tren.mp3" },
+    { "word": "abeja", "onomatopeya": "Bzzz, bzzz", "sound": "abeja.mp3" },
+    { "word": "campana", "onomatopeya": "Nin, non", "sound": "campana.mp3" },
+    { "word": "reloj", "onomatopeya": "Tic, tac", "sound": "reloj.mp3" }
   ],
   "conceptos": [
     ["grande", "pequeño"],

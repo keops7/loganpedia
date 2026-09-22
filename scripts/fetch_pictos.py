@@ -129,7 +129,12 @@ def main():
         w = item["word"]
         entry = resolve_word(w)
         if entry:
-            sonidos_out.append({"word": w, "onomatopeya": item["onomatopeya"], "file": entry["file"]})
+            sonidos_out.append({
+                "word": w,
+                "onomatopeya": item["onomatopeya"],
+                "file": entry["file"],
+                "sound": item["sound"],
+            })
         else:
             missing.append(f"sonidos -> {w}")
 

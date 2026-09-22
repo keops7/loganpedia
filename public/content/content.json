@@ -1516,52 +1516,62 @@
     {
       "word": "perro",
       "onomatopeya": "Guau, guau",
-      "file": "perro_7202.png"
+      "file": "perro_7202.png",
+      "sound": "perro.mp3"
     },
     {
       "word": "gato",
       "onomatopeya": "Miau",
-      "file": "gato_7114.png"
+      "file": "gato_7114.png",
+      "sound": "gato.mp3"
     },
     {
       "word": "vaca",
       "onomatopeya": "Muuu",
-      "file": "vaca_2609.png"
+      "file": "vaca_2609.png",
+      "sound": "vaca.mp3"
     },
     {
       "word": "oveja",
       "onomatopeya": "Beee",
-      "file": "oveja_2489.png"
+      "file": "oveja_2489.png",
+      "sound": "oveja.mp3"
     },
     {
       "word": "pato",
       "onomatopeya": "Cuac, cuac",
-      "file": "pato_28479.png"
+      "file": "pato_28479.png",
+      "sound": "pato.mp3"
     },
     {
       "word": "coche",
       "onomatopeya": "Pii, pii",
-      "file": "coche_2339.png"
+      "file": "coche_2339.png",
+      "sound": "coche.mp3"
     },
     {
       "word": "tren",
       "onomatopeya": "Chuu, chuu",
-      "file": "tren_21399.png"
+      "file": "tren_21399.png",
+      "sound": "tren.mp3"
     },
     {
       "word": "abeja",
       "onomatopeya": "Bzzz, bzzz",
-      "file": "abeja_24823.png"
+      "file": "abeja_24823.png",
+      "sound": "abeja.mp3"
     },
     {
       "word": "campana",
       "onomatopeya": "Nin, non",
-      "file": "campana_5938.png"
+      "file": "campana_5938.png",
+      "sound": "campana.mp3"
     },
     {
       "word": "reloj",
       "onomatopeya": "Tic, tac",
-      "file": "reloj_2549.png"
+      "file": "reloj_2549.png",
+      "sound": "reloj.mp3"
     }
   ],
   "conceptos": [

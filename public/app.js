@@ -25,6 +25,7 @@
       screens[k].classList.toggle("active", k === name);
     });
     window.speechSynthesis.cancel();
+    stopSound();
   }
 
   document.body.addEventListener("click", function (e) {
@@ -67,6 +68,21 @@
     window.speechSynthesis.speak(utter);
   }
 
+  // ---------- SONIDOS REALES (audio) ----------
+  var currentSoundAudio = null;
+  function stopSound() {
+    if (currentSoundAudio) {
+      currentSoundAudio.pause();
+      currentSoundAudio = null;
+    }
+  }
+  function playSound(filename) {
+    stopSound();
+    if (state.muted) return;
+    currentSoundAudio = new Audio("assets/sounds/" + filename);
+    currentSoundAudio.play().catch(function () {});
+  }
+
   // ---------- SILENCIO ----------
   var muteButtons = document.querySelectorAll(".mute-toggle");
 
@@ -84,7 +100,7 @@
     btn.addEventListener("click", function (e) {
       e.stopPropagation();
       state.muted = !state.muted;
-      if (state.muted) window.speechSynthesis.cancel();
+      if (state.muted) { window.speechSynthesis.cancel(); stopSound(); }
       try {
         localStorage.setItem("loganpedia-muted", state.muted ? "1" : "0");
       } catch (err) {}
@@ -261,11 +277,11 @@
       sonidosOpcionesEl.appendChild(btn);
     });
 
-    speak(sonidoActual.onomatopeya);
+    playSound(sonidoActual.sound);
   }
 
   sonidoPlayEl.addEventListener("click", function () {
-    if (sonidoActual) speak(sonidoActual.onomatopeya);
+    if (sonidoActual) playSound(sonidoActual.sound);
   });
 
   // ---------- CONCEPTOS ----------
