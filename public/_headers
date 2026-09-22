@@ -1,0 +1,29 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# HTML/CSS/JS/manifest/contenido: caché corta. La app cambia a menudo y un
+# telefono que ya la abrio antes tiene que ver las novedades pronto, sin
+# depender de que borre datos de Safari a mano.
+/index.html
+  Cache-Control: no-cache
+/style.css
+  Cache-Control: no-cache
+/app.js
+  Cache-Control: no-cache
+/sw.js
+  Cache-Control: no-cache
+/manifest.json
+  Cache-Control: no-cache
+/content/content.json
+  Cache-Control: no-cache
+
+# Pictogramas, sonidos e iconos: el nombre de fichero incluye el id de
+# ARASAAC o es fijo, así que si cambian, cambia tambien la ruta. Cache larga.
+/assets/pictos/*
+  Cache-Control: public, max-age=2592000, immutable
+/assets/sounds/*
+  Cache-Control: public, max-age=2592000, immutable
+/icons/*
+  Cache-Control: public, max-age=2592000, immutable
