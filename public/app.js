@@ -7,7 +7,12 @@
     nivel: "facil",
     letra: null,
     palabraIndex: 0,
+    muted: false,
   };
+
+  try {
+    state.muted = localStorage.getItem("loganpedia-muted") === "1";
+  } catch (e) {}
 
   var screens = {};
   document.querySelectorAll(".screen").forEach(function (el) {
@@ -49,6 +54,7 @@
   function speak(text) {
     if (!("speechSynthesis" in window)) return;
     window.speechSynthesis.cancel();
+    if (state.muted) return;
     var utter = new SpeechSynthesisUtterance(text);
     utter.lang = "es-ES";
     if (spanishVoice) utter.voice = spanishVoice;
@@ -56,6 +62,31 @@
     utter.pitch = 1.15;
     window.speechSynthesis.speak(utter);
   }
+
+  // ---------- SILENCIO ----------
+  var muteButtons = document.querySelectorAll(".mute-toggle");
+
+  function renderMuteButtons() {
+    muteButtons.forEach(function (btn) {
+      btn.textContent = state.muted ? "🔇" : "🔊";
+      btn.classList.toggle("is-muted", state.muted);
+      btn.setAttribute("aria-pressed", state.muted ? "true" : "false");
+      btn.setAttribute("aria-label", state.muted ? "Activar sonido" : "Silenciar sonido");
+    });
+  }
+  renderMuteButtons();
+
+  muteButtons.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      state.muted = !state.muted;
+      if (state.muted) window.speechSynthesis.cancel();
+      try {
+        localStorage.setItem("loganpedia-muted", state.muted ? "1" : "0");
+      } catch (err) {}
+      renderMuteButtons();
+    });
+  });
 
   // ---------- CARGA DE CONTENIDO ----------
   fetch("content/content.json")
@@ -115,10 +146,6 @@
     state.fraseIndex = (state.fraseIndex + 1) % n;
     renderFrase();
   });
-  document.getElementById("frase-speak").addEventListener("click", function () {
-    speak(state.content.sentences[state.fraseIndex].text);
-  });
-
   // ---------- VOCABULARIO: LETRAS ----------
   var LETRAS = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".split("");
   var letrasGridEl = document.getElementById("letras-grid");
@@ -184,9 +211,6 @@
     var n = currentWords().length;
     state.palabraIndex = (state.palabraIndex + 1) % n;
     renderPalabra();
-  });
-  document.getElementById("palabra-speak").addEventListener("click", function () {
-    speak(currentWords()[state.palabraIndex].word);
   });
   document.getElementById("palabra-picto").addEventListener("click", function () {
     speak(currentWords()[state.palabraIndex].word);

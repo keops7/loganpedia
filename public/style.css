@@ -111,7 +111,7 @@ html, body {
   flex: 1;
 }
 .topbar-spacer { width: 64px; display: inline-block; }
-.btn-back, .btn-speak {
+.btn-back, .btn-mute {
   border: none;
   background: white;
   width: 64px;
@@ -123,8 +123,9 @@ html, body {
   flex: 0 0 auto;
 }
 .btn-back { color: var(--azul-oscuro); }
-.btn-speak { color: var(--naranja-oscuro); }
-.btn-back:active, .btn-speak:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,0.1); }
+.btn-mute { color: var(--naranja-oscuro); }
+.btn-mute.is-muted { color: #B0B0B0; }
+.btn-back:active, .btn-mute:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,0.1); }
 
 /* ---------- FRASES ---------- */
 #screen-frases { background: #EAF3FF; }
@@ -317,5 +318,5 @@ html, body {
   .pictos-row { gap: 12px; }
   .picto-card { width: 40vw; }
   .btn-nav { width: 60px; height: 60px; font-size: 24px; }
-  .btn-back, .btn-speak { width: 54px; height: 54px; font-size: 22px; }
+  .btn-back, .btn-mute { width: 54px; height: 54px; font-size: 22px; }
 }
