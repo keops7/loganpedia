@@ -299,6 +299,241 @@
           "file": "galleta_8312.png"
         }
       ]
+    },
+    {
+      "text": "El niño duerme en la cama",
+      "pictos": [
+        {
+          "word": "niño",
+          "file": "nino_7176.png"
+        },
+        {
+          "word": "dormir",
+          "file": "dormir_6479.png"
+        },
+        {
+          "word": "cama",
+          "file": "cama_25900.png"
+        }
+      ]
+    },
+    {
+      "text": "La niña juega con la pelota",
+      "pictos": [
+        {
+          "word": "niña",
+          "file": "nina_27509.png"
+        },
+        {
+          "word": "jugar",
+          "file": "jugar_23392.png"
+        },
+        {
+          "word": "pelota",
+          "file": "pelota_3241.png"
+        }
+      ]
+    },
+    {
+      "text": "El perro corre rápido",
+      "pictos": [
+        {
+          "word": "perro",
+          "file": "perro_7202.png"
+        },
+        {
+          "word": "correr",
+          "file": "correr_6465.png"
+        }
+      ]
+    },
+    {
+      "text": "El gato duerme en el sofá",
+      "pictos": [
+        {
+          "word": "gato",
+          "file": "gato_7114.png"
+        },
+        {
+          "word": "dormir",
+          "file": "dormir_6479.png"
+        },
+        {
+          "word": "sofá",
+          "file": "sofa_25479.png"
+        }
+      ]
+    },
+    {
+      "text": "Yo como manzana",
+      "pictos": [
+        {
+          "word": "yo",
+          "file": "yo_6632.png"
+        },
+        {
+          "word": "comer",
+          "file": "comer_6456.png"
+        },
+        {
+          "word": "manzana",
+          "file": "manzana_2462.png"
+        }
+      ]
+    },
+    {
+      "text": "Mamá abraza al niño",
+      "pictos": [
+        {
+          "word": "mamá",
+          "file": "mama_2458.png"
+        },
+        {
+          "word": "abrazar",
+          "file": "abrazar_6023.png"
+        },
+        {
+          "word": "niño",
+          "file": "nino_7176.png"
+        }
+      ]
+    },
+    {
+      "text": "Papá conduce el coche",
+      "pictos": [
+        {
+          "word": "papá",
+          "file": "papa_31146.png"
+        },
+        {
+          "word": "conducir",
+          "file": "conducir_6458.png"
+        },
+        {
+          "word": "coche",
+          "file": "coche_2339.png"
+        }
+      ]
+    },
+    {
+      "text": "El niño llora un poco",
+      "pictos": [
+        {
+          "word": "niño",
+          "file": "nino_7176.png"
+        },
+        {
+          "word": "llorar",
+          "file": "llorar_7147.png"
+        }
+      ]
+    },
+    {
+      "text": "La niña ríe mucho",
+      "pictos": [
+        {
+          "word": "niña",
+          "file": "nina_27509.png"
+        },
+        {
+          "word": "reír",
+          "file": "reir_13354.png"
+        }
+      ]
+    },
+    {
+      "text": "El sol brilla mucho",
+      "pictos": [
+        {
+          "word": "sol",
+          "file": "sol_7252.png"
+        },
+        {
+          "word": "brillar",
+          "file": "brillar_6475.png"
+        }
+      ]
+    },
+    {
+      "text": "La lluvia cae del cielo",
+      "pictos": [
+        {
+          "word": "lluvia",
+          "file": "lluvia_7148.png"
+        },
+        {
+          "word": "caer",
+          "file": "caer_39440.png"
+        },
+        {
+          "word": "cielo",
+          "file": "cielo_6978.png"
+        }
+      ]
+    },
+    {
+      "text": "El niño se lava las manos",
+      "pictos": [
+        {
+          "word": "niño",
+          "file": "nino_7176.png"
+        },
+        {
+          "word": "lavar",
+          "file": "lavar_34826.png"
+        },
+        {
+          "word": "mano",
+          "file": "mano_2928.png"
+        }
+      ]
+    },
+    {
+      "text": "La abuela cocina sopa",
+      "pictos": [
+        {
+          "word": "abuela",
+          "file": "abuela_23710.png"
+        },
+        {
+          "word": "cocinar",
+          "file": "cocinar_2342.png"
+        },
+        {
+          "word": "sopa",
+          "file": "sopa_2573.png"
+        }
+      ]
+    },
+    {
+      "text": "El abuelo lee el periódico",
+      "pictos": [
+        {
+          "word": "abuelo",
+          "file": "abuelo_23718.png"
+        },
+        {
+          "word": "leer",
+          "file": "leer_7141.png"
+        },
+        {
+          "word": "periódico",
+          "file": "periodico_2845.png"
+        }
+      ]
+    },
+    {
+      "text": "El bebé sonríe feliz",
+      "pictos": [
+        {
+          "word": "bebé",
+          "file": "bebe_6060.png"
+        },
+        {
+          "word": "sonreír",
+          "file": "sonreir_13354.png"
+        }
+      ]
     }
   ],
   "letters": {
@@ -315,6 +550,14 @@
         {
           "word": "abeja",
           "file": "abeja_24823.png"
+        },
+        {
+          "word": "árbol",
+          "file": "arbol_3057.png"
+        },
+        {
+          "word": "anillo",
+          "file": "anillo_6900.png"
         }
       ],
       "dificil": [
@@ -329,6 +572,10 @@
         {
           "word": "pan",
           "file": "pan_2494.png"
+        },
+        {
+          "word": "cara",
+          "file": "cara_2684.png"
         }
       ]
     },
@@ -345,6 +592,14 @@
         {
           "word": "bota",
           "file": "bota_5401.png"
+        },
+        {
+          "word": "ballena",
+          "file": "ballena_2268.png"
+        },
+        {
+          "word": "banana",
+          "file": "banana_10218.png"
         }
       ],
       "dificil": [
@@ -359,6 +614,10 @@
         {
           "word": "abrigo",
           "file": "abrigo_8122.png"
+        },
+        {
+          "word": "sombrero",
+          "file": "sombrero_2572.png"
         }
       ]
     },
@@ -375,6 +634,14 @@
         {
           "word": "caballo",
           "file": "caballo_2294.png"
+        },
+        {
+          "word": "cuchara",
+          "file": "cuchara_2362.png"
+        },
+        {
+          "word": "cuna",
+          "file": "cuna_5980.png"
         }
       ],
       "dificil": [
@@ -389,6 +656,10 @@
         {
           "word": "mochila",
           "file": "mochila_2475.png"
+        },
+        {
+          "word": "escoba",
+          "file": "escoba_2693.png"
         }
       ]
     },
@@ -405,6 +676,14 @@
         {
           "word": "delfín",
           "file": "delfin_2732.png"
+        },
+        {
+          "word": "diente",
+          "file": "diente_10267.png"
+        },
+        {
+          "word": "dinosaurio",
+          "file": "dinosaurio_2738.png"
         }
       ],
       "dificil": [
@@ -419,6 +698,10 @@
         {
           "word": "moneda",
           "file": "moneda_8633.png"
+        },
+        {
+          "word": "helado",
+          "file": "helado_35209.png"
         }
       ]
     },
@@ -435,6 +718,14 @@
         {
           "word": "escoba",
           "file": "escoba_2693.png"
+        },
+        {
+          "word": "escalera",
+          "file": "escalera_2379.png"
+        },
+        {
+          "word": "espejo",
+          "file": "espejo_8573.png"
         }
       ],
       "dificil": [
@@ -449,6 +740,10 @@
         {
           "word": "pelota",
           "file": "pelota_3241.png"
+        },
+        {
+          "word": "nieve",
+          "file": "nieve_7172.png"
         }
       ]
     },
@@ -465,6 +760,10 @@
         {
           "word": "fresa",
           "file": "fresa_2400.png"
+        },
+        {
+          "word": "flauta",
+          "file": "flauta_2396.png"
         }
       ],
       "dificil": [
@@ -479,6 +778,10 @@
         {
           "word": "bufanda",
           "file": "bufanda_2290.png"
+        },
+        {
+          "word": "sofá",
+          "file": "sofa_25479.png"
         }
       ]
     },
@@ -495,6 +798,14 @@
         {
           "word": "guitarra",
           "file": "guitarra_2417.png"
+        },
+        {
+          "word": "gafas",
+          "file": "gafas_3329.png"
+        },
+        {
+          "word": "gallina",
+          "file": "gallina_2403.png"
         }
       ],
       "dificil": [
@@ -509,6 +820,10 @@
         {
           "word": "fuego",
           "file": "fuego_4654.png"
+        },
+        {
+          "word": "lengua",
+          "file": "lengua_2944.png"
         }
       ]
     },
@@ -525,6 +840,14 @@
         {
           "word": "hormiga",
           "file": "hormiga_2425.png"
+        },
+        {
+          "word": "hipopótamo",
+          "file": "hipopotamo_2424.png"
+        },
+        {
+          "word": "hamaca",
+          "file": "hamaca_4764.png"
         }
       ],
       "dificil": [
@@ -535,6 +858,10 @@
         {
           "word": "zanahoria",
           "file": "zanahoria_2619.png"
+        },
+        {
+          "word": "almohada",
+          "file": "almohada_2250.png"
         }
       ]
     },
@@ -551,6 +878,10 @@
         {
           "word": "isla",
           "file": "isla_2966.png"
+        },
+        {
+          "word": "imán",
+          "file": "iman_8138.png"
         }
       ],
       "dificil": [
@@ -565,6 +896,10 @@
         {
           "word": "abrigo",
           "file": "abrigo_8122.png"
+        },
+        {
+          "word": "piscina",
+          "file": "piscina_30516.png"
         }
       ]
     },
@@ -581,6 +916,14 @@
         {
           "word": "juguete",
           "file": "juguete_9813.png"
+        },
+        {
+          "word": "jamón",
+          "file": "jamon_2433.png"
+        },
+        {
+          "word": "jaula",
+          "file": "jaula_5494.png"
         }
       ],
       "dificil": [
@@ -591,6 +934,10 @@
         {
           "word": "reloj",
           "file": "reloj_2549.png"
+        },
+        {
+          "word": "espejo",
+          "file": "espejo_8573.png"
         }
       ]
     },
@@ -625,6 +972,14 @@
         {
           "word": "lápiz",
           "file": "lapiz_2440.png"
+        },
+        {
+          "word": "libro",
+          "file": "libro_25191.png"
+        },
+        {
+          "word": "lámpara",
+          "file": "lampara_4936.png"
         }
       ],
       "dificil": [
@@ -639,6 +994,10 @@
         {
           "word": "paloma",
           "file": "paloma_2493.png"
+        },
+        {
+          "word": "azul",
+          "file": "azul_4869.png"
         }
       ]
     },
@@ -655,6 +1014,14 @@
         {
           "word": "mariposa",
           "file": "mariposa_26200.png"
+        },
+        {
+          "word": "muñeca",
+          "file": "muneca_26238.png"
+        },
+        {
+          "word": "montaña",
+          "file": "montana_2909.png"
         }
       ],
       "dificil": [
@@ -669,6 +1036,10 @@
         {
           "word": "paloma",
           "file": "paloma_2493.png"
+        },
+        {
+          "word": "camino",
+          "file": "camino_6955.png"
         }
       ]
     },
@@ -685,6 +1056,14 @@
         {
           "word": "nido",
           "file": "nido_7173.png"
+        },
+        {
+          "word": "naranja",
+          "file": "naranja_2888.png"
+        },
+        {
+          "word": "noche",
+          "file": "noche_26997.png"
         }
       ],
       "dificil": [
@@ -699,6 +1078,10 @@
         {
           "word": "conejo",
           "file": "conejo_2351.png"
+        },
+        {
+          "word": "ventana",
+          "file": "ventana_2611.png"
         }
       ]
     },
@@ -717,6 +1100,10 @@
         {
           "word": "muñeca",
           "file": "muneca_26238.png"
+        },
+        {
+          "word": "araña",
+          "file": "arana_38275.png"
         }
       ]
     },
@@ -733,6 +1120,14 @@
         {
           "word": "ojo",
           "file": "ojo_6573.png"
+        },
+        {
+          "word": "oreja",
+          "file": "oreja_2871.png"
+        },
+        {
+          "word": "ordenador",
+          "file": "ordenador_7190.png"
         }
       ],
       "dificil": [
@@ -747,6 +1142,10 @@
         {
           "word": "libro",
           "file": "libro_25191.png"
+        },
+        {
+          "word": "pollo",
+          "file": "pollo_4952.png"
         }
       ]
     },
@@ -763,6 +1162,14 @@
         {
           "word": "pan",
           "file": "pan_2494.png"
+        },
+        {
+          "word": "piano",
+          "file": "piano_2521.png"
+        },
+        {
+          "word": "puerta",
+          "file": "puerta_3244.png"
         }
       ],
       "dificil": [
@@ -777,6 +1184,10 @@
         {
           "word": "mapa",
           "file": "mapa_5505.png"
+        },
+        {
+          "word": "ropa",
+          "file": "ropa_7233.png"
         }
       ]
     },
@@ -789,6 +1200,10 @@
         {
           "word": "quiosco",
           "file": "quiosco_2956.png"
+        },
+        {
+          "word": "quince",
+          "file": "quince_29268.png"
         }
       ],
       "dificil": [
@@ -811,6 +1226,10 @@
         {
           "word": "rana",
           "file": "rana_28473.png"
+        },
+        {
+          "word": "regalo",
+          "file": "regalo_25381.png"
         }
       ],
       "dificil": [
@@ -825,6 +1244,10 @@
         {
           "word": "libro",
           "file": "libro_25191.png"
+        },
+        {
+          "word": "perro",
+          "file": "perro_7202.png"
         }
       ]
     },
@@ -841,6 +1264,14 @@
         {
           "word": "serpiente",
           "file": "serpiente_2568.png"
+        },
+        {
+          "word": "sombrero",
+          "file": "sombrero_2572.png"
+        },
+        {
+          "word": "seta",
+          "file": "seta_8328.png"
         }
       ],
       "dificil": [
@@ -855,6 +1286,10 @@
         {
           "word": "oso",
           "file": "oso_2488.png"
+        },
+        {
+          "word": "beso",
+          "file": "beso_4576.png"
         }
       ]
     },
@@ -871,6 +1306,14 @@
         {
           "word": "taza",
           "file": "taza_2582.png"
+        },
+        {
+          "word": "tomate",
+          "file": "tomate_2594.png"
+        },
+        {
+          "word": "tortuga",
+          "file": "tortuga_26503.png"
         }
       ],
       "dificil": [
@@ -885,6 +1328,10 @@
         {
           "word": "pelota",
           "file": "pelota_3241.png"
+        },
+        {
+          "word": "manta",
+          "file": "manta_2459.png"
         }
       ]
     },
@@ -897,6 +1344,14 @@
         {
           "word": "uña",
           "file": "una_2783.png"
+        },
+        {
+          "word": "uno",
+          "file": "uno_2627.png"
+        },
+        {
+          "word": "unicornio",
+          "file": "unicornio_6237.png"
         }
       ],
       "dificil": [
@@ -911,6 +1366,10 @@
         {
           "word": "auto",
           "file": "auto_2339.png"
+        },
+        {
+          "word": "nube",
+          "file": "nube_2883.png"
         }
       ]
     },
@@ -927,6 +1386,14 @@
         {
           "word": "violín",
           "file": "violin_2615.png"
+        },
+        {
+          "word": "vela",
+          "file": "vela_6242.png"
+        },
+        {
+          "word": "volcán",
+          "file": "volcan_6247.png"
         }
       ],
       "dificil": [
@@ -937,6 +1404,10 @@
         {
           "word": "nueve",
           "file": "nueve_2635.png"
+        },
+        {
+          "word": "lluvia",
+          "file": "lluvia_7148.png"
         }
       ]
     },
@@ -981,6 +1452,10 @@
         {
           "word": "yema",
           "file": "yema_7308.png"
+        },
+        {
+          "word": "yegua",
+          "file": "yegua_2294.png"
         }
       ],
       "dificil": [
@@ -991,6 +1466,10 @@
         {
           "word": "payaso",
           "file": "payaso_2854.png"
+        },
+        {
+          "word": "playa",
+          "file": "playa_30518.png"
         }
       ]
     },
@@ -1007,6 +1486,14 @@
         {
           "word": "zanahoria",
           "file": "zanahoria_2619.png"
+        },
+        {
+          "word": "zumo",
+          "file": "zumo_11461.png"
+        },
+        {
+          "word": "zapatilla",
+          "file": "zapatilla_8333.png"
         }
       ],
       "dificil": [
@@ -1017,6 +1504,10 @@
         {
           "word": "cabeza",
           "file": "cabeza_2673.png"
+        },
+        {
+          "word": "lápiz",
+          "file": "lapiz_2440.png"
         }
       ]
     }
@@ -1565,6 +2056,262 @@
     "cabeza": {
       "id": 2673,
       "file": "cabeza_2673.png"
+    },
+    "jugar": {
+      "id": 23392,
+      "file": "jugar_23392.png"
+    },
+    "correr": {
+      "id": 6465,
+      "file": "correr_6465.png"
+    },
+    "sofá": {
+      "id": 25479,
+      "file": "sofa_25479.png"
+    },
+    "manzana": {
+      "id": 2462,
+      "file": "manzana_2462.png"
+    },
+    "abrazar": {
+      "id": 6023,
+      "file": "abrazar_6023.png"
+    },
+    "conducir": {
+      "id": 6458,
+      "file": "conducir_6458.png"
+    },
+    "llorar": {
+      "id": 7147,
+      "file": "llorar_7147.png"
+    },
+    "reír": {
+      "id": 13354,
+      "file": "reir_13354.png"
+    },
+    "brillar": {
+      "id": 6475,
+      "file": "brillar_6475.png"
+    },
+    "lluvia": {
+      "id": 7148,
+      "file": "lluvia_7148.png"
+    },
+    "caer": {
+      "id": 39440,
+      "file": "caer_39440.png"
+    },
+    "cielo": {
+      "id": 6978,
+      "file": "cielo_6978.png"
+    },
+    "cocinar": {
+      "id": 2342,
+      "file": "cocinar_2342.png"
+    },
+    "abuelo": {
+      "id": 23718,
+      "file": "abuelo_23718.png"
+    },
+    "periódico": {
+      "id": 2845,
+      "file": "periodico_2845.png"
+    },
+    "sonreír": {
+      "id": 13354,
+      "file": "sonreir_13354.png"
+    },
+    "árbol": {
+      "id": 3057,
+      "file": "arbol_3057.png"
+    },
+    "anillo": {
+      "id": 6900,
+      "file": "anillo_6900.png"
+    },
+    "ballena": {
+      "id": 2268,
+      "file": "ballena_2268.png"
+    },
+    "banana": {
+      "id": 10218,
+      "file": "banana_10218.png"
+    },
+    "sombrero": {
+      "id": 2572,
+      "file": "sombrero_2572.png"
+    },
+    "cuchara": {
+      "id": 2362,
+      "file": "cuchara_2362.png"
+    },
+    "diente": {
+      "id": 10267,
+      "file": "diente_10267.png"
+    },
+    "dinosaurio": {
+      "id": 2738,
+      "file": "dinosaurio_2738.png"
+    },
+    "escalera": {
+      "id": 2379,
+      "file": "escalera_2379.png"
+    },
+    "espejo": {
+      "id": 8573,
+      "file": "espejo_8573.png"
+    },
+    "nieve": {
+      "id": 7172,
+      "file": "nieve_7172.png"
+    },
+    "flauta": {
+      "id": 2396,
+      "file": "flauta_2396.png"
+    },
+    "gafas": {
+      "id": 3329,
+      "file": "gafas_3329.png"
+    },
+    "gallina": {
+      "id": 2403,
+      "file": "gallina_2403.png"
+    },
+    "lengua": {
+      "id": 2944,
+      "file": "lengua_2944.png"
+    },
+    "hipopótamo": {
+      "id": 2424,
+      "file": "hipopotamo_2424.png"
+    },
+    "hamaca": {
+      "id": 4764,
+      "file": "hamaca_4764.png"
+    },
+    "imán": {
+      "id": 8138,
+      "file": "iman_8138.png"
+    },
+    "piscina": {
+      "id": 30516,
+      "file": "piscina_30516.png"
+    },
+    "jamón": {
+      "id": 2433,
+      "file": "jamon_2433.png"
+    },
+    "jaula": {
+      "id": 5494,
+      "file": "jaula_5494.png"
+    },
+    "lámpara": {
+      "id": 4936,
+      "file": "lampara_4936.png"
+    },
+    "azul": {
+      "id": 4869,
+      "file": "azul_4869.png"
+    },
+    "montaña": {
+      "id": 2909,
+      "file": "montana_2909.png"
+    },
+    "camino": {
+      "id": 6955,
+      "file": "camino_6955.png"
+    },
+    "naranja": {
+      "id": 2888,
+      "file": "naranja_2888.png"
+    },
+    "noche": {
+      "id": 26997,
+      "file": "noche_26997.png"
+    },
+    "oreja": {
+      "id": 2871,
+      "file": "oreja_2871.png"
+    },
+    "ordenador": {
+      "id": 7190,
+      "file": "ordenador_7190.png"
+    },
+    "pollo": {
+      "id": 4952,
+      "file": "pollo_4952.png"
+    },
+    "piano": {
+      "id": 2521,
+      "file": "piano_2521.png"
+    },
+    "puerta": {
+      "id": 3244,
+      "file": "puerta_3244.png"
+    },
+    "ropa": {
+      "id": 7233,
+      "file": "ropa_7233.png"
+    },
+    "quince": {
+      "id": 29268,
+      "file": "quince_29268.png"
+    },
+    "regalo": {
+      "id": 25381,
+      "file": "regalo_25381.png"
+    },
+    "seta": {
+      "id": 8328,
+      "file": "seta_8328.png"
+    },
+    "beso": {
+      "id": 4576,
+      "file": "beso_4576.png"
+    },
+    "tomate": {
+      "id": 2594,
+      "file": "tomate_2594.png"
+    },
+    "tortuga": {
+      "id": 26503,
+      "file": "tortuga_26503.png"
+    },
+    "manta": {
+      "id": 2459,
+      "file": "manta_2459.png"
+    },
+    "uno": {
+      "id": 2627,
+      "file": "uno_2627.png"
+    },
+    "unicornio": {
+      "id": 6237,
+      "file": "unicornio_6237.png"
+    },
+    "vela": {
+      "id": 6242,
+      "file": "vela_6242.png"
+    },
+    "volcán": {
+      "id": 6247,
+      "file": "volcan_6247.png"
+    },
+    "yegua": {
+      "id": 2294,
+      "file": "yegua_2294.png"
+    },
+    "playa": {
+      "id": 30518,
+      "file": "playa_30518.png"
+    },
+    "zumo": {
+      "id": 11461,
+      "file": "zumo_11461.png"
+    },
+    "zapatilla": {
+      "id": 8333,
+      "file": "zapatilla_8333.png"
     }
   }
 }
