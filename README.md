@@ -2,8 +2,11 @@
 
 App web para peques de 3 años, en español, con cinco secciones:
 
-- **Frases simples** — frases de 2-3 elementos (ej. *"El niño bebe agua"*) acompañadas de sus pictogramas.
-- **Vocabulario** — dos niveles de dificultad por letra del abecedario:
+- **Frases simples** — frases de 2-3 elementos (ej. *"El niño bebe agua"*) mostradas como una pequeña escena animada
+  (CSS, no GIFs de internet: sin problemas de derechos ni de estilo) con sus pictogramas debajo, tocables uno a uno.
+- **Vocabulario** — la sección con más contenido de la app, al menos 20 palabras por letra del abecedario
+  (menos en K, Q, W, X, Ñ, I, U: el español no tiene 20 palabras reales para niños que empiecen por esas letras),
+  en dos niveles de dificultad:
   - **Fácil**: la palabra empieza por la letra elegida.
   - **Difícil**: la letra está dentro de la palabra, no al principio (ej. M → *almohada*).
 - **Frase libre** — banco de pictogramas de vocabulario nuclear (CAA); el niño toca varios para construir su propia frase y la app la lee en voz alta.
@@ -72,6 +75,14 @@ Para añadir o cambiar un sonido: descargar el audio, recortarlo a 1-3s con `ffm
 `public/assets/sounds/<palabra>.mp3`, luego apuntar el nombre de fichero en el campo `"sound"` de la
 entrada correspondiente en `content/words_source.json` (sección `sonidos`) y volver a ejecutar
 `scripts/fetch_pictos.py`.
+
+## Escena animada de "Frases simples"
+
+Cada frase tiene una familia de animación (campo `"anim"` en `content/words_source.json`, ej. `sip`, `munch`,
+`sleep`, `read`, `art`, `bounce`, `shine`, `drive`, `wash`, `stir`, `cry`, `hug`, `fall`) definida en `style.css`
+como clases `.anim-*` con `@keyframes` reutilizables, aplicadas al sujeto y al objeto de la frase (los dos
+pictogramas que se muestran grandes en el escenario). Para añadir una frase nueva, basta con elegir la familia
+que mejor encaje con su verbo; si ninguna encaja, se usa `bob` (balanceo suave) por defecto.
 
 ## Pendiente
 

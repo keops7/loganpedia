@@ -109,7 +109,7 @@
   });
 
   // ---------- CARGA DE CONTENIDO ----------
-  fetch("content/content.json")
+  fetch("content/content.json", { cache: "no-cache" })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       state.content = data;
@@ -122,28 +122,94 @@
       console.error("No se pudo cargar el contenido", err);
     });
 
-  // ---------- FRASES SIMPLES ----------
+  // ---------- FRASES SIMPLES (escena animada) ----------
   var fraseTextEl = document.getElementById("frase-text");
-  var fracePictosEl = document.getElementById("frase-pictos");
+  var fraseChipsEl = document.getElementById("frase-chips");
   var fraseDotsEl = document.getElementById("frase-dots");
+  var fraseSujetoEl = document.getElementById("frase-sujeto");
+  var fraseObjetoEl = document.getElementById("frase-objeto");
+  var fraseFxEl = document.getElementById("frase-fx");
+
+  var FAMILY_CLASS = {
+    sip: "anim-sip",
+    munch: "anim-munch",
+    sleep: "anim-sleep",
+    read: "anim-read",
+    art: "anim-art",
+    bounce: "anim-bounce",
+    shine: "anim-shine",
+    drive: "anim-drive",
+    wash: "anim-wash",
+    stir: "anim-stir",
+    cry: "anim-cry",
+    fall: "anim-idle",
+    bob: "anim-idle",
+  };
+
+  var FX_SPEC = {
+    sip: { emoji: "💧", cls: "fx-rise", dur: 1.4, pos: [[64, 50], [72, 38]] },
+    shine: { emoji: "✨", cls: "fx-pop", dur: 1.3, pos: [[18, 15], [78, 12], [50, 55]] },
+    sleep: { emoji: "z", cls: "fx-rise", dur: 2.2, pos: [[14, 25], [22, 10]] },
+    fall: { emoji: "💧", cls: "fx-fall", dur: 1.5, pos: [[12, 0], [34, 0], [56, 0], [80, 0]] },
+    wash: { emoji: "🫧", cls: "fx-rise", dur: 1.6, pos: [[58, 55], [68, 45]] },
+    stir: { emoji: "💨", cls: "fx-rise", dur: 1.8, pos: [[50, 35]] },
+    cry: { emoji: "💧", cls: "fx-fall", dur: 1.1, pos: [[26, 30]] },
+    hug: { emoji: "💕", cls: "fx-pop", dur: 1.2, pos: [[44, 30], [56, 20]] },
+  };
+
+  function renderFx(anim) {
+    fraseFxEl.innerHTML = "";
+    var spec = FX_SPEC[anim];
+    if (!spec) return;
+    spec.pos.forEach(function (p, i) {
+      var span = document.createElement("span");
+      span.className = "fx-item " + spec.cls;
+      span.textContent = spec.emoji;
+      span.style.left = p[0] + "%";
+      span.style.top = p[1] + "%";
+      span.style.animationDuration = spec.dur + "s";
+      span.style.animationDelay = i * 0.4 + "s";
+      fraseFxEl.appendChild(span);
+    });
+  }
 
   function renderFrase() {
     var sentences = state.content.sentences;
     var s = sentences[state.fraseIndex];
     fraseTextEl.textContent = s.text;
-    fracePictosEl.innerHTML = "";
+
+    var sujeto = s.pictos[0];
+    var objeto = s.pictos[s.pictos.length - 1];
+    fraseSujetoEl.src = "assets/pictos/" + sujeto.file;
+    fraseSujetoEl.alt = sujeto.word;
+    fraseObjetoEl.src = "assets/pictos/" + objeto.file;
+    fraseObjetoEl.alt = objeto.word;
+
+    fraseSujetoEl.className = "escena-picto escena-sujeto";
+    fraseObjetoEl.className = "escena-picto escena-objeto";
+    if (s.anim === "hug") {
+      fraseSujetoEl.classList.add("anim-hug-a");
+      fraseObjetoEl.classList.add("anim-hug-b");
+    } else {
+      fraseSujetoEl.classList.add("anim-idle");
+      fraseObjetoEl.classList.add(FAMILY_CLASS[s.anim] || "anim-idle");
+    }
+    renderFx(s.anim);
+
+    fraseChipsEl.innerHTML = "";
     s.pictos.forEach(function (p) {
-      var card = document.createElement("div");
-      card.className = "picto-card";
-      card.innerHTML =
+      var chip = document.createElement("div");
+      chip.className = "frase-chip";
+      chip.innerHTML =
         '<img src="assets/pictos/' + p.file + '" alt="' + p.word + '">' +
         "<span>" + p.word + "</span>";
-      card.addEventListener("click", function (e) {
+      chip.addEventListener("click", function (e) {
         e.stopPropagation();
         speak(p.word);
       });
-      fracePictosEl.appendChild(card);
+      fraseChipsEl.appendChild(chip);
     });
+
     fraseDotsEl.innerHTML = "";
     sentences.forEach(function (_, i) {
       var dot = document.createElement("span");
@@ -152,6 +218,15 @@
     });
     speak(s.text);
   }
+
+  fraseSujetoEl.addEventListener("click", function (e) {
+    e.stopPropagation();
+    speak(fraseSujetoEl.alt);
+  });
+  fraseObjetoEl.addEventListener("click", function (e) {
+    e.stopPropagation();
+    speak(fraseObjetoEl.alt);
+  });
 
   function buildFraseScreen() {
     state.fraseIndex = 0;

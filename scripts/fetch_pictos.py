@@ -17,6 +17,8 @@ IMG_URL = "https://static.arasaac.org/pictograms/{id}/{id}_500.png"
 # nino de 3 anos (ambiguo, poco representativo...); forzamos un id concreto.
 OVERRIDES = {
     "querer": 5441,  # mano alcanzando algo (desear/pedir), no el de "querer" romantico
+    "día": 26799,    # casa con sol (pareja visual de "noche" = casa con luna), no un calendario
+    "cielo": 38270,  # cielo azul de dia con nubes, no un cielo nocturno estrellado
 }
 
 session = requests.Session()
@@ -106,7 +108,7 @@ def main():
                 pictos.append({"word": w, "file": entry["file"]})
             else:
                 missing.append(f"frase:{s['text']} -> {w}")
-        sentences_out.append({"text": s["text"], "pictos": pictos})
+        sentences_out.append({"text": s["text"], "pictos": pictos, "anim": s.get("anim", "bob")})
 
     print("=== Vocabulario ===")
     letters_out = {}

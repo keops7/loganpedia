@@ -1,99 +1,1164 @@
 {
   "sentences": [
-    { "text": "El niño bebe agua", "words": ["niño", "beber", "agua"] },
-    { "text": "El coche es rojo", "words": ["coche", "rojo"] },
-    { "text": "El perro come hueso", "words": ["perro", "comer", "hueso"] },
-    { "text": "La niña come pan", "words": ["niña", "comer", "pan"] },
-    { "text": "El gato bebe leche", "words": ["gato", "beber", "leche"] },
-    { "text": "El sol es amarillo", "words": ["sol", "amarillo"] },
-    { "text": "El pájaro vuela alto", "words": ["pájaro", "volar"] },
-    { "text": "La pelota es redonda", "words": ["pelota", "redondo"] },
-    { "text": "Mamá lava los platos", "words": ["mamá", "lavar", "plato"] },
-    { "text": "Papá lee un libro", "words": ["papá", "leer", "libro"] },
-    { "text": "El bebé duerme mucho", "words": ["bebé", "dormir"] },
-    { "text": "La flor es bonita", "words": ["flor", "bonito"] },
-    { "text": "El niño salta alto", "words": ["niño", "saltar"] },
-    { "text": "El pez nada rápido", "words": ["pez", "nadar"] },
-    { "text": "La luna es blanca", "words": ["luna", "blanco"] },
-    { "text": "La vaca come hierba", "words": ["vaca", "comer", "hierba"] },
-    { "text": "El avión vuela rápido", "words": ["avión", "volar"] },
-    { "text": "Yo quiero agua", "words": ["yo", "querer", "agua"] },
-    { "text": "El niño pinta la casa", "words": ["niño", "pintar", "casa"] },
-    { "text": "La abuela hace galletas", "words": ["abuela", "hacer", "galleta"] },
-    { "text": "El niño duerme en la cama", "words": ["niño", "dormir", "cama"] },
-    { "text": "La niña juega con la pelota", "words": ["niña", "jugar", "pelota"] },
-    { "text": "El perro corre rápido", "words": ["perro", "correr"] },
-    { "text": "El gato duerme en el sofá", "words": ["gato", "dormir", "sofá"] },
-    { "text": "Yo como manzana", "words": ["yo", "comer", "manzana"] },
-    { "text": "Mamá abraza al niño", "words": ["mamá", "abrazar", "niño"] },
-    { "text": "Papá conduce el coche", "words": ["papá", "conducir", "coche"] },
-    { "text": "El niño llora un poco", "words": ["niño", "llorar"] },
-    { "text": "La niña ríe mucho", "words": ["niña", "reír"] },
-    { "text": "El sol brilla mucho", "words": ["sol", "brillar"] },
-    { "text": "La lluvia cae del cielo", "words": ["lluvia", "caer", "cielo"] },
-    { "text": "El niño se lava las manos", "words": ["niño", "lavar", "mano"] },
-    { "text": "La abuela cocina sopa", "words": ["abuela", "cocinar", "sopa"] },
-    { "text": "El abuelo lee el periódico", "words": ["abuelo", "leer", "periódico"] },
-    { "text": "El bebé sonríe feliz", "words": ["bebé", "sonreír"] }
+    {
+      "text": "El niño bebe agua",
+      "words": [
+        "niño",
+        "beber",
+        "agua"
+      ],
+      "anim": "sip"
+    },
+    {
+      "text": "El coche es rojo",
+      "words": [
+        "coche",
+        "rojo"
+      ],
+      "anim": "shine"
+    },
+    {
+      "text": "El perro come hueso",
+      "words": [
+        "perro",
+        "comer",
+        "hueso"
+      ],
+      "anim": "munch"
+    },
+    {
+      "text": "La niña come pan",
+      "words": [
+        "niña",
+        "comer",
+        "pan"
+      ],
+      "anim": "munch"
+    },
+    {
+      "text": "El gato bebe leche",
+      "words": [
+        "gato",
+        "beber",
+        "leche"
+      ],
+      "anim": "sip"
+    },
+    {
+      "text": "El sol es amarillo",
+      "words": [
+        "sol",
+        "amarillo"
+      ],
+      "anim": "shine"
+    },
+    {
+      "text": "El pájaro vuela alto",
+      "words": [
+        "pájaro",
+        "volar"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "La pelota es redonda",
+      "words": [
+        "pelota",
+        "redondo"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "Mamá lava los platos",
+      "words": [
+        "mamá",
+        "lavar",
+        "plato"
+      ],
+      "anim": "wash"
+    },
+    {
+      "text": "Papá lee un libro",
+      "words": [
+        "papá",
+        "leer",
+        "libro"
+      ],
+      "anim": "read"
+    },
+    {
+      "text": "El bebé duerme mucho",
+      "words": [
+        "bebé",
+        "dormir"
+      ],
+      "anim": "sleep"
+    },
+    {
+      "text": "La flor es bonita",
+      "words": [
+        "flor",
+        "bonito"
+      ],
+      "anim": "shine"
+    },
+    {
+      "text": "El niño salta alto",
+      "words": [
+        "niño",
+        "saltar"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "El pez nada rápido",
+      "words": [
+        "pez",
+        "nadar"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "La luna es blanca",
+      "words": [
+        "luna",
+        "blanco"
+      ],
+      "anim": "shine"
+    },
+    {
+      "text": "La vaca come hierba",
+      "words": [
+        "vaca",
+        "comer",
+        "hierba"
+      ],
+      "anim": "munch"
+    },
+    {
+      "text": "El avión vuela rápido",
+      "words": [
+        "avión",
+        "volar"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "Yo quiero agua",
+      "words": [
+        "yo",
+        "querer",
+        "agua"
+      ],
+      "anim": "bob"
+    },
+    {
+      "text": "El niño pinta la casa",
+      "words": [
+        "niño",
+        "pintar",
+        "casa"
+      ],
+      "anim": "art"
+    },
+    {
+      "text": "La abuela hace galletas",
+      "words": [
+        "abuela",
+        "hacer",
+        "galleta"
+      ],
+      "anim": "stir"
+    },
+    {
+      "text": "El niño duerme en la cama",
+      "words": [
+        "niño",
+        "dormir",
+        "cama"
+      ],
+      "anim": "sleep"
+    },
+    {
+      "text": "La niña juega con la pelota",
+      "words": [
+        "niña",
+        "jugar",
+        "pelota"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "El perro corre rápido",
+      "words": [
+        "perro",
+        "correr"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "El gato duerme en el sofá",
+      "words": [
+        "gato",
+        "dormir",
+        "sofá"
+      ],
+      "anim": "sleep"
+    },
+    {
+      "text": "Yo como manzana",
+      "words": [
+        "yo",
+        "comer",
+        "manzana"
+      ],
+      "anim": "munch"
+    },
+    {
+      "text": "Mamá abraza al niño",
+      "words": [
+        "mamá",
+        "abrazar",
+        "niño"
+      ],
+      "anim": "hug"
+    },
+    {
+      "text": "Papá conduce el coche",
+      "words": [
+        "papá",
+        "conducir",
+        "coche"
+      ],
+      "anim": "drive"
+    },
+    {
+      "text": "El niño llora un poco",
+      "words": [
+        "niño",
+        "llorar"
+      ],
+      "anim": "cry"
+    },
+    {
+      "text": "La niña ríe mucho",
+      "words": [
+        "niña",
+        "reír"
+      ],
+      "anim": "shine"
+    },
+    {
+      "text": "El sol brilla mucho",
+      "words": [
+        "sol",
+        "brillar"
+      ],
+      "anim": "shine"
+    },
+    {
+      "text": "La lluvia cae del cielo",
+      "words": [
+        "lluvia",
+        "caer",
+        "cielo"
+      ],
+      "anim": "fall"
+    },
+    {
+      "text": "El niño se lava las manos",
+      "words": [
+        "niño",
+        "lavar",
+        "mano"
+      ],
+      "anim": "wash"
+    },
+    {
+      "text": "La abuela cocina sopa",
+      "words": [
+        "abuela",
+        "cocinar",
+        "sopa"
+      ],
+      "anim": "stir"
+    },
+    {
+      "text": "El abuelo lee el periódico",
+      "words": [
+        "abuelo",
+        "leer",
+        "periódico"
+      ],
+      "anim": "read"
+    },
+    {
+      "text": "El bebé sonríe feliz",
+      "words": [
+        "bebé",
+        "sonreír"
+      ],
+      "anim": "shine"
+    },
+    {
+      "text": "El niño juega con la bicicleta",
+      "words": [
+        "niño",
+        "jugar",
+        "bicicleta"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "La niña va al colegio",
+      "words": [
+        "niña",
+        "ir",
+        "colegio"
+      ],
+      "anim": "bounce"
+    },
+    {
+      "text": "Papá pinta un cuadro",
+      "words": [
+        "papá",
+        "pintar",
+        "cuadro"
+      ],
+      "anim": "art"
+    }
   ],
   "letters": {
-    "A": { "facil": ["avión", "araña", "abeja", "árbol", "anillo"], "dificil": ["casa", "mano", "pan", "cara"] },
-    "B": { "facil": ["bebé", "barco", "bota", "ballena", "banana"], "dificil": ["cebra", "lobo", "abrigo", "sombrero"] },
-    "C": { "facil": ["casa", "coche", "caballo", "cuchara", "cuna"], "dificil": ["boca", "vaca", "mochila", "escoba"] },
-    "D": { "facil": ["dado", "dedo", "delfín", "diente", "dinosaurio"], "dificil": ["rueda", "nido", "moneda", "helado"] },
-    "E": { "facil": ["elefante", "estrella", "escoba", "escalera", "espejo"], "dificil": ["perro", "mesa", "pelota", "nieve"] },
-    "F": { "facil": ["flor", "foca", "fresa", "flauta"], "dificil": ["elefante", "jirafa", "bufanda", "sofá"] },
-    "G": { "facil": ["gato", "globo", "guitarra", "gafas", "gallina"], "dificil": ["tigre", "paraguas", "fuego", "lengua"] },
-    "H": { "facil": ["helado", "huevo", "hormiga", "hipopótamo", "hamaca"], "dificil": ["búho", "zanahoria", "almohada"] },
-    "I": { "facil": ["iglú", "insecto", "isla", "imán"], "dificil": ["pino", "camión", "abrigo", "piscina"] },
-    "J": { "facil": ["jirafa", "jabón", "juguete", "jamón", "jaula"], "dificil": ["conejo", "reloj", "espejo"] },
-    "K": { "facil": ["kiwi", "koala"], "dificil": ["anorak"] },
-    "L": { "facil": ["luna", "león", "lápiz", "libro", "lámpara"], "dificil": ["pelota", "globo", "paloma", "azul"] },
-    "M": { "facil": ["mano", "mesa", "mariposa", "muñeca", "montaña"], "dificil": ["almohada", "cama", "paloma", "camino"] },
-    "N": { "facil": ["nube", "nariz", "nido", "naranja", "noche"], "dificil": ["luna", "mano", "conejo", "ventana"] },
-    "Ñ": { "facil": ["ñu"], "dificil": ["piña", "muñeca", "araña"] },
-    "O": { "facil": ["oso", "oveja", "ojo", "oreja", "ordenador"], "dificil": ["sol", "pato", "libro", "pollo"] },
-    "P": { "facil": ["pelota", "pato", "pan", "piano", "puerta"], "dificil": ["sopa", "lápiz", "mapa", "ropa"] },
-    "Q": { "facil": ["queso", "quiosco", "quince"], "dificil": ["paquete"] },
-    "R": { "facil": ["ratón", "robot", "rana", "regalo"], "dificil": ["cara", "flor", "libro", "perro"] },
-    "S": { "facil": ["sol", "silla", "serpiente", "sombrero", "seta"], "dificil": ["casa", "mesa", "oso", "beso"] },
-    "T": { "facil": ["tren", "tigre", "taza", "tomate", "tortuga"], "dificil": ["pato", "gato", "pelota", "manta"] },
-    "U": { "facil": ["uva", "uña", "uno", "unicornio"], "dificil": ["luna", "cuna", "auto", "nube"] },
-    "V": { "facil": ["vaca", "ventana", "violín", "vela", "volcán"], "dificil": ["huevo", "nueve", "lluvia"] },
-    "W": { "facil": ["wifi"], "dificil": ["kiwi"] },
-    "X": { "facil": ["xilófono"], "dificil": ["taxi"] },
-    "Y": { "facil": ["yoyo", "yate", "yema", "yegua"], "dificil": ["rayo", "payaso", "playa"] },
-    "Z": { "facil": ["zapato", "zorro", "zanahoria", "zumo", "zapatilla"], "dificil": ["taza", "cabeza", "lápiz"] }
+    "A": {
+      "facil": [
+        "avión",
+        "araña",
+        "abeja",
+        "árbol",
+        "anillo",
+        "autobús",
+        "ardilla",
+        "armario",
+        "alfombra",
+        "ancla",
+        "abanico",
+        "aguacate",
+        "astronauta",
+        "avestruz",
+        "azúcar",
+        "almeja",
+        "antena",
+        "ambulancia",
+        "arco",
+        "agua"
+      ],
+      "dificil": [
+        "casa",
+        "mano",
+        "pan",
+        "cara",
+        "banana",
+        "manzana",
+        "guitarra",
+        "naranja",
+        "jarra"
+      ]
+    },
+    "B": {
+      "facil": [
+        "bebé",
+        "barco",
+        "bota",
+        "ballena",
+        "banana",
+        "burro",
+        "bicicleta",
+        "botella",
+        "brazo",
+        "bufanda",
+        "botón",
+        "barba",
+        "bolso",
+        "balón",
+        "bañera",
+        "biberón",
+        "buzón",
+        "bombero",
+        "bigote",
+        "banco"
+      ],
+      "dificil": [
+        "cebra",
+        "lobo",
+        "abrigo",
+        "sombrero",
+        "árbol",
+        "caballo",
+        "tambor"
+      ]
+    },
+    "C": {
+      "facil": [
+        "casa",
+        "coche",
+        "caballo",
+        "cuchara",
+        "cuna",
+        "camisa",
+        "cama",
+        "cebra",
+        "cinturón",
+        "corazón",
+        "cocodrilo",
+        "cohete",
+        "corona",
+        "cesta",
+        "cepillo",
+        "calcetín",
+        "camión",
+        "cangrejo",
+        "castillo",
+        "campana"
+      ],
+      "dificil": [
+        "boca",
+        "vaca",
+        "mochila",
+        "escoba",
+        "bicicleta",
+        "muñeca"
+      ]
+    },
+    "D": {
+      "facil": [
+        "dado",
+        "dedo",
+        "delfín",
+        "diente",
+        "dinosaurio",
+        "dragón",
+        "disfraz",
+        "dulce",
+        "ducha",
+        "doctor",
+        "desayuno",
+        "dardo",
+        "dominó",
+        "diadema",
+        "dromedario",
+        "delantal",
+        "día",
+        "dinero",
+        "domingo",
+        "diamante"
+      ],
+      "dificil": [
+        "rueda",
+        "nido",
+        "moneda",
+        "helado",
+        "espada",
+        "almohada",
+        "medias"
+      ]
+    },
+    "E": {
+      "facil": [
+        "elefante",
+        "estrella",
+        "escoba",
+        "escalera",
+        "espejo",
+        "enano",
+        "erizo",
+        "enchufe",
+        "escudo",
+        "estufa",
+        "espada",
+        "edificio",
+        "embudo",
+        "esponja",
+        "estatua",
+        "espinaca",
+        "enfermera",
+        "equipaje",
+        "elástico",
+        "esqueleto"
+      ],
+      "dificil": [
+        "perro",
+        "mesa",
+        "pelota",
+        "nieve",
+        "teléfono",
+        "regalo",
+        "reloj",
+        "bebé"
+      ]
+    },
+    "F": {
+      "facil": [
+        "flor",
+        "foca",
+        "fresa",
+        "flauta",
+        "foto",
+        "fantasma",
+        "farol",
+        "faro",
+        "fuego",
+        "funda",
+        "fideos",
+        "frigorífico",
+        "frutero",
+        "flecha",
+        "ferry",
+        "flotador",
+        "fuente",
+        "freno",
+        "farmacia",
+        "fábrica"
+      ],
+      "dificil": [
+        "elefante",
+        "jirafa",
+        "bufanda",
+        "sofá",
+        "delfín",
+        "café"
+      ]
+    },
+    "G": {
+      "facil": [
+        "gato",
+        "globo",
+        "guitarra",
+        "gafas",
+        "gallina",
+        "gorro",
+        "guante",
+        "gusano",
+        "ganso",
+        "girasol",
+        "garaje",
+        "gigante",
+        "galleta",
+        "gemelos",
+        "gorila",
+        "granja",
+        "grúa",
+        "guisantes",
+        "gaviota",
+        "goma"
+      ],
+      "dificil": [
+        "tigre",
+        "paraguas",
+        "fuego",
+        "lengua",
+        "jengibre",
+        "yogur"
+      ]
+    },
+    "H": {
+      "facil": [
+        "helado",
+        "huevo",
+        "hormiga",
+        "hipopótamo",
+        "hamaca",
+        "hoja",
+        "hueso",
+        "hada",
+        "helicóptero",
+        "horno",
+        "hilo",
+        "higo",
+        "hoguera",
+        "huerto",
+        "hongo",
+        "hucha",
+        "harina",
+        "herradura",
+        "humo",
+        "horquilla"
+      ],
+      "dificil": [
+        "búho",
+        "zanahoria",
+        "almohada",
+        "cacahuete"
+      ]
+    },
+    "I": {
+      "facil": [
+        "iglú",
+        "insecto",
+        "isla",
+        "imán",
+        "iguana",
+        "invierno",
+        "impresora",
+        "interruptor",
+        "inodoro",
+        "índice",
+        "insignia",
+        "imperdible",
+        "iglesia"
+      ],
+      "dificil": [
+        "pino",
+        "camión",
+        "abrigo",
+        "piscina",
+        "anillo",
+        "disfraz",
+        "princesa",
+        "tijeras"
+      ]
+    },
+    "J": {
+      "facil": [
+        "jirafa",
+        "jabón",
+        "juguete",
+        "jamón",
+        "jaula",
+        "jardín",
+        "jersey",
+        "jarrón",
+        "joya",
+        "jinete",
+        "judía",
+        "jeringuilla",
+        "joyero",
+        "jabalí",
+        "jarra",
+        "jacinto",
+        "joystick",
+        "jengibre",
+        "juego"
+      ],
+      "dificil": [
+        "conejo",
+        "reloj",
+        "espejo"
+      ]
+    },
+    "K": {
+      "facil": [
+        "kiwi",
+        "koala",
+        "karate",
+        "kilo",
+        "kimono",
+        "ketchup",
+        "kilogramo",
+        "kilómetro"
+      ],
+      "dificil": [
+        "anorak"
+      ]
+    },
+    "L": {
+      "facil": [
+        "luna",
+        "león",
+        "lápiz",
+        "libro",
+        "lámpara",
+        "lobo",
+        "lechuga",
+        "limón",
+        "lazo",
+        "llave",
+        "lluvia",
+        "luciérnaga",
+        "lupa",
+        "lechuza",
+        "langosta",
+        "ladrillo",
+        "leche",
+        "linterna",
+        "loro",
+        "laberinto"
+      ],
+      "dificil": [
+        "pelota",
+        "globo",
+        "paloma",
+        "azul",
+        "calcetín",
+        "salchicha"
+      ]
+    },
+    "M": {
+      "facil": [
+        "mano",
+        "mesa",
+        "mariposa",
+        "muñeca",
+        "montaña",
+        "mono",
+        "manzana",
+        "maleta",
+        "martillo",
+        "medias",
+        "molino",
+        "mariquita",
+        "mermelada",
+        "muela",
+        "murciélago",
+        "maceta",
+        "micrófono",
+        "moto",
+        "maracas",
+        "medusa"
+      ],
+      "dificil": [
+        "almohada",
+        "cama",
+        "paloma",
+        "camino",
+        "domingo",
+        "tambor"
+      ]
+    },
+    "N": {
+      "facil": [
+        "nube",
+        "nariz",
+        "nido",
+        "naranja",
+        "noche",
+        "nieve",
+        "nudo",
+        "nuez",
+        "nevera",
+        "narciso",
+        "nutria",
+        "neumático",
+        "niebla",
+        "noria",
+        "navío",
+        "número",
+        "níspero",
+        "nectarina",
+        "nogal",
+        "nublado"
+      ],
+      "dificil": [
+        "luna",
+        "mano",
+        "conejo",
+        "ventana",
+        "manzana",
+        "unicornio"
+      ]
+    },
+    "Ñ": {
+      "facil": [
+        "ñu",
+        "ñandú",
+        "ñame"
+      ],
+      "dificil": [
+        "piña",
+        "muñeca",
+        "araña"
+      ]
+    },
+    "O": {
+      "facil": [
+        "oso",
+        "oveja",
+        "ojo",
+        "oreja",
+        "ordenador",
+        "oruga",
+        "olla",
+        "ola",
+        "oca",
+        "orquídea",
+        "orangután",
+        "olivo",
+        "ombligo",
+        "otoño",
+        "ostra",
+        "oasis",
+        "ovni",
+        "oro",
+        "osito",
+        "oficina"
+      ],
+      "dificil": [
+        "sol",
+        "pato",
+        "libro",
+        "pollo",
+        "avión",
+        "payaso"
+      ]
+    },
+    "P": {
+      "facil": [
+        "pelota",
+        "pato",
+        "pan",
+        "piano",
+        "puerta",
+        "perro",
+        "pez",
+        "payaso",
+        "pingüino",
+        "pirata",
+        "princesa",
+        "pulpo",
+        "paraguas",
+        "pastel",
+        "patín",
+        "peine",
+        "pepino",
+        "piña",
+        "plátano",
+        "pizza"
+      ],
+      "dificil": [
+        "sopa",
+        "lápiz",
+        "mapa",
+        "ropa",
+        "hipopótamo",
+        "campana"
+      ]
+    },
+    "Q": {
+      "facil": [
+        "queso",
+        "quiosco",
+        "quince",
+        "quiche"
+      ],
+      "dificil": [
+        "paquete"
+      ]
+    },
+    "R": {
+      "facil": [
+        "ratón",
+        "robot",
+        "rana",
+        "regalo",
+        "reloj",
+        "rey",
+        "reina",
+        "rueda",
+        "radio",
+        "rábano",
+        "remo",
+        "rinoceronte",
+        "ropa",
+        "rodilla",
+        "rosa",
+        "ramo",
+        "raqueta",
+        "rebaño",
+        "raíz",
+        "reno"
+      ],
+      "dificil": [
+        "cara",
+        "flor",
+        "libro",
+        "perro",
+        "araña",
+        "barco"
+      ]
+    },
+    "S": {
+      "facil": [
+        "sol",
+        "silla",
+        "serpiente",
+        "sombrero",
+        "seta",
+        "sandía",
+        "saco",
+        "sapo",
+        "sirena",
+        "sombrilla",
+        "submarino",
+        "supermercado",
+        "saxofón",
+        "sartén",
+        "semilla",
+        "saltamontes",
+        "sobre",
+        "salchicha",
+        "servilleta",
+        "sopa"
+      ],
+      "dificil": [
+        "casa",
+        "mesa",
+        "oso",
+        "beso",
+        "vestido",
+        "disfraz"
+      ]
+    },
+    "T": {
+      "facil": [
+        "tren",
+        "tigre",
+        "taza",
+        "tomate",
+        "tortuga",
+        "teléfono",
+        "tambor",
+        "tenedor",
+        "tijeras",
+        "toalla",
+        "tobogán",
+        "tarta",
+        "tesoro",
+        "techo",
+        "tornillo",
+        "trompeta",
+        "trineo",
+        "tucán",
+        "toro",
+        "telaraña"
+      ],
+      "dificil": [
+        "pato",
+        "gato",
+        "pelota",
+        "manta",
+        "estrella",
+        "castillo"
+      ]
+    },
+    "U": {
+      "facil": [
+        "uva",
+        "uña",
+        "uno",
+        "unicornio",
+        "universo",
+        "urraca",
+        "ukelele"
+      ],
+      "dificil": [
+        "luna",
+        "cuna",
+        "auto",
+        "nube",
+        "escudo",
+        "muñeca"
+      ]
+    },
+    "V": {
+      "facil": [
+        "vaca",
+        "ventana",
+        "violín",
+        "vela",
+        "volcán",
+        "vaso",
+        "vampiro",
+        "vestido",
+        "valla",
+        "veleta",
+        "videojuego",
+        "violeta",
+        "volante",
+        "verdura",
+        "veterinario",
+        "víbora",
+        "vaquero",
+        "velero",
+        "verano"
+      ],
+      "dificil": [
+        "huevo",
+        "nueve",
+        "lluvia"
+      ]
+    },
+    "W": {
+      "facil": [
+        "wifi",
+        "walkie-talkie"
+      ],
+      "dificil": [
+        "kiwi"
+      ]
+    },
+    "X": {
+      "facil": [
+        "xilófono"
+      ],
+      "dificil": [
+        "taxi"
+      ]
+    },
+    "Y": {
+      "facil": [
+        "yoyo",
+        "yate",
+        "yema",
+        "yegua",
+        "yogur",
+        "yunque",
+        "yuca",
+        "yudo"
+      ],
+      "dificil": [
+        "rayo",
+        "payaso",
+        "playa"
+      ]
+    },
+    "Z": {
+      "facil": [
+        "zapato",
+        "zorro",
+        "zanahoria",
+        "zumo",
+        "zapatilla",
+        "zoo",
+        "zancos",
+        "zueco"
+      ],
+      "dificil": [
+        "taza",
+        "cabeza",
+        "lápiz",
+        "azul",
+        "buzón"
+      ]
+    }
   },
   "sonidos": [
-    { "word": "perro", "onomatopeya": "Guau, guau", "sound": "perro.mp3" },
-    { "word": "gato", "onomatopeya": "Miau", "sound": "gato.mp3" },
-    { "word": "vaca", "onomatopeya": "Muuu", "sound": "vaca.mp3" },
-    { "word": "oveja", "onomatopeya": "Beee", "sound": "oveja.mp3" },
-    { "word": "pato", "onomatopeya": "Cuac, cuac", "sound": "pato.mp3" },
-    { "word": "coche", "onomatopeya": "Pii, pii", "sound": "coche.mp3" },
-    { "word": "tren", "onomatopeya": "Chuu, chuu", "sound": "tren.mp3" },
-    { "word": "abeja", "onomatopeya": "Bzzz, bzzz", "sound": "abeja.mp3" },
-    { "word": "campana", "onomatopeya": "Nin, non", "sound": "campana.mp3" },
-    { "word": "reloj", "onomatopeya": "Tic, tac", "sound": "reloj.mp3" }
+    {
+      "word": "perro",
+      "onomatopeya": "Guau, guau",
+      "sound": "perro.mp3"
+    },
+    {
+      "word": "gato",
+      "onomatopeya": "Miau",
+      "sound": "gato.mp3"
+    },
+    {
+      "word": "vaca",
+      "onomatopeya": "Muuu",
+      "sound": "vaca.mp3"
+    },
+    {
+      "word": "oveja",
+      "onomatopeya": "Beee",
+      "sound": "oveja.mp3"
+    },
+    {
+      "word": "pato",
+      "onomatopeya": "Cuac, cuac",
+      "sound": "pato.mp3"
+    },
+    {
+      "word": "coche",
+      "onomatopeya": "Pii, pii",
+      "sound": "coche.mp3"
+    },
+    {
+      "word": "tren",
+      "onomatopeya": "Chuu, chuu",
+      "sound": "tren.mp3"
+    },
+    {
+      "word": "abeja",
+      "onomatopeya": "Bzzz, bzzz",
+      "sound": "abeja.mp3"
+    },
+    {
+      "word": "campana",
+      "onomatopeya": "Nin, non",
+      "sound": "campana.mp3"
+    },
+    {
+      "word": "reloj",
+      "onomatopeya": "Tic, tac",
+      "sound": "reloj.mp3"
+    }
   ],
   "conceptos": [
-    ["grande", "pequeño"],
-    ["arriba", "abajo"],
-    ["dentro", "fuera"],
-    ["mucho", "poco"],
-    ["lleno", "vacío"],
-    ["abierto", "cerrado"],
-    ["día", "noche"],
-    ["feliz", "triste"],
-    ["caliente", "frío"],
-    ["rápido", "lento"]
+    [
+      "grande",
+      "pequeño"
+    ],
+    [
+      "arriba",
+      "abajo"
+    ],
+    [
+      "dentro",
+      "fuera"
+    ],
+    [
+      "mucho",
+      "poco"
+    ],
+    [
+      "lleno",
+      "vacío"
+    ],
+    [
+      "abierto",
+      "cerrado"
+    ],
+    [
+      "día",
+      "noche"
+    ],
+    [
+      "feliz",
+      "triste"
+    ],
+    [
+      "caliente",
+      "frío"
+    ],
+    [
+      "rápido",
+      "lento"
+    ]
   ],
   "libre_bank": [
-    "yo", "mamá", "papá", "niño", "niña",
-    "querer", "comer", "beber", "jugar", "dormir", "saltar",
-    "agua", "pan", "pelota", "casa", "perro", "gato",
-    "grande", "pequeño", "rojo", "azul", "feliz",
-    "sí", "no", "más"
+    "yo",
+    "mamá",
+    "papá",
+    "niño",
+    "niña",
+    "querer",
+    "comer",
+    "beber",
+    "jugar",
+    "dormir",
+    "saltar",
+    "agua",
+    "pan",
+    "pelota",
+    "casa",
+    "perro",
+    "gato",
+    "grande",
+    "pequeño",
+    "rojo",
+    "azul",
+    "feliz",
+    "sí",
+    "no",
+    "más"
   ]
 }

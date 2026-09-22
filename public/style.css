@@ -173,6 +173,170 @@ html, body {
   color: var(--azul-oscuro);
   text-align: center;
 }
+
+/* ---------- ESCENA ANIMADA (frases simples) ---------- */
+.escena-stage {
+  position: relative;
+  width: min(92vw, 480px);
+  height: clamp(190px, 32vh, 280px);
+  border-radius: 32px;
+  background: linear-gradient(to bottom, #BFE3FF 0%, #DCEEFF 55%, #DCEFD9 55%, #DCEFD9 100%);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6vw;
+  padding: 16px;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.escena-picto {
+  position: relative;
+  max-height: 78%;
+  width: auto;
+  max-width: 42%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 5px rgba(0,0,0,0.18));
+  cursor: pointer;
+  z-index: 2;
+}
+.escena-fx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+.fx-item {
+  position: absolute;
+  font-size: 26px;
+  opacity: 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fx-rise {
+  0% { transform: translateY(0) scale(0.6); opacity: 0; }
+  25% { opacity: 1; }
+  100% { transform: translateY(-60px) scale(1); opacity: 0; }
+}
+@keyframes fx-fall {
+  0% { transform: translateY(-20px); opacity: 0; }
+  20% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(70px); opacity: 0; }
+}
+@keyframes fx-pop {
+  0%, 100% { transform: scale(0.4); opacity: 0; }
+  50% { transform: scale(1); opacity: 1; }
+}
+.fx-rise { animation-name: fx-rise; }
+.fx-fall { animation-name: fx-fall; }
+.fx-pop { animation-name: fx-pop; }
+
+/* familias de animacion reutilizables para los pictogramas de la escena */
+@keyframes escena-bob {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.03); }
+}
+@keyframes escena-sip {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  30%, 55% { transform: rotate(-16deg) translateY(-4px); }
+  80% { transform: rotate(0deg) translateY(0); }
+}
+@keyframes escena-munch {
+  0%, 100% { transform: translateX(0) scale(1); }
+  50% { transform: translateX(-10px) scale(0.92); }
+}
+@keyframes escena-sleep {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+@keyframes escena-read {
+  0%, 100% { transform: scaleX(1) rotate(0deg); }
+  50% { transform: scaleX(0.88) rotate(-2deg); }
+}
+@keyframes escena-art {
+  0%, 100% { transform: translateX(0) rotate(-4deg); }
+  50% { transform: translateX(14px) rotate(4deg); }
+}
+@keyframes escena-bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(-6deg); }
+}
+@keyframes escena-shine {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 6px 5px rgba(0,0,0,0.18)) brightness(1); }
+  50% { transform: scale(1.12); filter: drop-shadow(0 6px 10px rgba(255,196,0,0.55)) brightness(1.15); }
+}
+@keyframes escena-drive {
+  0%, 100% { transform: translateX(-8px) rotate(-2deg); }
+  50% { transform: translateX(8px) rotate(2deg); }
+}
+@keyframes escena-wash {
+  0%, 20%, 100% { transform: translateX(0) rotate(0deg); }
+  5% { transform: translateX(-4px) rotate(-3deg); }
+  10% { transform: translateX(4px) rotate(3deg); }
+  15% { transform: translateX(-4px) rotate(-3deg); }
+}
+@keyframes escena-stir {
+  0%, 100% { transform: rotate(-9deg); }
+  50% { transform: rotate(9deg); }
+}
+@keyframes escena-cry {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-3px) rotate(-2deg); }
+  75% { transform: translateX(3px) rotate(2deg); }
+}
+@keyframes escena-hug-a {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(10px) rotate(-4deg); }
+}
+@keyframes escena-hug-b {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(-10px) rotate(4deg); }
+}
+
+.anim-idle { animation: escena-bob 2.4s ease-in-out infinite; }
+.anim-sip { animation: escena-sip 2.6s ease-in-out infinite; transform-origin: bottom left; }
+.anim-munch { animation: escena-munch 1.1s ease-in-out infinite; }
+.anim-sleep { animation: escena-sleep 2.8s ease-in-out infinite; transform-origin: bottom center; }
+.anim-read { animation: escena-read 1.8s ease-in-out infinite; }
+.anim-art { animation: escena-art 1.4s ease-in-out infinite; }
+.anim-bounce { animation: escena-bounce 1.1s ease-in-out infinite; }
+.anim-shine { animation: escena-shine 1.6s ease-in-out infinite; }
+.anim-drive { animation: escena-drive 0.7s ease-in-out infinite; }
+.anim-wash { animation: escena-wash 1.6s ease-in-out infinite; }
+.anim-stir { animation: escena-stir 1s ease-in-out infinite; transform-origin: bottom center; }
+.anim-cry { animation: escena-cry 0.5s ease-in-out infinite; }
+.anim-hug-a { animation: escena-hug-a 1.3s ease-in-out infinite; }
+.anim-hug-b { animation: escena-hug-b 1.3s ease-in-out infinite; }
+
+.frase-chips {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+}
+.frase-chip {
+  background: white;
+  border-radius: 14px;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 62px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.08);
+}
+.frase-chip:active { transform: scale(0.94); }
+.frase-chip img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.frase-chip span {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  text-align: center;
+}
+
 .frase-text {
   font-size: clamp(24px, 4vw, 40px);
   font-weight: 700;
