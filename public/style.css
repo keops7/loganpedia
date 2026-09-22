@@ -7,7 +7,11 @@
   --verde: #4CD97B;
   --verde-oscuro: #2FB25E;
   --rosa: #FF6FA5;
+  --rosa-oscuro: #E0468A;
   --morado: #9B6BFF;
+  --morado-oscuro: #6E3FDB;
+  --teal: #2BC6C6;
+  --teal-oscuro: #1B9C9C;
   --texto: #2E2A26;
   --card-radio: 32px;
   --font: 'Baloo 2', 'SF Pro Rounded', system-ui, -apple-system, sans-serif;
@@ -92,6 +96,9 @@ html, body {
 .home-card:active { transform: translateY(6px); box-shadow: 0 4px 0 rgba(0,0,0,0.12); }
 .card-frases { background: linear-gradient(160deg, var(--azul), var(--azul-oscuro)); }
 .card-vocab { background: linear-gradient(160deg, var(--verde), var(--verde-oscuro)); }
+.card-libre { background: linear-gradient(160deg, var(--morado), var(--morado-oscuro)); }
+.card-sonidos { background: linear-gradient(160deg, var(--rosa), var(--rosa-oscuro)); }
+.card-conceptos { background: linear-gradient(160deg, var(--teal), var(--teal-oscuro)); }
 .home-card-emoji { font-size: 64px; }
 
 /* ---------- TOPBAR ---------- */
@@ -173,6 +180,190 @@ html, body {
   color: var(--texto);
   margin: 0;
   max-width: 90vw;
+}
+
+/* ---------- FRASE LIBRE ---------- */
+#screen-libre { background: #F5F0FF; }
+.libre-pizarra {
+  flex: 0 0 auto;
+  min-height: 140px;
+  margin: 8px 20px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px;
+}
+.libre-vacio {
+  color: #B3A9CC;
+  font-weight: 700;
+  font-size: clamp(16px, 2.5vw, 20px);
+  text-align: center;
+  margin: 0;
+}
+.libre-chip {
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 8px 10px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  width: 84px;
+}
+.libre-chip img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.libre-chip span { font-size: 13px; font-weight: 700; color: var(--morado-oscuro); text-align: center; }
+.libre-acciones {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 14px 20px;
+}
+.btn-libre-accion {
+  border: none;
+  border-radius: 999px;
+  padding: 16px 24px;
+  font-family: var(--font);
+  font-weight: 800;
+  font-size: clamp(16px, 2.2vw, 20px);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.12);
+}
+.btn-libre-accion:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(0,0,0,0.12); }
+.btn-libre-borrar { background: linear-gradient(160deg, #FF8A65, #E8632F); }
+.btn-libre-leer { background: linear-gradient(160deg, var(--morado), var(--morado-oscuro)); }
+.libre-bank {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 12px;
+  padding: 4px 20px 24px;
+  overflow-y: auto;
+  align-content: start;
+}
+.libre-bank-item {
+  background: white;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font);
+}
+.libre-bank-item:active { transform: scale(0.94); }
+.libre-bank-item img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.libre-bank-item span { font-size: 13px; font-weight: 700; color: var(--morado-oscuro); text-align: center; }
+
+/* ---------- SONIDOS ---------- */
+#screen-sonidos { background: #FFF0F5; }
+.sonidos-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 12px 24px;
+}
+.sonido-play {
+  border: none;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(160deg, var(--rosa), var(--rosa-oscuro));
+  color: white;
+  font-size: 56px;
+  cursor: pointer;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.12);
+}
+.sonido-play:active { transform: translateY(5px); box-shadow: 0 3px 0 rgba(0,0,0,0.12); }
+.sonidos-pregunta {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 700;
+  margin: 0;
+  color: var(--texto);
+}
+.sonidos-opciones {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sonido-opcion {
+  background: white;
+  border: 4px solid transparent;
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: min(26vw, 180px);
+  cursor: pointer;
+  font-family: var(--font);
+}
+.sonido-opcion:active { transform: scale(0.95); }
+.sonido-opcion img { width: 100%; height: auto; display: block; border-radius: 14px; }
+.sonido-opcion span { font-size: 15px; font-weight: 700; color: var(--rosa-oscuro); }
+.sonido-opcion.correcta { border-color: var(--verde-oscuro); }
+.sonido-opcion.incorrecta { border-color: #E85B4A; }
+.sonidos-feedback {
+  min-height: 32px;
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 800;
+  color: var(--verde-oscuro);
+  margin: 0;
+  text-align: center;
+}
+
+/* ---------- CONCEPTOS ---------- */
+#screen-conceptos { background: #E9FBFB; }
+.conceptos-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+}
+.concepto-card {
+  background: white;
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: min(38vw, 280px);
+  cursor: pointer;
+}
+.concepto-card:active { transform: scale(0.96); }
+.concepto-card img { width: 100%; height: auto; display: block; border-radius: 18px; max-height: 32vh; object-fit: contain; }
+.concepto-card span {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 800;
+  color: var(--teal-oscuro);
+  text-transform: capitalize;
+  text-align: center;
+}
+.concepto-vs {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 800;
+  color: var(--teal-oscuro);
 }
 
 /* ---------- VOCAB DIFICULTAD ---------- */
@@ -319,4 +510,7 @@ html, body {
   .picto-card { width: 40vw; }
   .btn-nav { width: 60px; height: 60px; font-size: 24px; }
   .btn-back, .btn-mute { width: 54px; height: 54px; font-size: 22px; }
+  .sonido-opcion { width: 27vw; }
+  .concepto-card { width: 42vw; }
+  .sonido-play { width: 110px; height: 110px; font-size: 44px; }
 }

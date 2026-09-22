@@ -258,7 +258,7 @@
         },
         {
           "word": "querer",
-          "file": "querer_11538.png"
+          "file": "querer_5441.png"
         },
         {
           "word": "agua",
@@ -1512,6 +1512,322 @@
       ]
     }
   },
+  "sonidos": [
+    {
+      "word": "perro",
+      "onomatopeya": "Guau, guau",
+      "file": "perro_7202.png"
+    },
+    {
+      "word": "gato",
+      "onomatopeya": "Miau",
+      "file": "gato_7114.png"
+    },
+    {
+      "word": "vaca",
+      "onomatopeya": "Muuu",
+      "file": "vaca_2609.png"
+    },
+    {
+      "word": "oveja",
+      "onomatopeya": "Beee",
+      "file": "oveja_2489.png"
+    },
+    {
+      "word": "pato",
+      "onomatopeya": "Cuac, cuac",
+      "file": "pato_28479.png"
+    },
+    {
+      "word": "coche",
+      "onomatopeya": "Pii, pii",
+      "file": "coche_2339.png"
+    },
+    {
+      "word": "tren",
+      "onomatopeya": "Chuu, chuu",
+      "file": "tren_21399.png"
+    },
+    {
+      "word": "abeja",
+      "onomatopeya": "Bzzz, bzzz",
+      "file": "abeja_24823.png"
+    },
+    {
+      "word": "campana",
+      "onomatopeya": "Nin, non",
+      "file": "campana_5938.png"
+    },
+    {
+      "word": "reloj",
+      "onomatopeya": "Tic, tac",
+      "file": "reloj_2549.png"
+    }
+  ],
+  "conceptos": [
+    {
+      "pair": [
+        "grande",
+        "pequeño"
+      ],
+      "items": [
+        {
+          "word": "grande",
+          "file": "grande_4658.png"
+        },
+        {
+          "word": "pequeño",
+          "file": "pequeno_4716.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "arriba",
+        "abajo"
+      ],
+      "items": [
+        {
+          "word": "arriba",
+          "file": "arriba_5388.png"
+        },
+        {
+          "word": "abajo",
+          "file": "abajo_5355.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "dentro",
+        "fuera"
+      ],
+      "items": [
+        {
+          "word": "dentro",
+          "file": "dentro_5439.png"
+        },
+        {
+          "word": "fuera",
+          "file": "fuera_5475.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "mucho",
+        "poco"
+      ],
+      "items": [
+        {
+          "word": "mucho",
+          "file": "mucho_7168.png"
+        },
+        {
+          "word": "poco",
+          "file": "poco_7209.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "lleno",
+        "vacío"
+      ],
+      "items": [
+        {
+          "word": "lleno",
+          "file": "lleno_26176.png"
+        },
+        {
+          "word": "vacío",
+          "file": "vacio_26527.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "abierto",
+        "cerrado"
+      ],
+      "items": [
+        {
+          "word": "abierto",
+          "file": "abierto_4549.png"
+        },
+        {
+          "word": "cerrado",
+          "file": "cerrado_4596.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "día",
+        "noche"
+      ],
+      "items": [
+        {
+          "word": "día",
+          "file": "dia_37731.png"
+        },
+        {
+          "word": "noche",
+          "file": "noche_26997.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "feliz",
+        "triste"
+      ],
+      "items": [
+        {
+          "word": "feliz",
+          "file": "feliz_9907.png"
+        },
+        {
+          "word": "triste",
+          "file": "triste_35545.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "caliente",
+        "frío"
+      ],
+      "items": [
+        {
+          "word": "caliente",
+          "file": "caliente_4583.png"
+        },
+        {
+          "word": "frío",
+          "file": "frio_4652.png"
+        }
+      ]
+    },
+    {
+      "pair": [
+        "rápido",
+        "lento"
+      ],
+      "items": [
+        {
+          "word": "rápido",
+          "file": "rapido_5306.png"
+        },
+        {
+          "word": "lento",
+          "file": "lento_4676.png"
+        }
+      ]
+    }
+  ],
+  "libre_bank": [
+    {
+      "word": "yo",
+      "file": "yo_6632.png"
+    },
+    {
+      "word": "mamá",
+      "file": "mama_2458.png"
+    },
+    {
+      "word": "papá",
+      "file": "papa_31146.png"
+    },
+    {
+      "word": "niño",
+      "file": "nino_7176.png"
+    },
+    {
+      "word": "niña",
+      "file": "nina_27509.png"
+    },
+    {
+      "word": "querer",
+      "file": "querer_5441.png"
+    },
+    {
+      "word": "comer",
+      "file": "comer_6456.png"
+    },
+    {
+      "word": "beber",
+      "file": "beber_6061.png"
+    },
+    {
+      "word": "jugar",
+      "file": "jugar_23392.png"
+    },
+    {
+      "word": "dormir",
+      "file": "dormir_6479.png"
+    },
+    {
+      "word": "saltar",
+      "file": "saltar_39052.png"
+    },
+    {
+      "word": "agua",
+      "file": "agua_32464.png"
+    },
+    {
+      "word": "pan",
+      "file": "pan_2494.png"
+    },
+    {
+      "word": "pelota",
+      "file": "pelota_3241.png"
+    },
+    {
+      "word": "casa",
+      "file": "casa_6964.png"
+    },
+    {
+      "word": "perro",
+      "file": "perro_7202.png"
+    },
+    {
+      "word": "gato",
+      "file": "gato_7114.png"
+    },
+    {
+      "word": "grande",
+      "file": "grande_4658.png"
+    },
+    {
+      "word": "pequeño",
+      "file": "pequeno_4716.png"
+    },
+    {
+      "word": "rojo",
+      "file": "rojo_2808.png"
+    },
+    {
+      "word": "azul",
+      "file": "azul_4869.png"
+    },
+    {
+      "word": "feliz",
+      "file": "feliz_9907.png"
+    },
+    {
+      "word": "sí",
+      "file": "si_5584.png"
+    },
+    {
+      "word": "no",
+      "file": "no_5526.png"
+    },
+    {
+      "word": "más",
+      "file": "mas_3220.png"
+    }
+  ],
   "_picto_cache": {
     "niño": {
       "id": 7176,
@@ -1662,8 +1978,8 @@
       "file": "yo_6632.png"
     },
     "querer": {
-      "id": 11538,
-      "file": "querer_11538.png"
+      "id": 5441,
+      "file": "querer_5441.png"
     },
     "pintar": {
       "id": 2348,
@@ -2312,6 +2628,98 @@
     "zapatilla": {
       "id": 8333,
       "file": "zapatilla_8333.png"
+    },
+    "campana": {
+      "id": 5938,
+      "file": "campana_5938.png"
+    },
+    "grande": {
+      "id": 4658,
+      "file": "grande_4658.png"
+    },
+    "pequeño": {
+      "id": 4716,
+      "file": "pequeno_4716.png"
+    },
+    "arriba": {
+      "id": 5388,
+      "file": "arriba_5388.png"
+    },
+    "abajo": {
+      "id": 5355,
+      "file": "abajo_5355.png"
+    },
+    "dentro": {
+      "id": 5439,
+      "file": "dentro_5439.png"
+    },
+    "fuera": {
+      "id": 5475,
+      "file": "fuera_5475.png"
+    },
+    "mucho": {
+      "id": 7168,
+      "file": "mucho_7168.png"
+    },
+    "poco": {
+      "id": 7209,
+      "file": "poco_7209.png"
+    },
+    "lleno": {
+      "id": 26176,
+      "file": "lleno_26176.png"
+    },
+    "vacío": {
+      "id": 26527,
+      "file": "vacio_26527.png"
+    },
+    "abierto": {
+      "id": 4549,
+      "file": "abierto_4549.png"
+    },
+    "cerrado": {
+      "id": 4596,
+      "file": "cerrado_4596.png"
+    },
+    "día": {
+      "id": 37731,
+      "file": "dia_37731.png"
+    },
+    "feliz": {
+      "id": 9907,
+      "file": "feliz_9907.png"
+    },
+    "triste": {
+      "id": 35545,
+      "file": "triste_35545.png"
+    },
+    "caliente": {
+      "id": 4583,
+      "file": "caliente_4583.png"
+    },
+    "frío": {
+      "id": 4652,
+      "file": "frio_4652.png"
+    },
+    "rápido": {
+      "id": 5306,
+      "file": "rapido_5306.png"
+    },
+    "lento": {
+      "id": 4676,
+      "file": "lento_4676.png"
+    },
+    "sí": {
+      "id": 5584,
+      "file": "si_5584.png"
+    },
+    "no": {
+      "id": 5526,
+      "file": "no_5526.png"
+    },
+    "más": {
+      "id": 3220,
+      "file": "mas_3220.png"
     }
   }
 }

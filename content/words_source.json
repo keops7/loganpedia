@@ -64,5 +64,36 @@
     "X": { "facil": ["xilófono"], "dificil": ["taxi"] },
     "Y": { "facil": ["yoyo", "yate", "yema", "yegua"], "dificil": ["rayo", "payaso", "playa"] },
     "Z": { "facil": ["zapato", "zorro", "zanahoria", "zumo", "zapatilla"], "dificil": ["taza", "cabeza", "lápiz"] }
-  }
+  },
+  "sonidos": [
+    { "word": "perro", "onomatopeya": "Guau, guau" },
+    { "word": "gato", "onomatopeya": "Miau" },
+    { "word": "vaca", "onomatopeya": "Muuu" },
+    { "word": "oveja", "onomatopeya": "Beee" },
+    { "word": "pato", "onomatopeya": "Cuac, cuac" },
+    { "word": "coche", "onomatopeya": "Pii, pii" },
+    { "word": "tren", "onomatopeya": "Chuu, chuu" },
+    { "word": "abeja", "onomatopeya": "Bzzz, bzzz" },
+    { "word": "campana", "onomatopeya": "Nin, non" },
+    { "word": "reloj", "onomatopeya": "Tic, tac" }
+  ],
+  "conceptos": [
+    ["grande", "pequeño"],
+    ["arriba", "abajo"],
+    ["dentro", "fuera"],
+    ["mucho", "poco"],
+    ["lleno", "vacío"],
+    ["abierto", "cerrado"],
+    ["día", "noche"],
+    ["feliz", "triste"],
+    ["caliente", "frío"],
+    ["rápido", "lento"]
+  ],
+  "libre_bank": [
+    "yo", "mamá", "papá", "niño", "niña",
+    "querer", "comer", "beber", "jugar", "dormir", "saltar",
+    "agua", "pan", "pelota", "casa", "perro", "gato",
+    "grande", "pequeño", "rojo", "azul", "feliz",
+    "sí", "no", "más"
+  ]
 }

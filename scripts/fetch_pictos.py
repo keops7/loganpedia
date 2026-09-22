@@ -13,6 +13,12 @@ os.makedirs(PICTO_DIR, exist_ok=True)
 SEARCH_URL = "https://api.arasaac.org/api/pictograms/es/search/{}"
 IMG_URL = "https://static.arasaac.org/pictograms/{id}/{id}_500.png"
 
+# Palabras donde el primer resultado de ARASAAC no es el mas claro para un
+# nino de 3 anos (ambiguo, poco representativo...); forzamos un id concreto.
+OVERRIDES = {
+    "querer": 5441,  # mano alcanzando algo (desear/pedir), no el de "querer" romantico
+}
+
 session = requests.Session()
 session.headers.update({"User-Agent": "LoganPedia-kids-app/1.0"})
 
@@ -47,24 +53,30 @@ if os.path.exists(OUT_JSON):
 
 
 def resolve_word(word):
+    forced_id = OVERRIDES.get(word)
     if word in cache:
         entry = cache[word]
         local_path = os.path.join(PICTO_DIR, entry["file"])
-        if os.path.exists(local_path):
+        if os.path.exists(local_path) and (forced_id is None or entry["id"] == forced_id):
             return entry
-    print(f"  buscando: {word}")
-    try:
-        resp = session.get(SEARCH_URL.format(word), timeout=15)
-        resp.raise_for_status()
-        results = resp.json()
-    except Exception as e:
-        print(f"  ERROR buscando '{word}': {e}")
-        return None
-    best = pick_best(results, word)
-    if not best:
-        print(f"  SIN RESULTADOS para '{word}'")
-        return None
-    picto_id = best["_id"]
+
+    if forced_id is not None:
+        picto_id = forced_id
+        print(f"  forzando picto {picto_id} para: {word}")
+    else:
+        print(f"  buscando: {word}")
+        try:
+            resp = session.get(SEARCH_URL.format(word), timeout=15)
+            resp.raise_for_status()
+            results = resp.json()
+        except Exception as e:
+            print(f"  ERROR buscando '{word}': {e}")
+            return None
+        best = pick_best(results, word)
+        if not best:
+            print(f"  SIN RESULTADOS para '{word}'")
+            return None
+        picto_id = best["_id"]
     filename = f"{slug(word)}_{picto_id}.png"
     local_path = os.path.join(PICTO_DIR, filename)
     if not os.path.exists(local_path):
@@ -111,9 +123,46 @@ def main():
                     missing.append(f"{letter}/{level} -> {w}")
             letters_out[letter][level] = items
 
+    print("=== Sonidos ===")
+    sonidos_out = []
+    for item in source.get("sonidos", []):
+        w = item["word"]
+        entry = resolve_word(w)
+        if entry:
+            sonidos_out.append({"word": w, "onomatopeya": item["onomatopeya"], "file": entry["file"]})
+        else:
+            missing.append(f"sonidos -> {w}")
+
+    print("=== Conceptos ===")
+    conceptos_out = []
+    for pair in source.get("conceptos", []):
+        items = []
+        ok = True
+        for w in pair:
+            entry = resolve_word(w)
+            if entry:
+                items.append({"word": w, "file": entry["file"]})
+            else:
+                missing.append(f"conceptos -> {w}")
+                ok = False
+        if ok:
+            conceptos_out.append({"pair": pair, "items": items})
+
+    print("=== Frase libre (banco) ===")
+    libre_out = []
+    for w in source.get("libre_bank", []):
+        entry = resolve_word(w)
+        if entry:
+            libre_out.append({"word": w, "file": entry["file"]})
+        else:
+            missing.append(f"libre_bank -> {w}")
+
     result = {
         "sentences": sentences_out,
         "letters": letters_out,
+        "sonidos": sonidos_out,
+        "conceptos": conceptos_out,
+        "libre_bank": libre_out,
         "_picto_cache": cache,
     }
     with open(OUT_JSON, "w", encoding="utf-8") as f:

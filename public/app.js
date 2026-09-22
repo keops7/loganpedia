@@ -7,6 +7,7 @@
     nivel: "facil",
     letra: null,
     palabraIndex: 0,
+    conceptoIndex: 0,
     muted: false,
   };
 
@@ -33,6 +34,9 @@
     if (target === "vocab-letras" && btn.dataset.nivel) {
       state.nivel = btn.dataset.nivel;
       buildLetrasGrid();
+    }
+    if (target === "sonidos") {
+      nextSonidoRound();
     }
     goTo(target);
   });
@@ -95,6 +99,8 @@
       state.content = data;
       buildFraseScreen();
       buildLetrasGrid();
+      buildLibreBank();
+      buildConceptosScreen();
     })
     .catch(function (err) {
       console.error("No se pudo cargar el contenido", err);
@@ -146,6 +152,172 @@
     state.fraseIndex = (state.fraseIndex + 1) % n;
     renderFrase();
   });
+  // ---------- FRASE LIBRE ----------
+  var libreBankEl = document.getElementById("libre-bank");
+  var librePizarraEl = document.getElementById("libre-pizarra");
+  var libreSeleccion = [];
+
+  function buildLibreBank() {
+    libreBankEl.innerHTML = "";
+    state.content.libre_bank.forEach(function (w) {
+      var btn = document.createElement("button");
+      btn.className = "libre-bank-item";
+      btn.innerHTML =
+        '<img src="assets/pictos/' + w.file + '" alt="' + w.word + '">' +
+        "<span>" + w.word + "</span>";
+      btn.addEventListener("click", function () {
+        libreSeleccion.push(w);
+        renderLibrePizarra();
+        speak(w.word);
+      });
+      libreBankEl.appendChild(btn);
+    });
+  }
+
+  function renderLibrePizarra() {
+    librePizarraEl.innerHTML = "";
+    if (libreSeleccion.length === 0) {
+      var vacio = document.createElement("p");
+      vacio.className = "libre-vacio";
+      vacio.id = "libre-vacio";
+      vacio.textContent = "Toca los dibujos para hacer tu frase";
+      librePizarraEl.appendChild(vacio);
+      return;
+    }
+    libreSeleccion.forEach(function (w, i) {
+      var chip = document.createElement("div");
+      chip.className = "libre-chip";
+      chip.innerHTML =
+        '<img src="assets/pictos/' + w.file + '" alt="' + w.word + '">' +
+        "<span>" + w.word + "</span>";
+      chip.addEventListener("click", function () {
+        libreSeleccion.splice(i, 1);
+        renderLibrePizarra();
+      });
+      librePizarraEl.appendChild(chip);
+    });
+  }
+
+  document.getElementById("libre-borrar").addEventListener("click", function () {
+    libreSeleccion = [];
+    renderLibrePizarra();
+    window.speechSynthesis.cancel();
+  });
+  document.getElementById("libre-leer").addEventListener("click", function () {
+    if (libreSeleccion.length === 0) return;
+    speak(libreSeleccion.map(function (w) { return w.word; }).join(" "));
+  });
+
+  // ---------- SONIDOS ----------
+  var sonidoPlayEl = document.getElementById("sonido-play");
+  var sonidosOpcionesEl = document.getElementById("sonidos-opciones");
+  var sonidosFeedbackEl = document.getElementById("sonidos-feedback");
+  var sonidoActual = null;
+  var sonidoAnteriorWord = null;
+  var sonidosBloqueado = false;
+
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function nextSonidoRound() {
+    if (!state.content) return;
+    sonidosBloqueado = false;
+    sonidosFeedbackEl.textContent = "";
+    var banco = state.content.sonidos;
+    var candidatos = banco.filter(function (s) { return s.word !== sonidoAnteriorWord; });
+    sonidoActual = candidatos[Math.floor(Math.random() * candidatos.length)];
+    sonidoAnteriorWord = sonidoActual.word;
+
+    var distractores = shuffle(banco.filter(function (s) { return s.word !== sonidoActual.word; })).slice(0, 2);
+    var opciones = shuffle([sonidoActual].concat(distractores));
+
+    sonidosOpcionesEl.innerHTML = "";
+    opciones.forEach(function (op) {
+      var btn = document.createElement("button");
+      btn.className = "sonido-opcion";
+      btn.innerHTML =
+        '<img src="assets/pictos/' + op.file + '" alt="' + op.word + '">' +
+        "<span>" + op.word + "</span>";
+      btn.addEventListener("click", function () {
+        if (sonidosBloqueado) return;
+        if (op.word === sonidoActual.word) {
+          sonidosBloqueado = true;
+          btn.classList.add("correcta");
+          sonidosFeedbackEl.textContent = "¡Muy bien! Es " + op.word;
+          speak("¡Muy bien! " + op.word);
+          setTimeout(nextSonidoRound, 2200);
+        } else {
+          btn.classList.add("incorrecta");
+          speak("Inténtalo otra vez");
+          setTimeout(function () { btn.classList.remove("incorrecta"); }, 700);
+        }
+      });
+      sonidosOpcionesEl.appendChild(btn);
+    });
+
+    speak(sonidoActual.onomatopeya);
+  }
+
+  sonidoPlayEl.addEventListener("click", function () {
+    if (sonidoActual) speak(sonidoActual.onomatopeya);
+  });
+
+  // ---------- CONCEPTOS ----------
+  var conceptosContentEl = document.getElementById("conceptos-content");
+  var conceptoDotsEl = document.getElementById("concepto-dots");
+
+  function renderConcepto() {
+    var pares = state.content.conceptos;
+    var par = pares[state.conceptoIndex];
+    conceptosContentEl.innerHTML = "";
+    par.items.forEach(function (it, i) {
+      var card = document.createElement("div");
+      card.className = "concepto-card";
+      card.innerHTML =
+        '<img src="assets/pictos/' + it.file + '" alt="' + it.word + '">' +
+        "<span>" + it.word + "</span>";
+      card.addEventListener("click", function () {
+        speak(it.word);
+      });
+      conceptosContentEl.appendChild(card);
+      if (i === 0) {
+        var vs = document.createElement("span");
+        vs.className = "concepto-vs";
+        vs.textContent = "🆚";
+        conceptosContentEl.appendChild(vs);
+      }
+    });
+    conceptoDotsEl.innerHTML = "";
+    pares.forEach(function (_, i) {
+      var dot = document.createElement("span");
+      dot.className = "dot" + (i === state.conceptoIndex ? " active" : "");
+      conceptoDotsEl.appendChild(dot);
+    });
+    speak(par.items[0].word + ". " + par.items[1].word + ".");
+  }
+
+  function buildConceptosScreen() {
+    state.conceptoIndex = 0;
+    renderConcepto();
+  }
+
+  document.getElementById("concepto-prev").addEventListener("click", function () {
+    var n = state.content.conceptos.length;
+    state.conceptoIndex = (state.conceptoIndex - 1 + n) % n;
+    renderConcepto();
+  });
+  document.getElementById("concepto-next").addEventListener("click", function () {
+    var n = state.content.conceptos.length;
+    state.conceptoIndex = (state.conceptoIndex + 1) % n;
+    renderConcepto();
+  });
+
   // ---------- VOCABULARIO: LETRAS ----------
   var LETRAS = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".split("");
   var letrasGridEl = document.getElementById("letras-grid");

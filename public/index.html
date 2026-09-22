@@ -37,6 +37,18 @@
           <span class="home-card-emoji" aria-hidden="true">🔤</span>
           <span class="home-card-label">Vocabulario</span>
         </button>
+        <button class="home-card card-libre" data-go="libre">
+          <span class="home-card-emoji" aria-hidden="true">🧱</span>
+          <span class="home-card-label">Frase libre</span>
+        </button>
+        <button class="home-card card-sonidos" data-go="sonidos">
+          <span class="home-card-emoji" aria-hidden="true">🎧</span>
+          <span class="home-card-label">¿Qué suena?</span>
+        </button>
+        <button class="home-card card-conceptos" data-go="conceptos">
+          <span class="home-card-emoji" aria-hidden="true">🆚</span>
+          <span class="home-card-label">Conceptos</span>
+        </button>
       </div>
     </div>
   </section>
@@ -56,6 +68,53 @@
       <button class="btn-nav" id="frase-prev" aria-label="Frase anterior">⟵</button>
       <div class="dots" id="frase-dots"></div>
       <button class="btn-nav" id="frase-next" aria-label="Siguiente frase">⟶</button>
+    </footer>
+  </section>
+
+  <!-- FRASE LIBRE -->
+  <section id="screen-libre" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="home" aria-label="Volver al inicio">⟵</button>
+      <h2 class="topbar-title">Frase libre</h2>
+      <button class="btn-mute mute-toggle" aria-label="Silenciar sonido" aria-pressed="false">🔊</button>
+    </header>
+    <div class="libre-pizarra" id="libre-pizarra">
+      <p class="libre-vacio" id="libre-vacio">Toca los dibujos para hacer tu frase</p>
+    </div>
+    <div class="libre-acciones">
+      <button class="btn-libre-accion btn-libre-borrar" id="libre-borrar" aria-label="Borrar frase">🗑️ Borrar</button>
+      <button class="btn-libre-accion btn-libre-leer" id="libre-leer" aria-label="Escuchar frase">▶️ Escuchar</button>
+    </div>
+    <div class="libre-bank" id="libre-bank"></div>
+  </section>
+
+  <!-- SONIDOS -->
+  <section id="screen-sonidos" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="home" aria-label="Volver al inicio">⟵</button>
+      <h2 class="topbar-title">¿Qué suena?</h2>
+      <button class="btn-mute mute-toggle" aria-label="Silenciar sonido" aria-pressed="false">🔊</button>
+    </header>
+    <div class="sonidos-content">
+      <button class="sonido-play" id="sonido-play" aria-label="Escuchar el sonido">🔊</button>
+      <p class="sonidos-pregunta">¿Qué hace este sonido?</p>
+      <div class="sonidos-opciones" id="sonidos-opciones"></div>
+      <p class="sonidos-feedback" id="sonidos-feedback"></p>
+    </div>
+  </section>
+
+  <!-- CONCEPTOS -->
+  <section id="screen-conceptos" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="home" aria-label="Volver al inicio">⟵</button>
+      <h2 class="topbar-title">Conceptos</h2>
+      <button class="btn-mute mute-toggle" aria-label="Silenciar sonido" aria-pressed="false">🔊</button>
+    </header>
+    <div class="conceptos-content" id="conceptos-content"></div>
+    <footer class="nav-footer">
+      <button class="btn-nav" id="concepto-prev" aria-label="Concepto anterior">⟵</button>
+      <div class="dots" id="concepto-dots"></div>
+      <button class="btn-nav" id="concepto-next" aria-label="Siguiente concepto">⟶</button>
     </footer>
   </section>
 
