@@ -16,7 +16,12 @@
           "file": "agua_32464.png"
         }
       ],
-      "anim": "sip"
+      "anim": "sip",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y qué bebe?"
+      ]
     },
     {
       "text": "El coche es rojo",
@@ -30,7 +35,11 @@
           "file": "rojo_2808.png"
         }
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿De qué color es?"
+      ]
     },
     {
       "text": "El perro come hueso",
@@ -48,7 +57,12 @@
           "file": "hueso_2972.png"
         }
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el perro?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "La niña come pan",
@@ -66,7 +80,12 @@
           "file": "pan_2494.png"
         }
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "El gato bebe leche",
@@ -84,7 +103,12 @@
           "file": "leche_2445.png"
         }
       ],
-      "anim": "sip"
+      "anim": "sip",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el gato?",
+        "¿Y qué bebe?"
+      ]
     },
     {
       "text": "El sol es amarillo",
@@ -98,7 +122,11 @@
           "file": "amarillo_2648.png"
         }
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿De qué color es?"
+      ]
     },
     {
       "text": "El pájaro vuela alto",
@@ -112,7 +140,11 @@
           "file": "volar_6246.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el pájaro?"
+      ]
     },
     {
       "text": "La pelota es redonda",
@@ -126,7 +158,11 @@
           "file": "redondo_4603.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Cómo es la pelota?"
+      ]
     },
     {
       "text": "Mamá lava los platos",
@@ -144,7 +180,12 @@
           "file": "plato_16857.png"
         }
       ],
-      "anim": "wash"
+      "anim": "wash",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace mamá?",
+        "¿Y qué lava?"
+      ]
     },
     {
       "text": "Papá lee un libro",
@@ -162,7 +203,12 @@
           "file": "libro_25191.png"
         }
       ],
-      "anim": "read"
+      "anim": "read",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace papá?",
+        "¿Y qué lee?"
+      ]
     },
     {
       "text": "El bebé duerme mucho",
@@ -176,7 +222,11 @@
           "file": "dormir_6479.png"
         }
       ],
-      "anim": "sleep"
+      "anim": "sleep",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el bebé?"
+      ]
     },
     {
       "text": "La flor es bonita",
@@ -190,7 +240,11 @@
           "file": "bonito_11194.png"
         }
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Cómo es la flor?"
+      ]
     },
     {
       "text": "El niño salta alto",
@@ -204,7 +258,11 @@
           "file": "saltar_39052.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?"
+      ]
     },
     {
       "text": "El pez nada rápido",
@@ -218,7 +276,11 @@
           "file": "nadar_6568.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el pez?"
+      ]
     },
     {
       "text": "La luna es blanca",
@@ -232,7 +294,11 @@
           "file": "blanco_8043.png"
         }
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿De qué color es?"
+      ]
     },
     {
       "text": "La vaca come hierba",
@@ -250,7 +316,12 @@
           "file": "hierba_3113.png"
         }
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la vaca?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "El avión vuela rápido",
@@ -264,7 +335,11 @@
           "file": "volar_6246.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Qué hace el avión?"
+      ]
     },
     {
       "text": "Yo quiero agua",
@@ -282,7 +357,12 @@
           "file": "agua_32464.png"
         }
       ],
-      "anim": "bob"
+      "anim": "bob",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace?",
+        "¿Y qué quiere?"
+      ]
     },
     {
       "text": "El niño pinta la casa",
@@ -300,7 +380,12 @@
           "file": "casa_6964.png"
         }
       ],
-      "anim": "art"
+      "anim": "art",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y qué pinta?"
+      ]
     },
     {
       "text": "La abuela hace galletas",
@@ -318,7 +403,12 @@
           "file": "galleta_8312.png"
         }
       ],
-      "anim": "stir"
+      "anim": "stir",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué está haciendo la abuela?",
+        "¿Y qué hace?"
+      ]
     },
     {
       "text": "El niño duerme en la cama",
@@ -336,7 +426,12 @@
           "file": "cama_25900.png"
         }
       ],
-      "anim": "sleep"
+      "anim": "sleep",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y dónde duerme?"
+      ]
     },
     {
       "text": "La niña juega con la pelota",
@@ -354,7 +449,12 @@
           "file": "pelota_3241.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?",
+        "¿Y con qué juega?"
+      ]
     },
     {
       "text": "El perro corre rápido",
@@ -368,7 +468,11 @@
           "file": "correr_6465.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el perro?"
+      ]
     },
     {
       "text": "El gato duerme en el sofá",
@@ -386,7 +490,12 @@
           "file": "sofa_25479.png"
         }
       ],
-      "anim": "sleep"
+      "anim": "sleep",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el gato?",
+        "¿Y dónde duerme?"
+      ]
     },
     {
       "text": "Yo como manzana",
@@ -404,7 +513,12 @@
           "file": "manzana_2462.png"
         }
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "Mamá abraza al niño",
@@ -422,7 +536,12 @@
           "file": "nino_7176.png"
         }
       ],
-      "anim": "hug"
+      "anim": "hug",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace mamá?",
+        "¿Y a quién abraza?"
+      ]
     },
     {
       "text": "Papá conduce el coche",
@@ -440,7 +559,12 @@
           "file": "coche_2339.png"
         }
       ],
-      "anim": "drive"
+      "anim": "drive",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace papá?",
+        "¿Y qué conduce?"
+      ]
     },
     {
       "text": "El niño llora un poco",
@@ -454,7 +578,11 @@
           "file": "llorar_7147.png"
         }
       ],
-      "anim": "cry"
+      "anim": "cry",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?"
+      ]
     },
     {
       "text": "La niña ríe mucho",
@@ -468,7 +596,11 @@
           "file": "reir_13354.png"
         }
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?"
+      ]
     },
     {
       "text": "El sol brilla mucho",
@@ -482,7 +614,11 @@
           "file": "brillar_6475.png"
         }
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Qué hace el sol?"
+      ]
     },
     {
       "text": "La lluvia cae del cielo",
@@ -500,7 +636,12 @@
           "file": "cielo_38270.png"
         }
       ],
-      "anim": "fall"
+      "anim": "fall",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Qué hace la lluvia?",
+        "¿Y de dónde cae?"
+      ]
     },
     {
       "text": "El niño se lava las manos",
@@ -518,7 +659,12 @@
           "file": "mano_2928.png"
         }
       ],
-      "anim": "wash"
+      "anim": "wash",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y qué se lava?"
+      ]
     },
     {
       "text": "La abuela cocina sopa",
@@ -536,7 +682,12 @@
           "file": "sopa_2573.png"
         }
       ],
-      "anim": "stir"
+      "anim": "stir",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la abuela?",
+        "¿Y qué cocina?"
+      ]
     },
     {
       "text": "El abuelo lee el periódico",
@@ -554,7 +705,12 @@
           "file": "periodico_2845.png"
         }
       ],
-      "anim": "read"
+      "anim": "read",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el abuelo?",
+        "¿Y qué lee?"
+      ]
     },
     {
       "text": "El bebé sonríe feliz",
@@ -568,7 +724,11 @@
           "file": "sonreir_13354.png"
         }
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el bebé?"
+      ]
     },
     {
       "text": "El niño juega con la bicicleta",
@@ -586,7 +746,12 @@
           "file": "bicicleta_6935.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y con qué juega?"
+      ]
     },
     {
       "text": "La niña va al colegio",
@@ -604,7 +769,12 @@
           "file": "colegio_32446.png"
         }
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?",
+        "¿Y a dónde va?"
+      ]
     },
     {
       "text": "Papá pinta un cuadro",
@@ -622,7 +792,12 @@
           "file": "cuadro_2360.png"
         }
       ],
-      "anim": "art"
+      "anim": "art",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace papá?",
+        "¿Y qué pinta?"
+      ]
     }
   ],
   "letters": {

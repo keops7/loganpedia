@@ -108,7 +108,12 @@ def main():
                 pictos.append({"word": w, "file": entry["file"]})
             else:
                 missing.append(f"frase:{s['text']} -> {w}")
-        sentences_out.append({"text": s["text"], "pictos": pictos, "anim": s.get("anim", "bob")})
+        sentences_out.append({
+            "text": s["text"],
+            "pictos": pictos,
+            "anim": s.get("anim", "bob"),
+            "preguntas": s.get("preguntas", []),
+        })
 
     print("=== Vocabulario ===")
     letters_out = {}

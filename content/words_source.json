@@ -7,7 +7,12 @@
         "beber",
         "agua"
       ],
-      "anim": "sip"
+      "anim": "sip",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y qué bebe?"
+      ]
     },
     {
       "text": "El coche es rojo",
@@ -15,7 +20,11 @@
         "coche",
         "rojo"
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿De qué color es?"
+      ]
     },
     {
       "text": "El perro come hueso",
@@ -24,7 +33,12 @@
         "comer",
         "hueso"
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el perro?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "La niña come pan",
@@ -33,7 +47,12 @@
         "comer",
         "pan"
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "El gato bebe leche",
@@ -42,7 +61,12 @@
         "beber",
         "leche"
       ],
-      "anim": "sip"
+      "anim": "sip",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el gato?",
+        "¿Y qué bebe?"
+      ]
     },
     {
       "text": "El sol es amarillo",
@@ -50,7 +74,11 @@
         "sol",
         "amarillo"
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿De qué color es?"
+      ]
     },
     {
       "text": "El pájaro vuela alto",
@@ -58,7 +86,11 @@
         "pájaro",
         "volar"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el pájaro?"
+      ]
     },
     {
       "text": "La pelota es redonda",
@@ -66,7 +98,11 @@
         "pelota",
         "redondo"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Cómo es la pelota?"
+      ]
     },
     {
       "text": "Mamá lava los platos",
@@ -75,7 +111,12 @@
         "lavar",
         "plato"
       ],
-      "anim": "wash"
+      "anim": "wash",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace mamá?",
+        "¿Y qué lava?"
+      ]
     },
     {
       "text": "Papá lee un libro",
@@ -84,7 +125,12 @@
         "leer",
         "libro"
       ],
-      "anim": "read"
+      "anim": "read",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace papá?",
+        "¿Y qué lee?"
+      ]
     },
     {
       "text": "El bebé duerme mucho",
@@ -92,7 +138,11 @@
         "bebé",
         "dormir"
       ],
-      "anim": "sleep"
+      "anim": "sleep",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el bebé?"
+      ]
     },
     {
       "text": "La flor es bonita",
@@ -100,7 +150,11 @@
         "flor",
         "bonito"
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Cómo es la flor?"
+      ]
     },
     {
       "text": "El niño salta alto",
@@ -108,7 +162,11 @@
         "niño",
         "saltar"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?"
+      ]
     },
     {
       "text": "El pez nada rápido",
@@ -116,7 +174,11 @@
         "pez",
         "nadar"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el pez?"
+      ]
     },
     {
       "text": "La luna es blanca",
@@ -124,7 +186,11 @@
         "luna",
         "blanco"
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿De qué color es?"
+      ]
     },
     {
       "text": "La vaca come hierba",
@@ -133,7 +199,12 @@
         "comer",
         "hierba"
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la vaca?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "El avión vuela rápido",
@@ -141,7 +212,11 @@
         "avión",
         "volar"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Qué hace el avión?"
+      ]
     },
     {
       "text": "Yo quiero agua",
@@ -150,7 +225,12 @@
         "querer",
         "agua"
       ],
-      "anim": "bob"
+      "anim": "bob",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace?",
+        "¿Y qué quiere?"
+      ]
     },
     {
       "text": "El niño pinta la casa",
@@ -159,7 +239,12 @@
         "pintar",
         "casa"
       ],
-      "anim": "art"
+      "anim": "art",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y qué pinta?"
+      ]
     },
     {
       "text": "La abuela hace galletas",
@@ -168,7 +253,12 @@
         "hacer",
         "galleta"
       ],
-      "anim": "stir"
+      "anim": "stir",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué está haciendo la abuela?",
+        "¿Y qué hace?"
+      ]
     },
     {
       "text": "El niño duerme en la cama",
@@ -177,7 +267,12 @@
         "dormir",
         "cama"
       ],
-      "anim": "sleep"
+      "anim": "sleep",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y dónde duerme?"
+      ]
     },
     {
       "text": "La niña juega con la pelota",
@@ -186,7 +281,12 @@
         "jugar",
         "pelota"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?",
+        "¿Y con qué juega?"
+      ]
     },
     {
       "text": "El perro corre rápido",
@@ -194,7 +294,11 @@
         "perro",
         "correr"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el perro?"
+      ]
     },
     {
       "text": "El gato duerme en el sofá",
@@ -203,7 +307,12 @@
         "dormir",
         "sofá"
       ],
-      "anim": "sleep"
+      "anim": "sleep",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el gato?",
+        "¿Y dónde duerme?"
+      ]
     },
     {
       "text": "Yo como manzana",
@@ -212,7 +321,12 @@
         "comer",
         "manzana"
       ],
-      "anim": "munch"
+      "anim": "munch",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace?",
+        "¿Y qué come?"
+      ]
     },
     {
       "text": "Mamá abraza al niño",
@@ -221,7 +335,12 @@
         "abrazar",
         "niño"
       ],
-      "anim": "hug"
+      "anim": "hug",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace mamá?",
+        "¿Y a quién abraza?"
+      ]
     },
     {
       "text": "Papá conduce el coche",
@@ -230,7 +349,12 @@
         "conducir",
         "coche"
       ],
-      "anim": "drive"
+      "anim": "drive",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace papá?",
+        "¿Y qué conduce?"
+      ]
     },
     {
       "text": "El niño llora un poco",
@@ -238,7 +362,11 @@
         "niño",
         "llorar"
       ],
-      "anim": "cry"
+      "anim": "cry",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?"
+      ]
     },
     {
       "text": "La niña ríe mucho",
@@ -246,7 +374,11 @@
         "niña",
         "reír"
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?"
+      ]
     },
     {
       "text": "El sol brilla mucho",
@@ -254,7 +386,11 @@
         "sol",
         "brillar"
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Qué hace el sol?"
+      ]
     },
     {
       "text": "La lluvia cae del cielo",
@@ -263,7 +399,12 @@
         "caer",
         "cielo"
       ],
-      "anim": "fall"
+      "anim": "fall",
+      "preguntas": [
+        "¿Qué es?",
+        "¿Qué hace la lluvia?",
+        "¿Y de dónde cae?"
+      ]
     },
     {
       "text": "El niño se lava las manos",
@@ -272,7 +413,12 @@
         "lavar",
         "mano"
       ],
-      "anim": "wash"
+      "anim": "wash",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y qué se lava?"
+      ]
     },
     {
       "text": "La abuela cocina sopa",
@@ -281,7 +427,12 @@
         "cocinar",
         "sopa"
       ],
-      "anim": "stir"
+      "anim": "stir",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la abuela?",
+        "¿Y qué cocina?"
+      ]
     },
     {
       "text": "El abuelo lee el periódico",
@@ -290,7 +441,12 @@
         "leer",
         "periódico"
       ],
-      "anim": "read"
+      "anim": "read",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el abuelo?",
+        "¿Y qué lee?"
+      ]
     },
     {
       "text": "El bebé sonríe feliz",
@@ -298,7 +454,11 @@
         "bebé",
         "sonreír"
       ],
-      "anim": "shine"
+      "anim": "shine",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el bebé?"
+      ]
     },
     {
       "text": "El niño juega con la bicicleta",
@@ -307,7 +467,12 @@
         "jugar",
         "bicicleta"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace el niño?",
+        "¿Y con qué juega?"
+      ]
     },
     {
       "text": "La niña va al colegio",
@@ -316,7 +481,12 @@
         "ir",
         "colegio"
       ],
-      "anim": "bounce"
+      "anim": "bounce",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace la niña?",
+        "¿Y a dónde va?"
+      ]
     },
     {
       "text": "Papá pinta un cuadro",
@@ -325,7 +495,12 @@
         "pintar",
         "cuadro"
       ],
-      "anim": "art"
+      "anim": "art",
+      "preguntas": [
+        "¿Quién es?",
+        "¿Qué hace papá?",
+        "¿Y qué pinta?"
+      ]
     }
   ],
   "letters": {
@@ -1046,48 +1221,138 @@
         "titulo": "Animales de granja",
         "emoji": "🐄",
         "items": [
-          { "word": "perro", "sound": "perro.mp3" },
-          { "word": "gato", "sound": "gato.mp3" },
-          { "word": "vaca", "sound": "vaca.mp3" },
-          { "word": "oveja", "sound": "oveja.mp3" },
-          { "word": "pato", "sound": "pato.mp3" },
-          { "word": "gallina", "sound": "gallina.mp3" },
-          { "word": "caballo", "sound": "caballo.mp3" },
-          { "word": "cerdo", "sound": "cerdo.mp3" },
-          { "word": "cabra", "sound": "cabra.mp3" },
-          { "word": "burro", "sound": "burro.mp3" }
+          {
+            "word": "perro",
+            "sound": "perro.mp3"
+          },
+          {
+            "word": "gato",
+            "sound": "gato.mp3"
+          },
+          {
+            "word": "vaca",
+            "sound": "vaca.mp3"
+          },
+          {
+            "word": "oveja",
+            "sound": "oveja.mp3"
+          },
+          {
+            "word": "pato",
+            "sound": "pato.mp3"
+          },
+          {
+            "word": "gallina",
+            "sound": "gallina.mp3"
+          },
+          {
+            "word": "caballo",
+            "sound": "caballo.mp3"
+          },
+          {
+            "word": "cerdo",
+            "sound": "cerdo.mp3"
+          },
+          {
+            "word": "cabra",
+            "sound": "cabra.mp3"
+          },
+          {
+            "word": "burro",
+            "sound": "burro.mp3"
+          }
         ]
       },
       {
         "titulo": "Vehículos y emergencias",
         "emoji": "🚑",
         "items": [
-          { "word": "coche", "sound": "coche.mp3" },
-          { "word": "tren", "sound": "tren.mp3" },
-          { "word": "moto", "sound": "moto.mp3" },
-          { "word": "avión", "sound": "avion.mp3" },
-          { "word": "helicóptero", "sound": "helicoptero.mp3" },
-          { "word": "barco", "sound": "barco.mp3" },
-          { "word": "camión", "sound": "camion.mp3" },
-          { "word": "ambulancia", "sound": "ambulancia.mp3" },
-          { "word": "policía", "sound": "policia.mp3" },
-          { "word": "bomberos", "sound": "bomberos.mp3" }
+          {
+            "word": "coche",
+            "sound": "coche.mp3"
+          },
+          {
+            "word": "tren",
+            "sound": "tren.mp3"
+          },
+          {
+            "word": "moto",
+            "sound": "moto.mp3"
+          },
+          {
+            "word": "avión",
+            "sound": "avion.mp3"
+          },
+          {
+            "word": "helicóptero",
+            "sound": "helicoptero.mp3"
+          },
+          {
+            "word": "barco",
+            "sound": "barco.mp3"
+          },
+          {
+            "word": "camión",
+            "sound": "camion.mp3"
+          },
+          {
+            "word": "ambulancia",
+            "sound": "ambulancia.mp3"
+          },
+          {
+            "word": "policía",
+            "sound": "policia.mp3"
+          },
+          {
+            "word": "bomberos",
+            "sound": "bomberos.mp3"
+          }
         ]
       },
       {
         "titulo": "Naturaleza y casa",
         "emoji": "⛈️",
         "items": [
-          { "word": "abeja", "sound": "abeja.mp3" },
-          { "word": "campana", "sound": "campana.mp3" },
-          { "word": "reloj", "sound": "reloj.mp3" },
-          { "word": "trueno", "sound": "trueno.mp3" },
-          { "word": "lluvia", "sound": "lluvia.mp3" },
-          { "word": "viento", "sound": "viento.mp3" },
-          { "word": "pájaro", "sound": "pajaro.mp3" },
-          { "word": "rana", "sound": "rana.mp3" },
-          { "word": "teléfono", "sound": "telefono.mp3" },
-          { "word": "timbre", "sound": "timbre.mp3" }
+          {
+            "word": "abeja",
+            "sound": "abeja.mp3"
+          },
+          {
+            "word": "campana",
+            "sound": "campana.mp3"
+          },
+          {
+            "word": "reloj",
+            "sound": "reloj.mp3"
+          },
+          {
+            "word": "trueno",
+            "sound": "trueno.mp3"
+          },
+          {
+            "word": "lluvia",
+            "sound": "lluvia.mp3"
+          },
+          {
+            "word": "viento",
+            "sound": "viento.mp3"
+          },
+          {
+            "word": "pájaro",
+            "sound": "pajaro.mp3"
+          },
+          {
+            "word": "rana",
+            "sound": "rana.mp3"
+          },
+          {
+            "word": "teléfono",
+            "sound": "telefono.mp3"
+          },
+          {
+            "word": "timbre",
+            "sound": "timbre.mp3"
+          }
         ]
       }
     ]

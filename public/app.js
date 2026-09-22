@@ -4,6 +4,7 @@
   var state = {
     content: null,
     fraseIndex: 0,
+    fraseStep: 0,
     nivel: "facil",
     letra: null,
     palabraIndex: 0,
@@ -41,6 +42,10 @@
       state.sonidoCapitulo = parseInt(btn.dataset.capitulo, 10);
       sonidoAnteriorWord = null;
       nextSonidoRound();
+    }
+    if (target === "frases" && state.content) {
+      state.fraseStep = 0;
+      renderFrase();
     }
     goTo(target);
   });
@@ -126,13 +131,20 @@
       console.error("No se pudo cargar el contenido", err);
     });
 
-  // ---------- FRASES SIMPLES (escena animada) ----------
+  // ---------- FRASES SIMPLES (juego de preguntas) ----------
   var fraseTextEl = document.getElementById("frase-text");
-  var fraseChipsEl = document.getElementById("frase-chips");
   var fraseDotsEl = document.getElementById("frase-dots");
   var fraseSujetoEl = document.getElementById("frase-sujeto");
   var fraseObjetoEl = document.getElementById("frase-objeto");
   var fraseFxEl = document.getElementById("frase-fx");
+  var qaStepsEl = document.getElementById("qa-steps");
+  var qaPreguntaEl = document.getElementById("qa-pregunta");
+  var qaPictoWrapEl = document.getElementById("qa-picto-wrap");
+  var qaPictoEl = document.getElementById("qa-picto");
+  var qaDecirBtnEl = document.getElementById("qa-decir-btn");
+  var qaRevealEl = document.getElementById("qa-reveal");
+  var qaRepetirBtnEl = document.getElementById("qa-repetir-btn");
+  var fraseBloqueado = false;
 
   var FAMILY_CLASS = {
     sip: "anim-sip",
@@ -177,11 +189,15 @@
     });
   }
 
-  function renderFrase() {
-    var sentences = state.content.sentences;
-    var s = sentences[state.fraseIndex];
-    fraseTextEl.textContent = s.text;
+  function wordDelay(text) {
+    return Math.max(900, Math.min(2200, 700 + text.length * 70));
+  }
+  function sentenceDelay(text) {
+    return Math.max(1500, Math.min(4000, 900 + text.length * 45));
+  }
 
+  function renderEscenaReveal(s) {
+    fraseTextEl.textContent = s.text;
     var sujeto = s.pictos[0];
     var objeto = s.pictos[s.pictos.length - 1];
     fraseSujetoEl.src = "assets/pictos/" + sujeto.file;
@@ -199,29 +215,84 @@
       fraseObjetoEl.classList.add(FAMILY_CLASS[s.anim] || "anim-idle");
     }
     renderFx(s.anim);
+  }
 
-    fraseChipsEl.innerHTML = "";
-    s.pictos.forEach(function (p) {
-      var chip = document.createElement("div");
-      chip.className = "frase-chip";
-      chip.innerHTML =
-        '<img src="assets/pictos/' + p.file + '" alt="' + p.word + '">' +
-        "<span>" + p.word + "</span>";
-      chip.addEventListener("click", function (e) {
-        e.stopPropagation();
-        speak(p.word);
-      });
-      fraseChipsEl.appendChild(chip);
-    });
+  function renderQaSteps(n) {
+    qaStepsEl.innerHTML = "";
+    for (var i = 0; i < n; i++) {
+      var dot = document.createElement("span");
+      var cls = "qa-step-dot";
+      if (i < state.fraseStep) cls += " qa-step-done";
+      else if (i === state.fraseStep) cls += " qa-step-current";
+      dot.className = cls;
+      qaStepsEl.appendChild(dot);
+    }
+  }
+
+  function renderFrase() {
+    var s = state.content.sentences[state.fraseIndex];
+    var n = s.pictos.length;
+    fraseBloqueado = false;
+    renderQaSteps(n);
+
+    if (state.fraseStep < n) {
+      qaPictoWrapEl.hidden = false;
+      qaDecirBtnEl.hidden = true;
+      qaRevealEl.hidden = true;
+      var picto = s.pictos[state.fraseStep];
+      qaPictoEl.src = "assets/pictos/" + picto.file;
+      qaPictoEl.alt = picto.word;
+      qaPreguntaEl.textContent = s.preguntas[state.fraseStep];
+      speak(s.preguntas[state.fraseStep]);
+    } else if (state.fraseStep === n) {
+      qaPictoWrapEl.hidden = true;
+      qaDecirBtnEl.hidden = false;
+      qaRevealEl.hidden = true;
+      qaPreguntaEl.textContent = "¿Puedes decir la frase tú solo?";
+      speak("¿Puedes decir la frase tú solo?");
+    } else {
+      qaPictoWrapEl.hidden = true;
+      qaDecirBtnEl.hidden = true;
+      qaPreguntaEl.textContent = "";
+      qaRevealEl.hidden = false;
+      renderEscenaReveal(s);
+    }
 
     fraseDotsEl.innerHTML = "";
-    sentences.forEach(function (_, i) {
+    state.content.sentences.forEach(function (_, i) {
       var dot = document.createElement("span");
       dot.className = "dot" + (i === state.fraseIndex ? " active" : "");
       fraseDotsEl.appendChild(dot);
     });
-    speak(s.text);
   }
+
+  qaPictoWrapEl.addEventListener("click", function () {
+    if (fraseBloqueado) return;
+    fraseBloqueado = true;
+    var s = state.content.sentences[state.fraseIndex];
+    var word = s.pictos[state.fraseStep].word;
+    speak(word);
+    setTimeout(function () {
+      state.fraseStep++;
+      renderFrase();
+    }, state.muted ? 350 : wordDelay(word));
+  });
+
+  qaDecirBtnEl.addEventListener("click", function () {
+    if (fraseBloqueado) return;
+    fraseBloqueado = true;
+    var s = state.content.sentences[state.fraseIndex];
+    speak(s.text);
+    setTimeout(function () {
+      state.fraseStep++;
+      renderFrase();
+    }, state.muted ? 350 : sentenceDelay(s.text));
+  });
+
+  qaRepetirBtnEl.addEventListener("click", function (e) {
+    e.stopPropagation();
+    speak(state.content.sentences[state.fraseIndex].text);
+  });
 
   fraseSujetoEl.addEventListener("click", function (e) {
     e.stopPropagation();
@@ -234,17 +305,20 @@
 
   function buildFraseScreen() {
     state.fraseIndex = 0;
+    state.fraseStep = 0;
     renderFrase();
   }
 
   document.getElementById("frase-prev").addEventListener("click", function () {
     var n = state.content.sentences.length;
     state.fraseIndex = (state.fraseIndex - 1 + n) % n;
+    state.fraseStep = 0;
     renderFrase();
   });
   document.getElementById("frase-next").addEventListener("click", function () {
     var n = state.content.sentences.length;
     state.fraseIndex = (state.fraseIndex + 1) % n;
+    state.fraseStep = 0;
     renderFrase();
   });
   // ---------- FRASE LIBRE ----------
