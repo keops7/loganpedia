@@ -10,8 +10,8 @@ App web para peques de 3 años, en español, con dos secciones:
 Lee las palabras y frases en voz alta (español de España) con la síntesis de voz del navegador.
 Instalable como app desde Safari (Añadir a pantalla de inicio) y funciona offline una vez cargada.
 
-Alojado en **Cloudflare Pages**, conectado a este repo (`keops7/loganpedia`):
-cada push a `main` publica automáticamente. No hay build: se sirve `public/` tal cual.
+Alojado en **Cloudflare Workers** (assets estáticos), conectado a este repo (`keops7/loganpedia`):
+cada push a `main` publica automáticamente. No hay build: `wrangler.jsonc` sirve `public/` tal cual.
 
 ## Estructura
 
@@ -23,16 +23,15 @@ cada push a `main` publica automáticamente. No hay build: se sirve `public/` ta
 - `content/words_source.json` — listas de palabras origen (frases y letras) usadas para generar `content.json`.
 - `scripts/fetch_pictos.py` — busca cada palabra en la API de ARASAAC, descarga su pictograma y genera `public/content/content.json`. Reutiliza lo ya descargado si se vuelve a ejecutar.
 - `scripts/make_icons.py` — genera los iconos de la app (`public/icons/`).
+- `wrangler.jsonc` — le dice a Cloudflare que sirva `public/` como sitio estático (sin código de Worker).
 
-## Ajustes del proyecto en Cloudflare Pages
+## Ajustes del proyecto en Cloudflare (Workers, flujo "Conectar a Git")
 
 | Campo | Valor |
 |---|---|
 | Production branch | `main` |
-| Framework preset | None |
 | Build command | *(vacío)* |
-| Deploy command | *(vacío)* |
-| Build output directory | `public` |
+| Deploy command | `npx wrangler deploy` |
 | Root directory | `/` |
 
 ## Desarrollo local
@@ -57,4 +56,4 @@ Creative Commons (BY-NC-SA), que permite este uso no comercial.
 ## Pendiente
 
 - Elegir/confirmar el pictograma de algunas palabras poco comunes (K, Q, W, X, Ñ tienen pocas opciones en español).
-- Conectar el repo a un proyecto de Cloudflare Pages (ver tabla de ajustes arriba).
+- Conectar el repo a un proyecto de Cloudflare (ver tabla de ajustes arriba).
