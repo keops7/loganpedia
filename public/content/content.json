@@ -2981,68 +2981,178 @@
       ]
     }
   },
-  "sonidos": [
-    {
-      "word": "perro",
-      "onomatopeya": "Guau, guau",
-      "file": "perro_7202.png",
-      "sound": "perro.mp3"
-    },
-    {
-      "word": "gato",
-      "onomatopeya": "Miau",
-      "file": "gato_7114.png",
-      "sound": "gato.mp3"
-    },
-    {
-      "word": "vaca",
-      "onomatopeya": "Muuu",
-      "file": "vaca_2609.png",
-      "sound": "vaca.mp3"
-    },
-    {
-      "word": "oveja",
-      "onomatopeya": "Beee",
-      "file": "oveja_2489.png",
-      "sound": "oveja.mp3"
-    },
-    {
-      "word": "pato",
-      "onomatopeya": "Cuac, cuac",
-      "file": "pato_28479.png",
-      "sound": "pato.mp3"
-    },
-    {
-      "word": "coche",
-      "onomatopeya": "Pii, pii",
-      "file": "coche_2339.png",
-      "sound": "coche.mp3"
-    },
-    {
-      "word": "tren",
-      "onomatopeya": "Chuu, chuu",
-      "file": "tren_21399.png",
-      "sound": "tren.mp3"
-    },
-    {
-      "word": "abeja",
-      "onomatopeya": "Bzzz, bzzz",
-      "file": "abeja_24823.png",
-      "sound": "abeja.mp3"
-    },
-    {
-      "word": "campana",
-      "onomatopeya": "Nin, non",
-      "file": "campana_5938.png",
-      "sound": "campana.mp3"
-    },
-    {
-      "word": "reloj",
-      "onomatopeya": "Tic, tac",
-      "file": "reloj_2549.png",
-      "sound": "reloj.mp3"
-    }
-  ],
+  "sonidos": {
+    "capitulos": [
+      {
+        "titulo": "Animales de granja",
+        "emoji": "🐄",
+        "items": [
+          {
+            "word": "perro",
+            "file": "perro_7202.png",
+            "sound": "perro.mp3"
+          },
+          {
+            "word": "gato",
+            "file": "gato_7114.png",
+            "sound": "gato.mp3"
+          },
+          {
+            "word": "vaca",
+            "file": "vaca_2609.png",
+            "sound": "vaca.mp3"
+          },
+          {
+            "word": "oveja",
+            "file": "oveja_2489.png",
+            "sound": "oveja.mp3"
+          },
+          {
+            "word": "pato",
+            "file": "pato_28479.png",
+            "sound": "pato.mp3"
+          },
+          {
+            "word": "gallina",
+            "file": "gallina_2403.png",
+            "sound": "gallina.mp3"
+          },
+          {
+            "word": "caballo",
+            "file": "caballo_2294.png",
+            "sound": "caballo.mp3"
+          },
+          {
+            "word": "cerdo",
+            "file": "cerdo_24972.png",
+            "sound": "cerdo.mp3"
+          },
+          {
+            "word": "cabra",
+            "file": "cabra_25887.png",
+            "sound": "cabra.mp3"
+          },
+          {
+            "word": "burro",
+            "file": "burro_2291.png",
+            "sound": "burro.mp3"
+          }
+        ]
+      },
+      {
+        "titulo": "Vehículos y emergencias",
+        "emoji": "🚑",
+        "items": [
+          {
+            "word": "coche",
+            "file": "coche_2339.png",
+            "sound": "coche.mp3"
+          },
+          {
+            "word": "tren",
+            "file": "tren_21399.png",
+            "sound": "tren.mp3"
+          },
+          {
+            "word": "moto",
+            "file": "moto_7166.png",
+            "sound": "moto.mp3"
+          },
+          {
+            "word": "avión",
+            "file": "avion_2264.png",
+            "sound": "avion.mp3"
+          },
+          {
+            "word": "helicóptero",
+            "file": "helicoptero_7126.png",
+            "sound": "helicoptero.mp3"
+          },
+          {
+            "word": "barco",
+            "file": "barco_6932.png",
+            "sound": "barco.mp3"
+          },
+          {
+            "word": "camión",
+            "file": "camion_6956.png",
+            "sound": "camion.mp3"
+          },
+          {
+            "word": "ambulancia",
+            "file": "ambulancia_6899.png",
+            "sound": "ambulancia.mp3"
+          },
+          {
+            "word": "policía",
+            "file": "policia_37367.png",
+            "sound": "policia.mp3"
+          },
+          {
+            "word": "bomberos",
+            "file": "bomberos_6066.png",
+            "sound": "bomberos.mp3"
+          }
+        ]
+      },
+      {
+        "titulo": "Naturaleza y casa",
+        "emoji": "⛈️",
+        "items": [
+          {
+            "word": "abeja",
+            "file": "abeja_24823.png",
+            "sound": "abeja.mp3"
+          },
+          {
+            "word": "campana",
+            "file": "campana_5938.png",
+            "sound": "campana.mp3"
+          },
+          {
+            "word": "reloj",
+            "file": "reloj_2549.png",
+            "sound": "reloj.mp3"
+          },
+          {
+            "word": "trueno",
+            "file": "trueno_11389.png",
+            "sound": "trueno.mp3"
+          },
+          {
+            "word": "lluvia",
+            "file": "lluvia_7148.png",
+            "sound": "lluvia.mp3"
+          },
+          {
+            "word": "viento",
+            "file": "viento_7259.png",
+            "sound": "viento.mp3"
+          },
+          {
+            "word": "pájaro",
+            "file": "pajaro_2490.png",
+            "sound": "pajaro.mp3"
+          },
+          {
+            "word": "rana",
+            "file": "rana_28473.png",
+            "sound": "rana.mp3"
+          },
+          {
+            "word": "teléfono",
+            "file": "telefono_26479.png",
+            "sound": "telefono.mp3"
+          },
+          {
+            "word": "timbre",
+            "file": "timbre_2592.png",
+            "sound": "timbre.mp3"
+          }
+        ]
+      }
+    ]
+  },
   "conceptos": [
     {
       "pair": [
@@ -5319,6 +5429,34 @@
     "zueco": {
       "id": 36606,
       "file": "zueco_36606.png"
+    },
+    "cerdo": {
+      "id": 24972,
+      "file": "cerdo_24972.png"
+    },
+    "cabra": {
+      "id": 25887,
+      "file": "cabra_25887.png"
+    },
+    "policía": {
+      "id": 37367,
+      "file": "policia_37367.png"
+    },
+    "bomberos": {
+      "id": 6066,
+      "file": "bomberos_6066.png"
+    },
+    "trueno": {
+      "id": 11389,
+      "file": "trueno_11389.png"
+    },
+    "viento": {
+      "id": 7259,
+      "file": "viento_7259.png"
+    },
+    "timbre": {
+      "id": 2592,
+      "file": "timbre_2592.png"
     }
   }
 }

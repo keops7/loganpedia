@@ -429,6 +429,48 @@ html, body {
 .libre-bank-item img { width: 100%; height: auto; display: block; border-radius: 10px; }
 .libre-bank-item span { font-size: 13px; font-weight: 700; color: var(--morado-oscuro); text-align: center; }
 
+/* ---------- SONIDOS: CAPITULOS ---------- */
+#screen-sonidos-capitulos { background: #FFF0F5; }
+.capitulos-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+}
+.capitulos-pregunta {
+  font-size: clamp(20px, 3.2vw, 28px);
+  font-weight: 700;
+  margin: 0;
+}
+.capitulos-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.capitulo-card {
+  border: none;
+  border-radius: var(--card-radio);
+  padding: 30px 26px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 0 rgba(0,0,0,0.12);
+  background: linear-gradient(160deg, var(--rosa), var(--rosa-oscuro));
+}
+.capitulo-card:active { transform: translateY(6px); box-shadow: 0 4px 0 rgba(0,0,0,0.12); }
+.capitulo-card .capitulo-emoji { font-size: 48px; }
+.capitulo-card .capitulo-num { font-size: 14px; font-weight: 700; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.05em; }
+.capitulo-card .capitulo-titulo { font-size: 20px; font-weight: 800; text-align: center; }
+
 /* ---------- SONIDOS ---------- */
 #screen-sonidos { background: #FFF0F5; }
 .sonidos-content {

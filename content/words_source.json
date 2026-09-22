@@ -1040,58 +1040,58 @@
       ]
     }
   },
-  "sonidos": [
-    {
-      "word": "perro",
-      "onomatopeya": "Guau, guau",
-      "sound": "perro.mp3"
-    },
-    {
-      "word": "gato",
-      "onomatopeya": "Miau",
-      "sound": "gato.mp3"
-    },
-    {
-      "word": "vaca",
-      "onomatopeya": "Muuu",
-      "sound": "vaca.mp3"
-    },
-    {
-      "word": "oveja",
-      "onomatopeya": "Beee",
-      "sound": "oveja.mp3"
-    },
-    {
-      "word": "pato",
-      "onomatopeya": "Cuac, cuac",
-      "sound": "pato.mp3"
-    },
-    {
-      "word": "coche",
-      "onomatopeya": "Pii, pii",
-      "sound": "coche.mp3"
-    },
-    {
-      "word": "tren",
-      "onomatopeya": "Chuu, chuu",
-      "sound": "tren.mp3"
-    },
-    {
-      "word": "abeja",
-      "onomatopeya": "Bzzz, bzzz",
-      "sound": "abeja.mp3"
-    },
-    {
-      "word": "campana",
-      "onomatopeya": "Nin, non",
-      "sound": "campana.mp3"
-    },
-    {
-      "word": "reloj",
-      "onomatopeya": "Tic, tac",
-      "sound": "reloj.mp3"
-    }
-  ],
+  "sonidos": {
+    "capitulos": [
+      {
+        "titulo": "Animales de granja",
+        "emoji": "🐄",
+        "items": [
+          { "word": "perro", "sound": "perro.mp3" },
+          { "word": "gato", "sound": "gato.mp3" },
+          { "word": "vaca", "sound": "vaca.mp3" },
+          { "word": "oveja", "sound": "oveja.mp3" },
+          { "word": "pato", "sound": "pato.mp3" },
+          { "word": "gallina", "sound": "gallina.mp3" },
+          { "word": "caballo", "sound": "caballo.mp3" },
+          { "word": "cerdo", "sound": "cerdo.mp3" },
+          { "word": "cabra", "sound": "cabra.mp3" },
+          { "word": "burro", "sound": "burro.mp3" }
+        ]
+      },
+      {
+        "titulo": "Vehículos y emergencias",
+        "emoji": "🚑",
+        "items": [
+          { "word": "coche", "sound": "coche.mp3" },
+          { "word": "tren", "sound": "tren.mp3" },
+          { "word": "moto", "sound": "moto.mp3" },
+          { "word": "avión", "sound": "avion.mp3" },
+          { "word": "helicóptero", "sound": "helicoptero.mp3" },
+          { "word": "barco", "sound": "barco.mp3" },
+          { "word": "camión", "sound": "camion.mp3" },
+          { "word": "ambulancia", "sound": "ambulancia.mp3" },
+          { "word": "policía", "sound": "policia.mp3" },
+          { "word": "bomberos", "sound": "bomberos.mp3" }
+        ]
+      },
+      {
+        "titulo": "Naturaleza y casa",
+        "emoji": "⛈️",
+        "items": [
+          { "word": "abeja", "sound": "abeja.mp3" },
+          { "word": "campana", "sound": "campana.mp3" },
+          { "word": "reloj", "sound": "reloj.mp3" },
+          { "word": "trueno", "sound": "trueno.mp3" },
+          { "word": "lluvia", "sound": "lluvia.mp3" },
+          { "word": "viento", "sound": "viento.mp3" },
+          { "word": "pájaro", "sound": "pajaro.mp3" },
+          { "word": "rana", "sound": "rana.mp3" },
+          { "word": "teléfono", "sound": "telefono.mp3" },
+          { "word": "timbre", "sound": "timbre.mp3" }
+        ]
+      }
+    ]
+  },
   "conceptos": [
     [
       "grande",

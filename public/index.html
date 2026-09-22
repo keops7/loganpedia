@@ -41,7 +41,7 @@
           <span class="home-card-emoji" aria-hidden="true">🧱</span>
           <span class="home-card-label">Frase libre</span>
         </button>
-        <button class="home-card card-sonidos" data-go="sonidos">
+        <button class="home-card card-sonidos" data-go="sonidos-capitulos">
           <span class="home-card-emoji" aria-hidden="true">🎧</span>
           <span class="home-card-label">¿Qué suena?</span>
         </button>
@@ -93,11 +93,24 @@
     <div class="libre-bank" id="libre-bank"></div>
   </section>
 
-  <!-- SONIDOS -->
-  <section id="screen-sonidos" class="screen">
+  <!-- SONIDOS: CAPITULOS -->
+  <section id="screen-sonidos-capitulos" class="screen">
     <header class="topbar">
       <button class="btn-back" data-go="home" aria-label="Volver al inicio">⟵</button>
       <h2 class="topbar-title">¿Qué suena?</h2>
+      <button class="btn-mute mute-toggle" aria-label="Silenciar sonido" aria-pressed="false">🔊</button>
+    </header>
+    <div class="capitulos-wrap">
+      <p class="capitulos-pregunta">Elige un capítulo</p>
+      <div class="capitulos-cards" id="capitulos-cards"></div>
+    </div>
+  </section>
+
+  <!-- SONIDOS -->
+  <section id="screen-sonidos" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="sonidos-capitulos" aria-label="Volver a los capítulos">⟵</button>
+      <h2 class="topbar-title" id="sonidos-titulo">¿Qué suena?</h2>
       <button class="btn-mute mute-toggle" aria-label="Silenciar sonido" aria-pressed="false">🔊</button>
     </header>
     <div class="sonidos-content">

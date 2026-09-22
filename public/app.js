@@ -8,6 +8,7 @@
     letra: null,
     palabraIndex: 0,
     conceptoIndex: 0,
+    sonidoCapitulo: 0,
     muted: false,
   };
 
@@ -36,7 +37,9 @@
       state.nivel = btn.dataset.nivel;
       buildLetrasGrid();
     }
-    if (target === "sonidos") {
+    if (target === "sonidos" && btn.dataset.capitulo !== undefined) {
+      state.sonidoCapitulo = parseInt(btn.dataset.capitulo, 10);
+      sonidoAnteriorWord = null;
       nextSonidoRound();
     }
     goTo(target);
@@ -116,6 +119,7 @@
       buildFraseScreen();
       buildLetrasGrid();
       buildLibreBank();
+      buildCapitulosScreen();
       buildConceptosScreen();
     })
     .catch(function (err) {
@@ -299,6 +303,25 @@
     speak(libreSeleccion.map(function (w) { return w.word; }).join(" "));
   });
 
+  // ---------- SONIDOS: CAPITULOS ----------
+  var capitulosCardsEl = document.getElementById("capitulos-cards");
+  var sonidosTituloEl = document.getElementById("sonidos-titulo");
+
+  function buildCapitulosScreen() {
+    capitulosCardsEl.innerHTML = "";
+    state.content.sonidos.capitulos.forEach(function (cap, i) {
+      var btn = document.createElement("button");
+      btn.className = "capitulo-card";
+      btn.setAttribute("data-go", "sonidos");
+      btn.setAttribute("data-capitulo", i);
+      btn.innerHTML =
+        '<span class="capitulo-emoji" aria-hidden="true">' + cap.emoji + "</span>" +
+        '<span class="capitulo-num">Capítulo ' + (i + 1) + "</span>" +
+        '<span class="capitulo-titulo">' + cap.titulo + "</span>";
+      capitulosCardsEl.appendChild(btn);
+    });
+  }
+
   // ---------- SONIDOS ----------
   var sonidoPlayEl = document.getElementById("sonido-play");
   var sonidosOpcionesEl = document.getElementById("sonidos-opciones");
@@ -320,7 +343,9 @@
     if (!state.content) return;
     sonidosBloqueado = false;
     sonidosFeedbackEl.textContent = "";
-    var banco = state.content.sonidos;
+    var cap = state.content.sonidos.capitulos[state.sonidoCapitulo];
+    sonidosTituloEl.textContent = cap.emoji + " " + cap.titulo;
+    var banco = cap.items;
     var candidatos = banco.filter(function (s) { return s.word !== sonidoAnteriorWord; });
     sonidoActual = candidatos[Math.floor(Math.random() * candidatos.length)];
     sonidoAnteriorWord = sonidoActual.word;
@@ -450,6 +475,7 @@
   }
 
   function renderPalabra() {
+    window.speechSynthesis.cancel();
     var words = currentWords();
     var w = words[state.palabraIndex];
     palabraLetraTitleEl.textContent = "Letra " + state.letra;
@@ -462,7 +488,6 @@
       dot.className = "dot" + (i === state.palabraIndex ? " active" : "");
       palabraDotsEl.appendChild(dot);
     });
-    speak(w.word);
   }
 
   document.getElementById("palabra-prev").addEventListener("click", function () {

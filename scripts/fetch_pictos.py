@@ -126,19 +126,25 @@ def main():
             letters_out[letter][level] = items
 
     print("=== Sonidos ===")
-    sonidos_out = []
-    for item in source.get("sonidos", []):
-        w = item["word"]
-        entry = resolve_word(w)
-        if entry:
-            sonidos_out.append({
-                "word": w,
-                "onomatopeya": item["onomatopeya"],
-                "file": entry["file"],
-                "sound": item["sound"],
-            })
-        else:
-            missing.append(f"sonidos -> {w}")
+    capitulos_out = []
+    for cap in source.get("sonidos", {}).get("capitulos", []):
+        items_out = []
+        for item in cap["items"]:
+            w = item["word"]
+            entry = resolve_word(w)
+            if entry:
+                items_out.append({
+                    "word": w,
+                    "file": entry["file"],
+                    "sound": item["sound"],
+                })
+            else:
+                missing.append(f"sonidos/{cap['titulo']} -> {w}")
+        capitulos_out.append({
+            "titulo": cap["titulo"],
+            "emoji": cap.get("emoji", ""),
+            "items": items_out,
+        })
 
     print("=== Conceptos ===")
     conceptos_out = []
@@ -167,7 +173,7 @@ def main():
     result = {
         "sentences": sentences_out,
         "letters": letters_out,
-        "sonidos": sonidos_out,
+        "sonidos": {"capitulos": capitulos_out},
         "conceptos": conceptos_out,
         "libre_bank": libre_out,
         "_picto_cache": cache,
