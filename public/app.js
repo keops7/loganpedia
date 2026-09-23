@@ -63,14 +63,17 @@
     if (!esVoices.length) {
       esVoices = voices.filter(function (v) { return v.lang && v.lang.indexOf("es") === 0; });
     }
-    // En iOS/Safari, si el usuario ha descargado una voz "Mejorada"/"Premium" en
-    // Ajustes > Accesibilidad > Contenido hablado, aparece junto a la voz compacta
-    // por defecto (mas robotica) con el mismo idioma: preferimos la de mas calidad.
-    // Desde iOS 17, las voces neuronales nuevas (las mismas que usa Siri) se listan
-    // ahi como "Voz 1".."Voz 5" / "Voice 1".."Voice 5" en vez de nombres clasicos
-    // (Monica, Paulina...), asi que tambien se priorizan por ese patron de nombre.
-    var quality = /enhanced|premium|mejorad|neural|^voz\s*\d|^voice\s*\d/i;
+    // Confirmado en el iPad del usuario: las voces "de Siri" (ej. "Voz 2 de Siri"
+    // elegida en Ajustes) NO se exponen a las paginas web via speechSynthesis,
+    // asi que no se pueden usar aqui aunque el sistema las use en otros sitios.
+    // Las es-ES que si llegan a la web incluyen voces "de personaje"/efecto que
+    // trae iOS desde hace anios (Shelley, Grandma, Grandpa, Rocko, Sandy, Flo,
+    // Eddy, Reed...), pensadas para gracietas, no para narrar. "Monica" es la
+    // unica voz seria de ese lote, asi que se prioriza por nombre explicitamente.
+    var goodNames = /^m[oó]nica$/i;
+    var quality = /enhanced|premium|mejorad|neural/i;
     spanishVoice =
+      esVoices.find(function (v) { return goodNames.test(v.name); }) ||
       esVoices.find(function (v) { return quality.test(v.name); }) ||
       esVoices[0] ||
       null;
