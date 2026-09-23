@@ -625,7 +625,7 @@
         }
       ],
       "anim": "shine",
-      "video": null,
+      "video": "nina_rie.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?"
@@ -644,7 +644,7 @@
         }
       ],
       "anim": "shine",
-      "video": null,
+      "video": "sol_brilla.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿Qué hace el sol?"
@@ -667,7 +667,7 @@
         }
       ],
       "anim": "fall",
-      "video": null,
+      "video": "lluvia.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿Qué hace la lluvia?",
@@ -691,7 +691,7 @@
         }
       ],
       "anim": "wash",
-      "video": null,
+      "video": "nino_manos.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -715,7 +715,7 @@
         }
       ],
       "anim": "stir",
-      "video": null,
+      "video": "abuela_sopa.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la abuela?",
