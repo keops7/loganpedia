@@ -533,6 +533,32 @@
   var letrasGridEl = document.getElementById("letras-grid");
   var letrasTitleEl = document.getElementById("letras-title");
 
+  // ---------- ESTADISTICAS DE VOCABULARIO (para el Área para papás) ----------
+  var VOCAB_STATS_KEY = "loganpedia_vocab_stats";
+
+  function loadVocabStats() {
+    var stats = {};
+    LETRAS.forEach(function (l) { stats[l] = 0; });
+    try {
+      var raw = localStorage.getItem(VOCAB_STATS_KEY);
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        LETRAS.forEach(function (l) {
+          if (typeof parsed[l] === "number") stats[l] = parsed[l];
+        });
+      }
+    } catch (e) {}
+    return stats;
+  }
+
+  function registrarVisitaLetra(letra) {
+    try {
+      var stats = loadVocabStats();
+      stats[letra] = (stats[letra] || 0) + 1;
+      localStorage.setItem(VOCAB_STATS_KEY, JSON.stringify(stats));
+    } catch (e) {}
+  }
+
   function buildLetrasGrid() {
     if (!state.content) return;
     letrasTitleEl.textContent =
@@ -550,6 +576,7 @@
         btn.addEventListener("click", function () {
           state.letra = letra;
           state.palabraIndex = 0;
+          registrarVisitaLetra(letra);
           renderPalabra();
           goTo("vocab-palabra");
         });
@@ -597,6 +624,80 @@
   document.getElementById("palabra-picto").addEventListener("click", function () {
     speak(currentWords()[state.palabraIndex].word);
   });
+
+  // ---------- AREA PARA PAPAS ----------
+  var papasResumenEl = document.getElementById("papas-resumen");
+  var papasRankingEl = document.getElementById("papas-ranking");
+  var papasSinExplorarEl = document.getElementById("papas-sin-explorar");
+
+  function renderPapas() {
+    var stats = loadVocabStats();
+    var vistas = LETRAS.filter(function (l) { return stats[l] > 0; });
+    var sinVer = LETRAS.filter(function (l) { return !stats[l]; });
+
+    papasResumenEl.textContent = vistas.length + " de " + LETRAS.length + " letras exploradas";
+
+    papasRankingEl.innerHTML = "";
+    if (vistas.length === 0) {
+      var vacio = document.createElement("p");
+      vacio.className = "papas-vacio";
+      vacio.textContent = "Logan todavía no ha explorado ninguna letra.";
+      papasRankingEl.appendChild(vacio);
+    } else {
+      vistas
+        .slice()
+        .sort(function (a, b) { return stats[b] - stats[a]; })
+        .forEach(function (l, i) {
+          var row = document.createElement("div");
+          row.className = "papas-row";
+          row.innerHTML =
+            '<span class="papas-row-pos">' + (i + 1) + "</span>" +
+            '<span class="papas-row-letra">' + l + "</span>" +
+            '<span class="papas-row-veces">' + stats[l] + (stats[l] === 1 ? " vez" : " veces") + "</span>";
+          papasRankingEl.appendChild(row);
+        });
+    }
+
+    papasSinExplorarEl.innerHTML = "";
+    if (sinVer.length === 0) {
+      var todas = document.createElement("p");
+      todas.className = "papas-vacio";
+      todas.textContent = "¡Logan ha explorado todas las letras!";
+      papasSinExplorarEl.appendChild(todas);
+    } else {
+      sinVer.forEach(function (l) {
+        var chip = document.createElement("span");
+        chip.className = "papas-chip";
+        chip.textContent = l;
+        papasSinExplorarEl.appendChild(chip);
+      });
+    }
+  }
+
+  // Acceso discreto: solo con pulsación larga (~1.5s), nunca con un toque normal.
+  var papasSecretoBtn = document.getElementById("papas-secreto");
+  if (papasSecretoBtn) {
+    var papasPressTimer = null;
+    var PAPAS_LONG_PRESS_MS = 1500;
+
+    papasSecretoBtn.addEventListener("pointerdown", function (e) {
+      e.stopPropagation();
+      clearTimeout(papasPressTimer);
+      papasPressTimer = setTimeout(function () {
+        papasPressTimer = null;
+        renderPapas();
+        goTo("papas");
+      }, PAPAS_LONG_PRESS_MS);
+    });
+
+    function cancelPapasPress() {
+      clearTimeout(papasPressTimer);
+      papasPressTimer = null;
+    }
+    papasSecretoBtn.addEventListener("pointerup", cancelPapasPress);
+    papasSecretoBtn.addEventListener("pointerleave", cancelPapasPress);
+    papasSecretoBtn.addEventListener("pointercancel", cancelPapasPress);
+  }
 
   // ---------- SERVICE WORKER ----------
   if ("serviceWorker" in navigator) {

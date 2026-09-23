@@ -104,6 +104,23 @@ html, body {
 .card-conceptos { background: linear-gradient(160deg, var(--teal), var(--teal-oscuro)); }
 .home-card-emoji { font-size: 64px; }
 
+.papas-secreto {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.06);
+  color: rgba(46, 42, 38, 0.35);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 5;
+}
+.papas-secreto:active { background: rgba(0, 0, 0, 0.1); }
+
 /* ---------- TOPBAR ---------- */
 .topbar {
   display: flex;
@@ -801,6 +818,90 @@ html, body {
 .dots .dot.active {
   background: var(--azul);
   transform: scale(1.3);
+}
+
+/* ---------- AREA PARA PAPAS ---------- */
+#screen-papas { background: #F0F4FF; }
+.papas-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 24px 28px;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+.papas-resumen {
+  font-size: clamp(20px, 3.5vw, 26px);
+  font-weight: 800;
+  color: var(--azul-oscuro);
+  text-align: center;
+  margin: 4px 0 8px;
+}
+.papas-subtitulo {
+  font-size: clamp(16px, 2.6vw, 19px);
+  font-weight: 700;
+  color: var(--texto);
+  margin: 12px 0 6px;
+}
+.papas-ranking {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.papas-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border-radius: 16px;
+  padding: 10px 16px;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.06);
+}
+.papas-row-pos {
+  font-weight: 800;
+  color: rgba(46, 42, 38, 0.4);
+  width: 22px;
+  flex: 0 0 auto;
+}
+.papas-row-letra {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--azul-oscuro);
+  width: 28px;
+  flex: 0 0 auto;
+}
+.papas-row-veces {
+  flex: 1;
+  text-align: right;
+  font-weight: 600;
+  color: var(--texto);
+  opacity: 0.75;
+}
+.papas-sin-explorar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.papas-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.06);
+  color: var(--texto);
+  font-weight: 800;
+  opacity: 0.6;
+}
+.papas-vacio {
+  font-weight: 600;
+  opacity: 0.7;
+  margin: 4px 0;
 }
 
 @media (max-width: 480px) {
