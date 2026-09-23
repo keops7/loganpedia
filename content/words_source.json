@@ -704,7 +704,11 @@
         "antena",
         "ambulancia",
         "arco",
-        "agua"
+        "agua",
+        "abrazar",
+        "abuela",
+        "abuelo",
+        "amarillo"
       ],
       "dificil": [
         "casa",
@@ -739,7 +743,11 @@
         "buzón",
         "bombero",
         "bigote",
-        "banco"
+        "banco",
+        "beber",
+        "blanco",
+        "bonito",
+        "brillar"
       ],
       "dificil": [
         "cebra",
@@ -772,7 +780,15 @@
         "camión",
         "cangrejo",
         "castillo",
-        "campana"
+        "campana",
+        "caer",
+        "cielo",
+        "cocinar",
+        "colegio",
+        "comer",
+        "conducir",
+        "correr",
+        "cuadro"
       ],
       "dificil": [
         "boca",
@@ -804,7 +820,8 @@
         "día",
         "dinero",
         "domingo",
-        "diamante"
+        "diamante",
+        "dormir"
       ],
       "dificil": [
         "rueda",
@@ -935,7 +952,9 @@
         "harina",
         "herradura",
         "humo",
-        "horquilla"
+        "horquilla",
+        "hacer",
+        "hierba"
       ],
       "dificil": [
         "búho",
@@ -958,7 +977,8 @@
         "índice",
         "insignia",
         "imperdible",
-        "iglesia"
+        "iglesia",
+        "ir"
       ],
       "dificil": [
         "pino",
@@ -991,7 +1011,8 @@
         "jacinto",
         "joystick",
         "jengibre",
-        "juego"
+        "juego",
+        "jugar"
       ],
       "dificil": [
         "conejo",
@@ -1035,7 +1056,10 @@
         "leche",
         "linterna",
         "loro",
-        "laberinto"
+        "laberinto",
+        "lavar",
+        "leer",
+        "llorar"
       ],
       "dificil": [
         "pelota",
@@ -1067,7 +1091,8 @@
         "micrófono",
         "moto",
         "maracas",
-        "medusa"
+        "medusa",
+        "mamá"
       ],
       "dificil": [
         "almohada",
@@ -1099,7 +1124,10 @@
         "níspero",
         "nectarina",
         "nogal",
-        "nublado"
+        "nublado",
+        "nadar",
+        "niña",
+        "niño"
       ],
       "dificil": [
         "luna",
@@ -1175,7 +1203,12 @@
         "pepino",
         "piña",
         "plátano",
-        "pizza"
+        "pizza",
+        "papá",
+        "periódico",
+        "pintar",
+        "plato",
+        "pájaro"
       ],
       "dificil": [
         "sopa",
@@ -1191,7 +1224,8 @@
         "queso",
         "quiosco",
         "quince",
-        "quiche"
+        "quiche",
+        "querer"
       ],
       "dificil": [
         "paquete"
@@ -1218,7 +1252,10 @@
         "raqueta",
         "rebaño",
         "raíz",
-        "reno"
+        "reno",
+        "redondo",
+        "reír",
+        "rojo"
       ],
       "dificil": [
         "cara",
@@ -1250,7 +1287,9 @@
         "sobre",
         "salchicha",
         "servilleta",
-        "sopa"
+        "sopa",
+        "saltar",
+        "sonreír"
       ],
       "dificil": [
         "casa",
@@ -1332,7 +1371,8 @@
         "víbora",
         "vaquero",
         "velero",
-        "verano"
+        "verano",
+        "volar"
       ],
       "dificil": [
         "huevo",
@@ -1366,7 +1406,8 @@
         "yogur",
         "yunque",
         "yuca",
-        "yudo"
+        "yudo",
+        "yo"
       ],
       "dificil": [
         "rayo",

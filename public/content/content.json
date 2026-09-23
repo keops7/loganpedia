@@ -920,6 +920,22 @@
         {
           "word": "agua",
           "file": "agua_32464.png"
+        },
+        {
+          "word": "abrazar",
+          "file": "abrazar_6023.png"
+        },
+        {
+          "word": "abuela",
+          "file": "abuela_23710.png"
+        },
+        {
+          "word": "abuelo",
+          "file": "abuelo_23718.png"
+        },
+        {
+          "word": "amarillo",
+          "file": "amarillo_2648.png"
         }
       ],
       "dificil": [
@@ -1042,6 +1058,22 @@
         {
           "word": "banco",
           "file": "banco_3062.png"
+        },
+        {
+          "word": "beber",
+          "file": "beber_6061.png"
+        },
+        {
+          "word": "blanco",
+          "file": "blanco_8043.png"
+        },
+        {
+          "word": "bonito",
+          "file": "bonito_11194.png"
+        },
+        {
+          "word": "brillar",
+          "file": "brillar_6475.png"
         }
       ],
       "dificil": [
@@ -1156,6 +1188,38 @@
         {
           "word": "campana",
           "file": "campana_5938.png"
+        },
+        {
+          "word": "caer",
+          "file": "caer_39440.png"
+        },
+        {
+          "word": "cielo",
+          "file": "cielo_38270.png"
+        },
+        {
+          "word": "cocinar",
+          "file": "cocinar_2342.png"
+        },
+        {
+          "word": "colegio",
+          "file": "colegio_32446.png"
+        },
+        {
+          "word": "comer",
+          "file": "comer_6456.png"
+        },
+        {
+          "word": "conducir",
+          "file": "conducir_6458.png"
+        },
+        {
+          "word": "correr",
+          "file": "correr_6465.png"
+        },
+        {
+          "word": "cuadro",
+          "file": "cuadro_2360.png"
         }
       ],
       "dificil": [
@@ -1266,6 +1330,10 @@
         {
           "word": "diamante",
           "file": "diamante_6475.png"
+        },
+        {
+          "word": "dormir",
+          "file": "dormir_6479.png"
         }
       ],
       "dificil": [
@@ -1718,6 +1786,14 @@
         {
           "word": "horquilla",
           "file": "horquilla_2975.png"
+        },
+        {
+          "word": "hacer",
+          "file": "hacer_32751.png"
+        },
+        {
+          "word": "hierba",
+          "file": "hierba_3113.png"
         }
       ],
       "dificil": [
@@ -1792,6 +1868,10 @@
         {
           "word": "iglesia",
           "file": "iglesia_3118.png"
+        },
+        {
+          "word": "ir",
+          "file": "ir_8142.png"
         }
       ],
       "dificil": [
@@ -1906,6 +1986,10 @@
         {
           "word": "juego",
           "file": "juego_36405.png"
+        },
+        {
+          "word": "jugar",
+          "file": "jugar_23392.png"
         }
       ],
       "dificil": [
@@ -2046,6 +2130,18 @@
         {
           "word": "laberinto",
           "file": "laberinto_29626.png"
+        },
+        {
+          "word": "lavar",
+          "file": "lavar_34826.png"
+        },
+        {
+          "word": "leer",
+          "file": "leer_7141.png"
+        },
+        {
+          "word": "llorar",
+          "file": "llorar_7147.png"
         }
       ],
       "dificil": [
@@ -2156,6 +2252,10 @@
         {
           "word": "medusa",
           "file": "medusa_2920.png"
+        },
+        {
+          "word": "mamá",
+          "file": "mama_2458.png"
         }
       ],
       "dificil": [
@@ -2266,6 +2366,18 @@
         {
           "word": "nublado",
           "file": "nublado_34383.png"
+        },
+        {
+          "word": "nadar",
+          "file": "nadar_6568.png"
+        },
+        {
+          "word": "niña",
+          "file": "nina_27509.png"
+        },
+        {
+          "word": "niño",
+          "file": "nino_7176.png"
         }
       ],
       "dificil": [
@@ -2516,6 +2628,26 @@
         {
           "word": "pizza",
           "file": "pizza_2527.png"
+        },
+        {
+          "word": "papá",
+          "file": "papa_31146.png"
+        },
+        {
+          "word": "periódico",
+          "file": "periodico_2845.png"
+        },
+        {
+          "word": "pintar",
+          "file": "pintar_2348.png"
+        },
+        {
+          "word": "plato",
+          "file": "plato_16857.png"
+        },
+        {
+          "word": "pájaro",
+          "file": "pajaro_2490.png"
         }
       ],
       "dificil": [
@@ -2562,6 +2694,10 @@
         {
           "word": "quiche",
           "file": "quiche_32472.png"
+        },
+        {
+          "word": "querer",
+          "file": "querer_5441.png"
         }
       ],
       "dificil": [
@@ -2652,6 +2788,18 @@
         {
           "word": "reno",
           "file": "reno_9069.png"
+        },
+        {
+          "word": "redondo",
+          "file": "redondo_4603.png"
+        },
+        {
+          "word": "reír",
+          "file": "reir_13354.png"
+        },
+        {
+          "word": "rojo",
+          "file": "rojo_2808.png"
         }
       ],
       "dificil": [
@@ -2762,6 +2910,14 @@
         {
           "word": "sopa",
           "file": "sopa_2573.png"
+        },
+        {
+          "word": "saltar",
+          "file": "saltar_39052.png"
+        },
+        {
+          "word": "sonreír",
+          "file": "sonreir_13354.png"
         }
       ],
       "dificil": [
@@ -3036,6 +3192,10 @@
         {
           "word": "verano",
           "file": "verano_5604.png"
+        },
+        {
+          "word": "volar",
+          "file": "volar_6246.png"
         }
       ],
       "dificil": [
@@ -3118,6 +3278,10 @@
         {
           "word": "yudo",
           "file": "yudo_21943.png"
+        },
+        {
+          "word": "yo",
+          "file": "yo_6632.png"
         }
       ],
       "dificil": [
