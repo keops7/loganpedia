@@ -63,7 +63,10 @@
     // En iOS/Safari, si el usuario ha descargado una voz "Mejorada"/"Premium" en
     // Ajustes > Accesibilidad > Contenido hablado, aparece junto a la voz compacta
     // por defecto (mas robotica) con el mismo idioma: preferimos la de mas calidad.
-    var quality = /enhanced|premium|mejorad|neural/i;
+    // Desde iOS 17, las voces neuronales nuevas (las mismas que usa Siri) se listan
+    // ahi como "Voz 1".."Voz 5" / "Voice 1".."Voice 5" en vez de nombres clasicos
+    // (Monica, Paulina...), asi que tambien se priorizan por ese patron de nombre.
+    var quality = /enhanced|premium|mejorad|neural|^voz\s*\d|^voice\s*\d/i;
     spanishVoice =
       esVoices.find(function (v) { return quality.test(v.name); }) ||
       esVoices[0] ||
