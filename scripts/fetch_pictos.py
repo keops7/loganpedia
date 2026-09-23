@@ -102,10 +102,12 @@ def main():
     sentences_out = []
     for s in source["sentences"]:
         pictos = []
-        for w in s["words"]:
+        labels = s.get("labels", s["words"])
+        for i, w in enumerate(s["words"]):
             entry = resolve_word(w)
             if entry:
-                pictos.append({"word": w, "file": entry["file"]})
+                label = labels[i] if i < len(labels) else w
+                pictos.append({"word": label, "file": entry["file"]})
             else:
                 missing.append(f"frase:{s['text']} -> {w}")
         sentences_out.append({
