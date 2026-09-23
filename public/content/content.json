@@ -290,7 +290,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "pez.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el pez?"
@@ -309,7 +309,7 @@
         }
       ],
       "anim": "shine",
-      "video": null,
+      "video": "luna.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿De qué color es?"
@@ -352,7 +352,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "avion.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿Qué hace el avión?"
@@ -375,7 +375,7 @@
         }
       ],
       "anim": "bob",
-      "video": null,
+      "video": "yo_quiero_agua.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace?",
@@ -399,7 +399,7 @@
         }
       ],
       "anim": "art",
-      "video": null,
+      "video": "nino_pinta_casa.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -423,7 +423,7 @@
         }
       ],
       "anim": "stir",
-      "video": null,
+      "video": "abuela_galletas.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué está haciendo la abuela?",
@@ -447,7 +447,7 @@
         }
       ],
       "anim": "sleep",
-      "video": null,
+      "video": "nino_cama.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -471,7 +471,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "nina_pelota.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?",
@@ -491,7 +491,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "perro_corre.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el perro?"
@@ -514,7 +514,7 @@
         }
       ],
       "anim": "sleep",
-      "video": null,
+      "video": "gato_sofa.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el gato?",
@@ -538,7 +538,7 @@
         }
       ],
       "anim": "munch",
-      "video": null,
+      "video": "como_manzana.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace?",
@@ -562,7 +562,7 @@
         }
       ],
       "anim": "hug",
-      "video": null,
+      "video": "mama_abraza.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace mamá?",
@@ -586,7 +586,7 @@
         }
       ],
       "anim": "drive",
-      "video": null,
+      "video": "papa_conduce.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace papá?",
