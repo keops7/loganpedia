@@ -739,7 +739,7 @@
         }
       ],
       "anim": "read",
-      "video": null,
+      "video": "abuelo_periodico.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el abuelo?",
@@ -759,7 +759,7 @@
         }
       ],
       "anim": "shine",
-      "video": null,
+      "video": "bebe_sonrie.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el bebé?"
@@ -782,7 +782,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "nino_bici.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -806,7 +806,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "nina_colegio.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?",
@@ -830,7 +830,7 @@
         }
       ],
       "anim": "art",
-      "video": null,
+      "video": "papa_cuadro.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace papá?",
