@@ -44,6 +44,9 @@ html, body {
   display: none;
   flex-direction: column;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .screen.active { display: flex; }
 
@@ -144,7 +147,6 @@ html, body {
   justify-content: center;
   gap: 18px;
   padding: 12px 24px;
-  overflow: hidden;
 }
 .qa-steps {
   display: flex;
@@ -731,7 +733,6 @@ html, body {
   justify-content: center;
   gap: 20px;
   padding: 12px 24px;
-  overflow: hidden;
 }
 .palabra-picto-wrap {
   background: white;
