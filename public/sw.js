@@ -1,4 +1,4 @@
-var CACHE_NAME = "loganpedia-v17";
+var CACHE_NAME = "loganpedia-v18";
 var CORE_ASSETS = [
   "./",
   "index.html",

@@ -117,6 +117,7 @@ html, body {
   font-size: 18px;
   line-height: 1;
   cursor: pointer;
+  touch-action: none;
   z-index: 5;
 }
 .papas-secreto:active { background: rgba(0, 0, 0, 0.1); }
