@@ -273,6 +273,16 @@ html, body {
   overflow: hidden;
   flex: 0 0 auto;
 }
+.escena-video {
+  width: min(92vw, 480px);
+  height: clamp(190px, 32vh, 280px);
+  border-radius: 32px;
+  object-fit: cover;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+  flex: 0 0 auto;
+  background: #000;
+}
+.escena-video[hidden], .escena-stage[hidden] { display: none; }
 .escena-picto {
   position: relative;
   max-height: 78%;

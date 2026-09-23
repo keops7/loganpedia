@@ -112,6 +112,7 @@ def main():
             "text": s["text"],
             "pictos": pictos,
             "anim": s.get("anim", "bob"),
+            "video": s.get("video"),
             "preguntas": s.get("preguntas", []),
         })
 

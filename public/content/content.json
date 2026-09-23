@@ -17,6 +17,7 @@
         }
       ],
       "anim": "sip",
+      "video": "nino_agua.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -36,6 +37,7 @@
         }
       ],
       "anim": "shine",
+      "video": "coche.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿De qué color es?"
@@ -58,6 +60,7 @@
         }
       ],
       "anim": "munch",
+      "video": "perro.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el perro?",
@@ -81,6 +84,7 @@
         }
       ],
       "anim": "munch",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?",
@@ -104,6 +108,7 @@
         }
       ],
       "anim": "sip",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el gato?",
@@ -123,6 +128,7 @@
         }
       ],
       "anim": "shine",
+      "video": null,
       "preguntas": [
         "¿Qué es?",
         "¿De qué color es?"
@@ -141,6 +147,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el pájaro?"
@@ -159,6 +166,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Qué es?",
         "¿Cómo es la pelota?"
@@ -181,6 +189,7 @@
         }
       ],
       "anim": "wash",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace mamá?",
@@ -204,6 +213,7 @@
         }
       ],
       "anim": "read",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace papá?",
@@ -223,6 +233,7 @@
         }
       ],
       "anim": "sleep",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el bebé?"
@@ -241,6 +252,7 @@
         }
       ],
       "anim": "shine",
+      "video": null,
       "preguntas": [
         "¿Qué es?",
         "¿Cómo es la flor?"
@@ -259,6 +271,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?"
@@ -277,6 +290,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el pez?"
@@ -295,6 +309,7 @@
         }
       ],
       "anim": "shine",
+      "video": null,
       "preguntas": [
         "¿Qué es?",
         "¿De qué color es?"
@@ -317,6 +332,7 @@
         }
       ],
       "anim": "munch",
+      "video": "vaca.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la vaca?",
@@ -336,6 +352,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Qué es?",
         "¿Qué hace el avión?"
@@ -358,6 +375,7 @@
         }
       ],
       "anim": "bob",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace?",
@@ -381,6 +399,7 @@
         }
       ],
       "anim": "art",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -404,6 +423,7 @@
         }
       ],
       "anim": "stir",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué está haciendo la abuela?",
@@ -427,6 +447,7 @@
         }
       ],
       "anim": "sleep",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -450,6 +471,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?",
@@ -469,6 +491,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el perro?"
@@ -491,6 +514,7 @@
         }
       ],
       "anim": "sleep",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el gato?",
@@ -514,6 +538,7 @@
         }
       ],
       "anim": "munch",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace?",
@@ -537,6 +562,7 @@
         }
       ],
       "anim": "hug",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace mamá?",
@@ -560,6 +586,7 @@
         }
       ],
       "anim": "drive",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace papá?",
@@ -579,6 +606,7 @@
         }
       ],
       "anim": "cry",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?"
@@ -597,6 +625,7 @@
         }
       ],
       "anim": "shine",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?"
@@ -615,6 +644,7 @@
         }
       ],
       "anim": "shine",
+      "video": null,
       "preguntas": [
         "¿Qué es?",
         "¿Qué hace el sol?"
@@ -637,6 +667,7 @@
         }
       ],
       "anim": "fall",
+      "video": null,
       "preguntas": [
         "¿Qué es?",
         "¿Qué hace la lluvia?",
@@ -660,6 +691,7 @@
         }
       ],
       "anim": "wash",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -683,6 +715,7 @@
         }
       ],
       "anim": "stir",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la abuela?",
@@ -706,6 +739,7 @@
         }
       ],
       "anim": "read",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el abuelo?",
@@ -725,6 +759,7 @@
         }
       ],
       "anim": "shine",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el bebé?"
@@ -747,6 +782,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -770,6 +806,7 @@
         }
       ],
       "anim": "bounce",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?",
@@ -793,6 +830,7 @@
         }
       ],
       "anim": "art",
+      "video": null,
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace papá?",

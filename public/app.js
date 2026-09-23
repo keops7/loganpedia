@@ -28,6 +28,8 @@
     });
     window.speechSynthesis.cancel();
     stopSound();
+    var video = document.getElementById("frase-video");
+    if (video) video.pause();
   }
 
   document.body.addEventListener("click", function (e) {
@@ -137,6 +139,8 @@
   var fraseSujetoEl = document.getElementById("frase-sujeto");
   var fraseObjetoEl = document.getElementById("frase-objeto");
   var fraseFxEl = document.getElementById("frase-fx");
+  var fraseVideoEl = document.getElementById("frase-video");
+  var fraseEscenaEl = document.getElementById("frase-escena");
   var qaStepsEl = document.getElementById("qa-steps");
   var qaPreguntaEl = document.getElementById("qa-pregunta");
   var qaPictoWrapEl = document.getElementById("qa-picto-wrap");
@@ -198,6 +202,22 @@
 
   function renderEscenaReveal(s) {
     fraseTextEl.textContent = s.text;
+
+    if (s.video) {
+      fraseEscenaEl.hidden = true;
+      fraseVideoEl.hidden = false;
+      var src = "assets/videos/" + s.video;
+      if (fraseVideoEl.getAttribute("src") !== src) {
+        fraseVideoEl.setAttribute("src", src);
+      }
+      fraseVideoEl.play().catch(function () {});
+      return;
+    }
+
+    fraseVideoEl.hidden = true;
+    fraseVideoEl.removeAttribute("src");
+    fraseEscenaEl.hidden = false;
+
     var sujeto = s.pictos[0];
     var objeto = s.pictos[s.pictos.length - 1];
     fraseSujetoEl.src = "assets/pictos/" + sujeto.file;

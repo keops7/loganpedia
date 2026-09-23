@@ -8,6 +8,7 @@
         "agua"
       ],
       "anim": "sip",
+      "video": "nino_agua.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?",
@@ -21,6 +22,7 @@
         "rojo"
       ],
       "anim": "shine",
+      "video": "coche.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿De qué color es?"
@@ -34,6 +36,7 @@
         "hueso"
       ],
       "anim": "munch",
+      "video": "perro.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el perro?",
@@ -200,6 +203,7 @@
         "hierba"
       ],
       "anim": "munch",
+      "video": "vaca.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la vaca?",
