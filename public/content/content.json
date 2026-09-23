@@ -84,7 +84,7 @@
         }
       ],
       "anim": "munch",
-      "video": null,
+      "video": "nina_pan.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace la niña?",
@@ -128,7 +128,7 @@
         }
       ],
       "anim": "shine",
-      "video": null,
+      "video": "sol.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿De qué color es?"
@@ -147,7 +147,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "pajaro.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el pájaro?"
@@ -166,7 +166,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "pelota.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿Cómo es la pelota?"
@@ -189,7 +189,7 @@
         }
       ],
       "anim": "wash",
-      "video": null,
+      "video": "mama_platos.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace mamá?",
@@ -213,7 +213,7 @@
         }
       ],
       "anim": "read",
-      "video": null,
+      "video": "papa_libro.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace papá?",
@@ -233,7 +233,7 @@
         }
       ],
       "anim": "sleep",
-      "video": null,
+      "video": "bebe_duerme.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el bebé?"
@@ -252,7 +252,7 @@
         }
       ],
       "anim": "shine",
-      "video": null,
+      "video": "flor.mp4",
       "preguntas": [
         "¿Qué es?",
         "¿Cómo es la flor?"
@@ -271,7 +271,7 @@
         }
       ],
       "anim": "bounce",
-      "video": null,
+      "video": "nino_salta.mp4",
       "preguntas": [
         "¿Quién es?",
         "¿Qué hace el niño?"
