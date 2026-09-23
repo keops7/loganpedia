@@ -2,840 +2,167 @@
   "sentences": [
     {
       "text": "El niño bebe agua",
-      "pictos": [
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        },
-        {
-          "word": "bebe",
-          "file": "beber_6061.png"
-        },
-        {
-          "word": "agua",
-          "file": "agua_32464.png"
-        }
-      ],
-      "anim": "sip",
-      "video": "nino_agua.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y qué bebe?"
-      ]
+      "video": "nino_agua.mp4"
     },
     {
       "text": "El coche es rojo",
-      "pictos": [
-        {
-          "word": "coche",
-          "file": "coche_2339.png"
-        },
-        {
-          "word": "rojo",
-          "file": "rojo_2808.png"
-        }
-      ],
-      "anim": "shine",
-      "video": "coche.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿De qué color es?"
-      ]
+      "video": "coche.mp4"
     },
     {
       "text": "El perro come hueso",
-      "pictos": [
-        {
-          "word": "perro",
-          "file": "perro_7202.png"
-        },
-        {
-          "word": "come",
-          "file": "comer_6456.png"
-        },
-        {
-          "word": "hueso",
-          "file": "hueso_2972.png"
-        }
-      ],
-      "anim": "munch",
-      "video": "perro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el perro?",
-        "¿Y qué come?"
-      ]
+      "video": "perro.mp4"
     },
     {
       "text": "La niña come pan",
-      "pictos": [
-        {
-          "word": "niña",
-          "file": "nina_27509.png"
-        },
-        {
-          "word": "come",
-          "file": "comer_6456.png"
-        },
-        {
-          "word": "pan",
-          "file": "pan_2494.png"
-        }
-      ],
-      "anim": "munch",
-      "video": "nina_pan.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?",
-        "¿Y qué come?"
-      ]
+      "video": "nina_pan.mp4"
     },
     {
       "text": "El gato bebe leche",
-      "pictos": [
-        {
-          "word": "gato",
-          "file": "gato_7114.png"
-        },
-        {
-          "word": "bebe",
-          "file": "beber_6061.png"
-        },
-        {
-          "word": "leche",
-          "file": "leche_2445.png"
-        }
-      ],
-      "anim": "sip",
-      "video": null,
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el gato?",
-        "¿Y qué bebe?"
-      ]
+      "video": "gato_leche.mp4"
     },
     {
       "text": "El sol es amarillo",
-      "pictos": [
-        {
-          "word": "sol",
-          "file": "sol_7252.png"
-        },
-        {
-          "word": "amarillo",
-          "file": "amarillo_2648.png"
-        }
-      ],
-      "anim": "shine",
-      "video": "sol.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿De qué color es?"
-      ]
+      "video": "sol.mp4"
     },
     {
       "text": "El pájaro vuela alto",
-      "pictos": [
-        {
-          "word": "pájaro",
-          "file": "pajaro_2490.png"
-        },
-        {
-          "word": "vuela",
-          "file": "volar_6246.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "pajaro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el pájaro?"
-      ]
+      "video": "pajaro.mp4"
     },
     {
       "text": "La pelota es redonda",
-      "pictos": [
-        {
-          "word": "pelota",
-          "file": "pelota_3241.png"
-        },
-        {
-          "word": "redonda",
-          "file": "redondo_4603.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "pelota.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Cómo es la pelota?"
-      ]
+      "video": "pelota.mp4"
     },
     {
       "text": "Mamá lava los platos",
-      "pictos": [
-        {
-          "word": "mamá",
-          "file": "mama_2458.png"
-        },
-        {
-          "word": "lava",
-          "file": "lavar_34826.png"
-        },
-        {
-          "word": "plato",
-          "file": "plato_16857.png"
-        }
-      ],
-      "anim": "wash",
-      "video": "mama_platos.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace mamá?",
-        "¿Y qué lava?"
-      ]
+      "video": "mama_platos.mp4"
     },
     {
       "text": "Papá lee un libro",
-      "pictos": [
-        {
-          "word": "papá",
-          "file": "papa_31146.png"
-        },
-        {
-          "word": "lee",
-          "file": "leer_7141.png"
-        },
-        {
-          "word": "libro",
-          "file": "libro_25191.png"
-        }
-      ],
-      "anim": "read",
-      "video": "papa_libro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace papá?",
-        "¿Y qué lee?"
-      ]
+      "video": "papa_libro.mp4"
     },
     {
       "text": "El bebé duerme mucho",
-      "pictos": [
-        {
-          "word": "bebé",
-          "file": "bebe_6060.png"
-        },
-        {
-          "word": "duerme",
-          "file": "dormir_6479.png"
-        }
-      ],
-      "anim": "sleep",
-      "video": "bebe_duerme.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el bebé?"
-      ]
+      "video": "bebe_duerme.mp4"
     },
     {
       "text": "La flor es bonita",
-      "pictos": [
-        {
-          "word": "flor",
-          "file": "flor_7104.png"
-        },
-        {
-          "word": "bonita",
-          "file": "bonito_11194.png"
-        }
-      ],
-      "anim": "shine",
-      "video": "flor.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Cómo es la flor?"
-      ]
+      "video": "flor.mp4"
     },
     {
       "text": "El niño salta alto",
-      "pictos": [
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        },
-        {
-          "word": "salta",
-          "file": "saltar_39052.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "nino_salta.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?"
-      ]
+      "video": "nino_salta.mp4"
     },
     {
       "text": "El pez nada rápido",
-      "pictos": [
-        {
-          "word": "pez",
-          "file": "pez_2520.png"
-        },
-        {
-          "word": "nada",
-          "file": "nadar_6568.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "pez.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el pez?"
-      ]
+      "video": "pez.mp4"
     },
     {
       "text": "La luna es blanca",
-      "pictos": [
-        {
-          "word": "luna",
-          "file": "luna_2933.png"
-        },
-        {
-          "word": "blanca",
-          "file": "blanco_8043.png"
-        }
-      ],
-      "anim": "shine",
-      "video": "luna.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿De qué color es?"
-      ]
+      "video": "luna.mp4"
     },
     {
       "text": "La vaca come hierba",
-      "pictos": [
-        {
-          "word": "vaca",
-          "file": "vaca_2609.png"
-        },
-        {
-          "word": "come",
-          "file": "comer_6456.png"
-        },
-        {
-          "word": "hierba",
-          "file": "hierba_3113.png"
-        }
-      ],
-      "anim": "munch",
-      "video": "vaca.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la vaca?",
-        "¿Y qué come?"
-      ]
+      "video": "vaca.mp4"
     },
     {
       "text": "El avión vuela rápido",
-      "pictos": [
-        {
-          "word": "avión",
-          "file": "avion_2264.png"
-        },
-        {
-          "word": "vuela",
-          "file": "volar_6246.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "avion.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Qué hace el avión?"
-      ]
+      "video": "avion.mp4"
     },
     {
       "text": "Yo quiero agua",
-      "pictos": [
-        {
-          "word": "yo",
-          "file": "yo_6632.png"
-        },
-        {
-          "word": "quiero",
-          "file": "querer_5441.png"
-        },
-        {
-          "word": "agua",
-          "file": "agua_32464.png"
-        }
-      ],
-      "anim": "bob",
-      "video": "yo_quiero_agua.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace?",
-        "¿Y qué quiere?"
-      ]
+      "video": "yo_quiero_agua.mp4"
     },
     {
       "text": "El niño pinta la casa",
-      "pictos": [
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        },
-        {
-          "word": "pinta",
-          "file": "pintar_2348.png"
-        },
-        {
-          "word": "casa",
-          "file": "casa_6964.png"
-        }
-      ],
-      "anim": "art",
-      "video": "nino_pinta_casa.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y qué pinta?"
-      ]
+      "video": "nino_pinta_casa.mp4"
     },
     {
       "text": "La abuela hace galletas",
-      "pictos": [
-        {
-          "word": "abuela",
-          "file": "abuela_23710.png"
-        },
-        {
-          "word": "hace",
-          "file": "hacer_32751.png"
-        },
-        {
-          "word": "galleta",
-          "file": "galleta_8312.png"
-        }
-      ],
-      "anim": "stir",
-      "video": "abuela_galletas.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué está haciendo la abuela?",
-        "¿Y qué hace?"
-      ]
+      "video": "abuela_galletas.mp4"
     },
     {
       "text": "El niño duerme en la cama",
-      "pictos": [
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        },
-        {
-          "word": "duerme",
-          "file": "dormir_6479.png"
-        },
-        {
-          "word": "cama",
-          "file": "cama_25900.png"
-        }
-      ],
-      "anim": "sleep",
-      "video": "nino_cama.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y dónde duerme?"
-      ]
+      "video": "nino_cama.mp4"
     },
     {
       "text": "La niña juega con la pelota",
-      "pictos": [
-        {
-          "word": "niña",
-          "file": "nina_27509.png"
-        },
-        {
-          "word": "juega",
-          "file": "jugar_23392.png"
-        },
-        {
-          "word": "pelota",
-          "file": "pelota_3241.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "nina_pelota.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?",
-        "¿Y con qué juega?"
-      ]
+      "video": "nina_pelota.mp4"
     },
     {
       "text": "El perro corre rápido",
-      "pictos": [
-        {
-          "word": "perro",
-          "file": "perro_7202.png"
-        },
-        {
-          "word": "corre",
-          "file": "correr_6465.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "perro_corre.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el perro?"
-      ]
+      "video": "perro_corre.mp4"
     },
     {
       "text": "El gato duerme en el sofá",
-      "pictos": [
-        {
-          "word": "gato",
-          "file": "gato_7114.png"
-        },
-        {
-          "word": "duerme",
-          "file": "dormir_6479.png"
-        },
-        {
-          "word": "sofá",
-          "file": "sofa_25479.png"
-        }
-      ],
-      "anim": "sleep",
-      "video": "gato_sofa.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el gato?",
-        "¿Y dónde duerme?"
-      ]
+      "video": "gato_sofa.mp4"
     },
     {
       "text": "Yo como manzana",
-      "pictos": [
-        {
-          "word": "yo",
-          "file": "yo_6632.png"
-        },
-        {
-          "word": "como",
-          "file": "comer_6456.png"
-        },
-        {
-          "word": "manzana",
-          "file": "manzana_2462.png"
-        }
-      ],
-      "anim": "munch",
-      "video": "como_manzana.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace?",
-        "¿Y qué come?"
-      ]
+      "video": "como_manzana.mp4"
     },
     {
       "text": "Mamá abraza al niño",
-      "pictos": [
-        {
-          "word": "mamá",
-          "file": "mama_2458.png"
-        },
-        {
-          "word": "abraza",
-          "file": "abrazar_6023.png"
-        },
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        }
-      ],
-      "anim": "hug",
-      "video": "mama_abraza.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace mamá?",
-        "¿Y a quién abraza?"
-      ]
+      "video": "mama_abraza.mp4"
     },
     {
       "text": "Papá conduce el coche",
-      "pictos": [
-        {
-          "word": "papá",
-          "file": "papa_31146.png"
-        },
-        {
-          "word": "conduce",
-          "file": "conducir_6458.png"
-        },
-        {
-          "word": "coche",
-          "file": "coche_2339.png"
-        }
-      ],
-      "anim": "drive",
-      "video": "papa_conduce.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace papá?",
-        "¿Y qué conduce?"
-      ]
+      "video": "papa_conduce.mp4"
     },
     {
       "text": "El niño llora un poco",
-      "pictos": [
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        },
-        {
-          "word": "llora",
-          "file": "llorar_7147.png"
-        }
-      ],
-      "anim": "cry",
-      "video": null,
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?"
-      ]
+      "video": "nino_llora.mp4"
     },
     {
       "text": "La niña ríe mucho",
-      "pictos": [
-        {
-          "word": "niña",
-          "file": "nina_27509.png"
-        },
-        {
-          "word": "ríe",
-          "file": "reir_13354.png"
-        }
-      ],
-      "anim": "shine",
-      "video": "nina_rie.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?"
-      ]
+      "video": "nina_rie.mp4"
     },
     {
       "text": "El sol brilla mucho",
-      "pictos": [
-        {
-          "word": "sol",
-          "file": "sol_7252.png"
-        },
-        {
-          "word": "brilla",
-          "file": "brillar_6475.png"
-        }
-      ],
-      "anim": "shine",
-      "video": "sol_brilla.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Qué hace el sol?"
-      ]
+      "video": "sol_brilla.mp4"
     },
     {
       "text": "La lluvia cae del cielo",
-      "pictos": [
-        {
-          "word": "lluvia",
-          "file": "lluvia_7148.png"
-        },
-        {
-          "word": "cae",
-          "file": "caer_39440.png"
-        },
-        {
-          "word": "cielo",
-          "file": "cielo_38270.png"
-        }
-      ],
-      "anim": "fall",
-      "video": "lluvia.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Qué hace la lluvia?",
-        "¿Y de dónde cae?"
-      ]
+      "video": "lluvia.mp4"
     },
     {
       "text": "El niño se lava las manos",
-      "pictos": [
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        },
-        {
-          "word": "lava",
-          "file": "lavar_34826.png"
-        },
-        {
-          "word": "mano",
-          "file": "mano_2928.png"
-        }
-      ],
-      "anim": "wash",
-      "video": "nino_manos.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y qué se lava?"
-      ]
+      "video": "nino_manos.mp4"
     },
     {
       "text": "La abuela cocina sopa",
-      "pictos": [
-        {
-          "word": "abuela",
-          "file": "abuela_23710.png"
-        },
-        {
-          "word": "cocina",
-          "file": "cocinar_2342.png"
-        },
-        {
-          "word": "sopa",
-          "file": "sopa_2573.png"
-        }
-      ],
-      "anim": "stir",
-      "video": "abuela_sopa.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la abuela?",
-        "¿Y qué cocina?"
-      ]
+      "video": "abuela_sopa.mp4"
     },
     {
       "text": "El abuelo lee el periódico",
-      "pictos": [
-        {
-          "word": "abuelo",
-          "file": "abuelo_23718.png"
-        },
-        {
-          "word": "lee",
-          "file": "leer_7141.png"
-        },
-        {
-          "word": "periódico",
-          "file": "periodico_2845.png"
-        }
-      ],
-      "anim": "read",
-      "video": "abuelo_periodico.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el abuelo?",
-        "¿Y qué lee?"
-      ]
+      "video": "abuelo_periodico.mp4"
     },
     {
       "text": "El bebé sonríe feliz",
-      "pictos": [
-        {
-          "word": "bebé",
-          "file": "bebe_6060.png"
-        },
-        {
-          "word": "sonríe",
-          "file": "sonreir_13354.png"
-        }
-      ],
-      "anim": "shine",
-      "video": "bebe_sonrie.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el bebé?"
-      ]
+      "video": "bebe_sonrie.mp4"
     },
     {
       "text": "El niño juega con la bicicleta",
-      "pictos": [
-        {
-          "word": "niño",
-          "file": "nino_7176.png"
-        },
-        {
-          "word": "juega",
-          "file": "jugar_23392.png"
-        },
-        {
-          "word": "bicicleta",
-          "file": "bicicleta_6935.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "nino_bici.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y con qué juega?"
-      ]
+      "video": "nino_bici.mp4"
     },
     {
       "text": "La niña va al colegio",
-      "pictos": [
-        {
-          "word": "niña",
-          "file": "nina_27509.png"
-        },
-        {
-          "word": "va",
-          "file": "ir_8142.png"
-        },
-        {
-          "word": "colegio",
-          "file": "colegio_32446.png"
-        }
-      ],
-      "anim": "bounce",
-      "video": "nina_colegio.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?",
-        "¿Y a dónde va?"
-      ]
+      "video": "nina_colegio.mp4"
     },
     {
       "text": "Papá pinta un cuadro",
-      "pictos": [
-        {
-          "word": "papá",
-          "file": "papa_31146.png"
-        },
-        {
-          "word": "pinta",
-          "file": "pintar_2348.png"
-        },
-        {
-          "word": "cuadro",
-          "file": "cuadro_2360.png"
-        }
-      ],
-      "anim": "art",
-      "video": "papa_cuadro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace papá?",
-        "¿Y qué pinta?"
-      ]
+      "video": "papa_cuadro.mp4"
+    },
+    {
+      "text": "El bombero apaga el fuego",
+      "video": "bombero.mp4"
+    },
+    {
+      "text": "El policía para el coche",
+      "video": "policia.mp4"
+    },
+    {
+      "text": "El semáforo está verde",
+      "video": "semaforo.mp4"
     }
   ],
   "letters": {

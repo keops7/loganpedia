@@ -101,22 +101,10 @@ def main():
     print("=== Frases simples ===")
     sentences_out = []
     for s in source["sentences"]:
-        pictos = []
-        labels = s.get("labels", s["words"])
-        for i, w in enumerate(s["words"]):
-            entry = resolve_word(w)
-            if entry:
-                label = labels[i] if i < len(labels) else w
-                pictos.append({"word": label, "file": entry["file"]})
-            else:
-                missing.append(f"frase:{s['text']} -> {w}")
-        sentences_out.append({
-            "text": s["text"],
-            "pictos": pictos,
-            "anim": s.get("anim", "bob"),
-            "video": s.get("video"),
-            "preguntas": s.get("preguntas", []),
-        })
+        if not s.get("video"):
+            missing.append(f"frase sin video: {s['text']}")
+            continue
+        sentences_out.append({"text": s["text"], "video": s["video"]})
 
     print("=== Vocabulario ===")
     letters_out = {}

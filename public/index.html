@@ -58,28 +58,10 @@
       <button class="btn-mute mute-toggle" aria-label="Silenciar sonido" aria-pressed="false">🔊</button>
     </header>
     <div class="frase-content">
-      <div class="qa-steps" id="qa-steps"></div>
-      <p class="qa-pregunta" id="qa-pregunta"></p>
-
-      <div class="qa-picto-wrap" id="qa-picto-wrap">
-        <img class="qa-picto" id="qa-picto" alt="">
-      </div>
-
-      <button class="qa-decir-btn" id="qa-decir-btn" hidden>
-        <span class="qa-decir-emoji" aria-hidden="true">🗣️</span>
-        <span>¡Ya lo dije! Toca aquí</span>
+      <button class="frase-video-wrap" id="frase-video-wrap" aria-label="Escuchar la frase">
+        <video class="frase-video" id="frase-video" muted loop playsinline autoplay></video>
       </button>
-
-      <div class="qa-reveal" id="qa-reveal" hidden>
-        <video class="escena-video" id="frase-video" muted loop playsinline autoplay hidden></video>
-        <div class="escena-stage" id="frase-escena">
-          <div class="escena-fx" id="frase-fx"></div>
-          <img class="escena-picto escena-sujeto" id="frase-sujeto" alt="">
-          <img class="escena-picto escena-objeto" id="frase-objeto" alt="">
-        </div>
-        <p class="frase-text" id="frase-text"></p>
-        <button class="qa-repetir-btn" id="qa-repetir-btn">🔁 Escuchar otra vez</button>
-      </div>
+      <p class="frase-text" id="frase-text"></p>
     </div>
     <footer class="nav-footer">
       <button class="btn-nav" id="frase-prev" aria-label="Frase anterior">⟵</button>

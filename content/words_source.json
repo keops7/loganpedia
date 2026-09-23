@@ -2,716 +2,167 @@
   "sentences": [
     {
       "text": "El niño bebe agua",
-      "words": [
-        "niño",
-        "beber",
-        "agua"
-      ],
-      "anim": "sip",
-      "video": "nino_agua.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y qué bebe?"
-      ],
-      "labels": [
-        "niño",
-        "bebe",
-        "agua"
-      ]
+      "video": "nino_agua.mp4"
     },
     {
       "text": "El coche es rojo",
-      "words": [
-        "coche",
-        "rojo"
-      ],
-      "anim": "shine",
-      "video": "coche.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿De qué color es?"
-      ],
-      "labels": [
-        "coche",
-        "rojo"
-      ]
+      "video": "coche.mp4"
     },
     {
       "text": "El perro come hueso",
-      "words": [
-        "perro",
-        "comer",
-        "hueso"
-      ],
-      "anim": "munch",
-      "video": "perro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el perro?",
-        "¿Y qué come?"
-      ],
-      "labels": [
-        "perro",
-        "come",
-        "hueso"
-      ]
+      "video": "perro.mp4"
     },
     {
       "text": "La niña come pan",
-      "words": [
-        "niña",
-        "comer",
-        "pan"
-      ],
-      "anim": "munch",
-      "video": "nina_pan.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?",
-        "¿Y qué come?"
-      ],
-      "labels": [
-        "niña",
-        "come",
-        "pan"
-      ]
+      "video": "nina_pan.mp4"
     },
     {
       "text": "El gato bebe leche",
-      "words": [
-        "gato",
-        "beber",
-        "leche"
-      ],
-      "anim": "sip",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el gato?",
-        "¿Y qué bebe?"
-      ],
-      "labels": [
-        "gato",
-        "bebe",
-        "leche"
-      ]
+      "video": "gato_leche.mp4"
     },
     {
       "text": "El sol es amarillo",
-      "words": [
-        "sol",
-        "amarillo"
-      ],
-      "anim": "shine",
-      "video": "sol.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿De qué color es?"
-      ],
-      "labels": [
-        "sol",
-        "amarillo"
-      ]
+      "video": "sol.mp4"
     },
     {
       "text": "El pájaro vuela alto",
-      "words": [
-        "pájaro",
-        "volar"
-      ],
-      "anim": "bounce",
-      "video": "pajaro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el pájaro?"
-      ],
-      "labels": [
-        "pájaro",
-        "vuela"
-      ]
+      "video": "pajaro.mp4"
     },
     {
       "text": "La pelota es redonda",
-      "words": [
-        "pelota",
-        "redondo"
-      ],
-      "anim": "bounce",
-      "video": "pelota.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Cómo es la pelota?"
-      ],
-      "labels": [
-        "pelota",
-        "redonda"
-      ]
+      "video": "pelota.mp4"
     },
     {
       "text": "Mamá lava los platos",
-      "words": [
-        "mamá",
-        "lavar",
-        "plato"
-      ],
-      "anim": "wash",
-      "video": "mama_platos.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace mamá?",
-        "¿Y qué lava?"
-      ],
-      "labels": [
-        "mamá",
-        "lava",
-        "plato"
-      ]
+      "video": "mama_platos.mp4"
     },
     {
       "text": "Papá lee un libro",
-      "words": [
-        "papá",
-        "leer",
-        "libro"
-      ],
-      "anim": "read",
-      "video": "papa_libro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace papá?",
-        "¿Y qué lee?"
-      ],
-      "labels": [
-        "papá",
-        "lee",
-        "libro"
-      ]
+      "video": "papa_libro.mp4"
     },
     {
       "text": "El bebé duerme mucho",
-      "words": [
-        "bebé",
-        "dormir"
-      ],
-      "anim": "sleep",
-      "video": "bebe_duerme.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el bebé?"
-      ],
-      "labels": [
-        "bebé",
-        "duerme"
-      ]
+      "video": "bebe_duerme.mp4"
     },
     {
       "text": "La flor es bonita",
-      "words": [
-        "flor",
-        "bonito"
-      ],
-      "anim": "shine",
-      "video": "flor.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Cómo es la flor?"
-      ],
-      "labels": [
-        "flor",
-        "bonita"
-      ]
+      "video": "flor.mp4"
     },
     {
       "text": "El niño salta alto",
-      "words": [
-        "niño",
-        "saltar"
-      ],
-      "anim": "bounce",
-      "video": "nino_salta.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?"
-      ],
-      "labels": [
-        "niño",
-        "salta"
-      ]
+      "video": "nino_salta.mp4"
     },
     {
       "text": "El pez nada rápido",
-      "words": [
-        "pez",
-        "nadar"
-      ],
-      "anim": "bounce",
-      "video": "pez.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el pez?"
-      ],
-      "labels": [
-        "pez",
-        "nada"
-      ]
+      "video": "pez.mp4"
     },
     {
       "text": "La luna es blanca",
-      "words": [
-        "luna",
-        "blanco"
-      ],
-      "anim": "shine",
-      "video": "luna.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿De qué color es?"
-      ],
-      "labels": [
-        "luna",
-        "blanca"
-      ]
+      "video": "luna.mp4"
     },
     {
       "text": "La vaca come hierba",
-      "words": [
-        "vaca",
-        "comer",
-        "hierba"
-      ],
-      "anim": "munch",
-      "video": "vaca.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la vaca?",
-        "¿Y qué come?"
-      ],
-      "labels": [
-        "vaca",
-        "come",
-        "hierba"
-      ]
+      "video": "vaca.mp4"
     },
     {
       "text": "El avión vuela rápido",
-      "words": [
-        "avión",
-        "volar"
-      ],
-      "anim": "bounce",
-      "video": "avion.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Qué hace el avión?"
-      ],
-      "labels": [
-        "avión",
-        "vuela"
-      ]
+      "video": "avion.mp4"
     },
     {
       "text": "Yo quiero agua",
-      "words": [
-        "yo",
-        "querer",
-        "agua"
-      ],
-      "anim": "bob",
-      "video": "yo_quiero_agua.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace?",
-        "¿Y qué quiere?"
-      ],
-      "labels": [
-        "yo",
-        "quiero",
-        "agua"
-      ]
+      "video": "yo_quiero_agua.mp4"
     },
     {
       "text": "El niño pinta la casa",
-      "words": [
-        "niño",
-        "pintar",
-        "casa"
-      ],
-      "anim": "art",
-      "video": "nino_pinta_casa.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y qué pinta?"
-      ],
-      "labels": [
-        "niño",
-        "pinta",
-        "casa"
-      ]
+      "video": "nino_pinta_casa.mp4"
     },
     {
       "text": "La abuela hace galletas",
-      "words": [
-        "abuela",
-        "hacer",
-        "galleta"
-      ],
-      "anim": "stir",
-      "video": "abuela_galletas.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué está haciendo la abuela?",
-        "¿Y qué hace?"
-      ],
-      "labels": [
-        "abuela",
-        "hace",
-        "galleta"
-      ]
+      "video": "abuela_galletas.mp4"
     },
     {
       "text": "El niño duerme en la cama",
-      "words": [
-        "niño",
-        "dormir",
-        "cama"
-      ],
-      "anim": "sleep",
-      "video": "nino_cama.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y dónde duerme?"
-      ],
-      "labels": [
-        "niño",
-        "duerme",
-        "cama"
-      ]
+      "video": "nino_cama.mp4"
     },
     {
       "text": "La niña juega con la pelota",
-      "words": [
-        "niña",
-        "jugar",
-        "pelota"
-      ],
-      "anim": "bounce",
-      "video": "nina_pelota.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?",
-        "¿Y con qué juega?"
-      ],
-      "labels": [
-        "niña",
-        "juega",
-        "pelota"
-      ]
+      "video": "nina_pelota.mp4"
     },
     {
       "text": "El perro corre rápido",
-      "words": [
-        "perro",
-        "correr"
-      ],
-      "anim": "bounce",
-      "video": "perro_corre.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el perro?"
-      ],
-      "labels": [
-        "perro",
-        "corre"
-      ]
+      "video": "perro_corre.mp4"
     },
     {
       "text": "El gato duerme en el sofá",
-      "words": [
-        "gato",
-        "dormir",
-        "sofá"
-      ],
-      "anim": "sleep",
-      "video": "gato_sofa.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el gato?",
-        "¿Y dónde duerme?"
-      ],
-      "labels": [
-        "gato",
-        "duerme",
-        "sofá"
-      ]
+      "video": "gato_sofa.mp4"
     },
     {
       "text": "Yo como manzana",
-      "words": [
-        "yo",
-        "comer",
-        "manzana"
-      ],
-      "anim": "munch",
-      "video": "como_manzana.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace?",
-        "¿Y qué come?"
-      ],
-      "labels": [
-        "yo",
-        "como",
-        "manzana"
-      ]
+      "video": "como_manzana.mp4"
     },
     {
       "text": "Mamá abraza al niño",
-      "words": [
-        "mamá",
-        "abrazar",
-        "niño"
-      ],
-      "anim": "hug",
-      "video": "mama_abraza.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace mamá?",
-        "¿Y a quién abraza?"
-      ],
-      "labels": [
-        "mamá",
-        "abraza",
-        "niño"
-      ]
+      "video": "mama_abraza.mp4"
     },
     {
       "text": "Papá conduce el coche",
-      "words": [
-        "papá",
-        "conducir",
-        "coche"
-      ],
-      "anim": "drive",
-      "video": "papa_conduce.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace papá?",
-        "¿Y qué conduce?"
-      ],
-      "labels": [
-        "papá",
-        "conduce",
-        "coche"
-      ]
+      "video": "papa_conduce.mp4"
     },
     {
       "text": "El niño llora un poco",
-      "words": [
-        "niño",
-        "llorar"
-      ],
-      "anim": "cry",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?"
-      ],
-      "labels": [
-        "niño",
-        "llora"
-      ]
+      "video": "nino_llora.mp4"
     },
     {
       "text": "La niña ríe mucho",
-      "words": [
-        "niña",
-        "reír"
-      ],
-      "anim": "shine",
-      "video": "nina_rie.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?"
-      ],
-      "labels": [
-        "niña",
-        "ríe"
-      ]
+      "video": "nina_rie.mp4"
     },
     {
       "text": "El sol brilla mucho",
-      "words": [
-        "sol",
-        "brillar"
-      ],
-      "anim": "shine",
-      "video": "sol_brilla.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Qué hace el sol?"
-      ],
-      "labels": [
-        "sol",
-        "brilla"
-      ]
+      "video": "sol_brilla.mp4"
     },
     {
       "text": "La lluvia cae del cielo",
-      "words": [
-        "lluvia",
-        "caer",
-        "cielo"
-      ],
-      "anim": "fall",
-      "video": "lluvia.mp4",
-      "preguntas": [
-        "¿Qué es?",
-        "¿Qué hace la lluvia?",
-        "¿Y de dónde cae?"
-      ],
-      "labels": [
-        "lluvia",
-        "cae",
-        "cielo"
-      ]
+      "video": "lluvia.mp4"
     },
     {
       "text": "El niño se lava las manos",
-      "words": [
-        "niño",
-        "lavar",
-        "mano"
-      ],
-      "anim": "wash",
-      "video": "nino_manos.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y qué se lava?"
-      ],
-      "labels": [
-        "niño",
-        "lava",
-        "mano"
-      ]
+      "video": "nino_manos.mp4"
     },
     {
       "text": "La abuela cocina sopa",
-      "words": [
-        "abuela",
-        "cocinar",
-        "sopa"
-      ],
-      "anim": "stir",
-      "video": "abuela_sopa.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la abuela?",
-        "¿Y qué cocina?"
-      ],
-      "labels": [
-        "abuela",
-        "cocina",
-        "sopa"
-      ]
+      "video": "abuela_sopa.mp4"
     },
     {
       "text": "El abuelo lee el periódico",
-      "words": [
-        "abuelo",
-        "leer",
-        "periódico"
-      ],
-      "anim": "read",
-      "video": "abuelo_periodico.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el abuelo?",
-        "¿Y qué lee?"
-      ],
-      "labels": [
-        "abuelo",
-        "lee",
-        "periódico"
-      ]
+      "video": "abuelo_periodico.mp4"
     },
     {
       "text": "El bebé sonríe feliz",
-      "words": [
-        "bebé",
-        "sonreír"
-      ],
-      "anim": "shine",
-      "video": "bebe_sonrie.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el bebé?"
-      ],
-      "labels": [
-        "bebé",
-        "sonríe"
-      ]
+      "video": "bebe_sonrie.mp4"
     },
     {
       "text": "El niño juega con la bicicleta",
-      "words": [
-        "niño",
-        "jugar",
-        "bicicleta"
-      ],
-      "anim": "bounce",
-      "video": "nino_bici.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace el niño?",
-        "¿Y con qué juega?"
-      ],
-      "labels": [
-        "niño",
-        "juega",
-        "bicicleta"
-      ]
+      "video": "nino_bici.mp4"
     },
     {
       "text": "La niña va al colegio",
-      "words": [
-        "niña",
-        "ir",
-        "colegio"
-      ],
-      "anim": "bounce",
-      "video": "nina_colegio.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace la niña?",
-        "¿Y a dónde va?"
-      ],
-      "labels": [
-        "niña",
-        "va",
-        "colegio"
-      ]
+      "video": "nina_colegio.mp4"
     },
     {
       "text": "Papá pinta un cuadro",
-      "words": [
-        "papá",
-        "pintar",
-        "cuadro"
-      ],
-      "anim": "art",
-      "video": "papa_cuadro.mp4",
-      "preguntas": [
-        "¿Quién es?",
-        "¿Qué hace papá?",
-        "¿Y qué pinta?"
-      ],
-      "labels": [
-        "papá",
-        "pinta",
-        "cuadro"
-      ]
+      "video": "papa_cuadro.mp4"
+    },
+    {
+      "text": "El bombero apaga el fuego",
+      "video": "bombero.mp4"
+    },
+    {
+      "text": "El policía para el coche",
+      "video": "policia.mp4"
+    },
+    {
+      "text": "El semáforo está verde",
+      "video": "semaforo.mp4"
     }
   ],
   "letters": {
