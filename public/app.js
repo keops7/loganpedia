@@ -49,6 +49,9 @@
       state.fraseStep = 0;
       renderFrase();
     }
+    if (target === "papas") {
+      renderPapas();
+    }
     goTo(target);
   });
 
@@ -683,38 +686,31 @@
         papasSinExplorarEl.appendChild(chip);
       });
     }
-  }
 
-  // Acceso discreto: solo con pulsación larga (~1.5s), nunca con un toque normal.
-  // Se usan Touch Events + Mouse Events "clasicos" (no Pointer Events): en iOS
-  // Safari, Pointer Events puede cancelar el gesto (pointercancel) ante el minimo
-  // movimiento del dedo aunque touch-action sea none. touchstart con
-  // preventDefault + { passive: false } es el metodo mas fiable en iOS.
-  var papasSecretoBtn = document.getElementById("papas-secreto");
-  if (papasSecretoBtn) {
-    var papasPressTimer = null;
-    var PAPAS_LONG_PRESS_MS = 1500;
-
-    function startPapasPress(e) {
-      e.preventDefault();
-      clearTimeout(papasPressTimer);
-      papasPressTimer = setTimeout(function () {
-        papasPressTimer = null;
-        renderPapas();
-        goTo("papas");
-      }, PAPAS_LONG_PRESS_MS);
+    var papasVozActualEl = document.getElementById("papas-voz-actual");
+    var papasVocesEl = document.getElementById("papas-voces");
+    if (papasVozActualEl && papasVocesEl) {
+      papasVozActualEl.textContent = spanishVoice
+        ? "La app está usando: " + spanishVoice.name + " (" + spanishVoice.lang + ")"
+        : "La app no ha encontrado ninguna voz en español instalada.";
+      papasVocesEl.innerHTML = "";
+      var todasVoces = ("speechSynthesis" in window) ? window.speechSynthesis.getVoices() : [];
+      if (!todasVoces.length) {
+        var sinVoces = document.createElement("p");
+        sinVoces.className = "papas-vacio";
+        sinVoces.textContent = "El navegador todavía no ha listado ninguna voz.";
+        papasVocesEl.appendChild(sinVoces);
+      } else {
+        todasVoces.forEach(function (v) {
+          var row = document.createElement("div");
+          row.className = "papas-row papas-voz-row";
+          row.innerHTML =
+            '<span class="papas-row-letra papas-voz-nombre">' + v.name + "</span>" +
+            '<span class="papas-row-veces">' + v.lang + "</span>";
+          papasVocesEl.appendChild(row);
+        });
+      }
     }
-    function cancelPapasPress() {
-      clearTimeout(papasPressTimer);
-      papasPressTimer = null;
-    }
-
-    papasSecretoBtn.addEventListener("touchstart", startPapasPress, { passive: false });
-    papasSecretoBtn.addEventListener("touchend", cancelPapasPress);
-    papasSecretoBtn.addEventListener("touchcancel", cancelPapasPress);
-    papasSecretoBtn.addEventListener("mousedown", startPapasPress);
-    papasSecretoBtn.addEventListener("mouseup", cancelPapasPress);
-    papasSecretoBtn.addEventListener("mouseleave", cancelPapasPress);
   }
 
   // ---------- SERVICE WORKER ----------
