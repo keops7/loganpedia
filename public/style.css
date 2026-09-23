@@ -904,21 +904,6 @@ html, body {
   opacity: 0.7;
   margin: 4px 0;
 }
-.papas-voz-actual {
-  font-weight: 700;
-  font-size: 15px;
-  margin: 0 0 6px;
-}
-.papas-voz-nombre {
-  font-size: 13px;
-  word-break: break-word;
-  width: auto;
-  flex: 1;
-}
-.papas-voz-row .papas-row-veces {
-  flex: 0 0 auto;
-}
-
 @media (max-width: 480px) {
   .pictos-row { gap: 12px; }
   .picto-card { width: 40vw; }

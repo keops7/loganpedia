@@ -689,31 +689,6 @@
         papasSinExplorarEl.appendChild(chip);
       });
     }
-
-    var papasVozActualEl = document.getElementById("papas-voz-actual");
-    var papasVocesEl = document.getElementById("papas-voces");
-    if (papasVozActualEl && papasVocesEl) {
-      papasVozActualEl.textContent = spanishVoice
-        ? "La app está usando: " + spanishVoice.name + " (" + spanishVoice.lang + ")"
-        : "La app no ha encontrado ninguna voz en español instalada.";
-      papasVocesEl.innerHTML = "";
-      var todasVoces = ("speechSynthesis" in window) ? window.speechSynthesis.getVoices() : [];
-      if (!todasVoces.length) {
-        var sinVoces = document.createElement("p");
-        sinVoces.className = "papas-vacio";
-        sinVoces.textContent = "El navegador todavía no ha listado ninguna voz.";
-        papasVocesEl.appendChild(sinVoces);
-      } else {
-        todasVoces.forEach(function (v) {
-          var row = document.createElement("div");
-          row.className = "papas-row papas-voz-row";
-          row.innerHTML =
-            '<span class="papas-row-letra papas-voz-nombre">' + v.name + "</span>" +
-            '<span class="papas-row-veces">' + v.lang + "</span>";
-          papasVocesEl.appendChild(row);
-        });
-      }
-    }
   }
 
   // ---------- SERVICE WORKER ----------
