@@ -56,9 +56,17 @@
   var spanishVoice = null;
   function pickVoice() {
     var voices = window.speechSynthesis.getVoices();
+    var esVoices = voices.filter(function (v) { return v.lang === "es-ES"; });
+    if (!esVoices.length) {
+      esVoices = voices.filter(function (v) { return v.lang && v.lang.indexOf("es") === 0; });
+    }
+    // En iOS/Safari, si el usuario ha descargado una voz "Mejorada"/"Premium" en
+    // Ajustes > Accesibilidad > Contenido hablado, aparece junto a la voz compacta
+    // por defecto (mas robotica) con el mismo idioma: preferimos la de mas calidad.
+    var quality = /enhanced|premium|mejorad|neural/i;
     spanishVoice =
-      voices.find(function (v) { return v.lang === "es-ES"; }) ||
-      voices.find(function (v) { return v.lang && v.lang.indexOf("es") === 0; }) ||
+      esVoices.find(function (v) { return quality.test(v.name); }) ||
+      esVoices[0] ||
       null;
   }
   if ("speechSynthesis" in window) {
@@ -675,28 +683,35 @@
   }
 
   // Acceso discreto: solo con pulsación larga (~1.5s), nunca con un toque normal.
+  // Se usan Touch Events + Mouse Events "clasicos" (no Pointer Events): en iOS
+  // Safari, Pointer Events puede cancelar el gesto (pointercancel) ante el minimo
+  // movimiento del dedo aunque touch-action sea none. touchstart con
+  // preventDefault + { passive: false } es el metodo mas fiable en iOS.
   var papasSecretoBtn = document.getElementById("papas-secreto");
   if (papasSecretoBtn) {
     var papasPressTimer = null;
     var PAPAS_LONG_PRESS_MS = 1500;
 
-    papasSecretoBtn.addEventListener("pointerdown", function (e) {
-      e.stopPropagation();
+    function startPapasPress(e) {
+      e.preventDefault();
       clearTimeout(papasPressTimer);
       papasPressTimer = setTimeout(function () {
         papasPressTimer = null;
         renderPapas();
         goTo("papas");
       }, PAPAS_LONG_PRESS_MS);
-    });
-
+    }
     function cancelPapasPress() {
       clearTimeout(papasPressTimer);
       papasPressTimer = null;
     }
-    papasSecretoBtn.addEventListener("pointerup", cancelPapasPress);
-    papasSecretoBtn.addEventListener("pointerleave", cancelPapasPress);
-    papasSecretoBtn.addEventListener("pointercancel", cancelPapasPress);
+
+    papasSecretoBtn.addEventListener("touchstart", startPapasPress, { passive: false });
+    papasSecretoBtn.addEventListener("touchend", cancelPapasPress);
+    papasSecretoBtn.addEventListener("touchcancel", cancelPapasPress);
+    papasSecretoBtn.addEventListener("mousedown", startPapasPress);
+    papasSecretoBtn.addEventListener("mouseup", cancelPapasPress);
+    papasSecretoBtn.addEventListener("mouseleave", cancelPapasPress);
   }
 
   // ---------- SERVICE WORKER ----------
