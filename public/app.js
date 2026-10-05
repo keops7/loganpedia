@@ -35,6 +35,9 @@
     var btn = e.target.closest("[data-go]");
     if (!btn) return;
     var target = btn.getAttribute("data-go");
+    // goTo primero: corta voz/sonido en curso, y si fuera despues cortaria el
+    // sonido que arranca la ronda de ¿Qué suena? nada mas entrar al capitulo.
+    goTo(target);
     if (target === "vocab-letras" && btn.dataset.nivel) {
       state.nivel = btn.dataset.nivel;
       buildLetrasGrid();
@@ -50,7 +53,6 @@
     if (target === "papas") {
       renderPapas();
     }
-    goTo(target);
   });
 
   // ---------- VOZ ----------
@@ -94,18 +96,19 @@
   }
 
   // ---------- SONIDOS REALES (audio) ----------
-  var currentSoundAudio = null;
+  // Un unico elemento Audio reutilizado: iOS solo deja reproducir sin gesto del
+  // usuario en un elemento que ya se haya "desbloqueado" con un toque, asi que
+  // crear un Audio nuevo por ronda impedia el autoplay de las rondas siguientes.
+  var soundAudio = new Audio();
   function stopSound() {
-    if (currentSoundAudio) {
-      currentSoundAudio.pause();
-      currentSoundAudio = null;
-    }
+    soundAudio.pause();
   }
   function playSound(filename) {
     stopSound();
     if (state.muted) return;
-    currentSoundAudio = new Audio("assets/sounds/" + filename);
-    currentSoundAudio.play().catch(function () {});
+    soundAudio.src = "assets/sounds/" + filename;
+    soundAudio.currentTime = 0;
+    soundAudio.play().catch(function () {});
   }
 
   // ---------- SILENCIO ----------
@@ -133,11 +136,49 @@
     });
   });
 
+  // ---------- ORDEN DIARIO ----------
+  // Cada dia (fecha local) todas las listas se barajan con una semilla distinta:
+  // mismo orden durante todo el dia, orden nuevo al dia siguiente, sin servidor.
+  function hashStr(s) {
+    var h = 2166136261;
+    for (var i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return h >>> 0;
+  }
+  function seededRandom(seed) {
+    return function () {
+      seed = (seed + 0x6D2B79F5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function shuffleDailyList(arr, key) {
+    var d = new Date();
+    var day = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+    var rnd = seededRandom(hashStr(key + "|" + day));
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(rnd() * (i + 1));
+      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    }
+  }
+  function shuffleContentDaily(data) {
+    shuffleDailyList(data.sentences, "frases");
+    shuffleDailyList(data.conceptos, "conceptos");
+    Object.keys(data.letters).forEach(function (l) {
+      shuffleDailyList(data.letters[l].facil, "letra-" + l + "-facil");
+      shuffleDailyList(data.letters[l].dificil, "letra-" + l + "-dificil");
+    });
+  }
+
   // ---------- CARGA DE CONTENIDO ----------
   fetch("content/content.json", { cache: "no-cache" })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       state.content = data;
+      shuffleContentDaily(data);
       buildFraseScreen();
       buildLetrasGrid();
       buildLibreBank();
