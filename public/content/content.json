@@ -2811,12 +2811,12 @@
           {
             "word": "campana",
             "file": "campana_5938.png",
-            "sound": "campana.mp3"
+            "sound": "campana_v2.mp3"
           },
           {
             "word": "reloj",
             "file": "reloj_2549.png",
-            "sound": "reloj.mp3"
+            "sound": "reloj_v2.mp3"
           },
           {
             "word": "trueno",

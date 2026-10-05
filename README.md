@@ -68,8 +68,8 @@ se puede forzar un pictograma concreto añadiendo su id al diccionario `OVERRIDE
 Los 10 audios de "¿Qué suena?" (`public/assets/sounds/`) son grabaciones reales recortadas y niveladas a mano
 (no voz sintética), descargadas de bancos de sonido gratuitos:
 
-- **Mixkit** (`perro`, `gato`, `vaca`, `reloj`) — [Mixkit Free Sound Effects License](https://mixkit.co/license/#sfxFree), uso libre sin atribución.
-- **Pixabay** (`oveja`, `pato`, `coche`, `tren`, `abeja`, `campana`) — [Pixabay Content License](https://pixabay.com/service/license-summary/), uso libre sin atribución.
+- **Mixkit** (`perro`, `gato`, `vaca`, `reloj`, `campana`) — [Mixkit Free Sound Effects License](https://mixkit.co/license/#sfxFree), uso libre sin atribución.
+- **Pixabay** (`oveja`, `pato`, `coche`, `tren`, `abeja`) — [Pixabay Content License](https://pixabay.com/service/license-summary/), uso libre sin atribución.
 
 Para añadir o cambiar un sonido: descargar el audio, recortarlo a 1-3s con `ffmpeg` y guardarlo en
 `public/assets/sounds/<palabra>.mp3`, luego apuntar el nombre de fichero en el campo `"sound"` de la
