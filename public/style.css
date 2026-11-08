@@ -102,6 +102,7 @@ html, body {
 .card-libre { background: linear-gradient(160deg, var(--morado), var(--morado-oscuro)); }
 .card-sonidos { background: linear-gradient(160deg, var(--rosa), var(--rosa-oscuro)); }
 .card-conceptos { background: linear-gradient(160deg, var(--teal), var(--teal-oscuro)); }
+.card-dobble { background: linear-gradient(160deg, var(--naranja), var(--naranja-oscuro)); }
 .home-card-emoji { font-size: 64px; }
 
 .papas-secreto {
@@ -382,6 +383,84 @@ html, body {
   margin: 0;
   text-align: center;
 }
+
+/* ---------- DOBBLE ---------- */
+#screen-dobble { background: #FFF6E5; }
+.dobble-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 16px 16px;
+}
+.dobble-pregunta {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: var(--texto);
+}
+.dobble-cards {
+  --dcard: min(84vw, 34vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+@media (orientation: landscape) {
+  .dobble-cards { --dcard: min(42vw, 58vh); flex-direction: row; gap: 28px; }
+}
+.dobble-card {
+  position: relative;
+  width: var(--dcard);
+  height: var(--dcard);
+  border-radius: 50%;
+  background: white;
+  border: 5px solid #FFD9A0;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.1);
+  flex: 0 0 auto;
+}
+.dobble-item {
+  position: absolute;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.dobble-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+.dobble-item.correcta {
+  background: rgba(76, 217, 123, 0.35);
+  animation: dobble-pop 0.6s ease-in-out 2;
+}
+.dobble-item.incorrecta { animation: dobble-shake 0.4s ease-in-out; }
+@keyframes dobble-pop {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+}
+@keyframes dobble-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
+}
+.dobble-feedback {
+  min-height: 32px;
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 800;
+  color: var(--verde-oscuro);
+  margin: 0;
+  text-align: center;
+}
+.dobble-niveles { flex: 0 0 auto; }
+.dots.dobble-niveles .dot.active { background: var(--naranja-oscuro); }
 
 /* ---------- CONCEPTOS ---------- */
 #screen-conceptos { background: #E9FBFB; }

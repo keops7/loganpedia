@@ -53,6 +53,9 @@
     if (target === "papas") {
       renderPapas();
     }
+    if (target === "dobble") {
+      startDobble();
+    }
   });
 
   // ---------- VOZ ----------
@@ -368,6 +371,123 @@
   sonidoPlayEl.addEventListener("click", function () {
     if (sonidoActual) playSound(sonidoActual.sound);
   });
+
+  // ---------- DOBBLE ----------
+  // Dos tarjetas con N dibujos cada una y exactamente UNO en comun: el nino toca
+  // el repetido. Empieza con 4 por tarjeta y sube 1 por ronda hasta 7.
+  var DOBBLE_MIN = 4;
+  var DOBBLE_MAX = 7;
+  // Casi iguales entre si: si coincidieran en una ronda el juego seria injusto.
+  var DOBBLE_EXCLUIDOS = ["coche de carreras", "tranvía", "lancha"];
+  var DOBBLE_TAM = { 4: 34, 5: 31, 6: 28, 7: 25 };
+  var dobbleCardsEl = document.getElementById("dobble-cards");
+  var dobbleFeedbackEl = document.getElementById("dobble-feedback");
+  var dobbleNivelesEl = document.getElementById("dobble-niveles");
+  var dobbleRonda = 0;
+  var dobbleComun = null;
+  var dobbleBloqueado = false;
+
+  function dobblePool() {
+    var vistos = {};
+    var pool = [];
+    state.content.sonidos.capitulos.forEach(function (cap) {
+      cap.items.forEach(function (it) {
+        if (vistos[it.word] || DOBBLE_EXCLUIDOS.indexOf(it.word) >= 0) return;
+        vistos[it.word] = true;
+        pool.push({ word: it.word, file: it.file });
+      });
+    });
+    return pool;
+  }
+
+  // Posiciones (en % de la tarjeta, centro del dibujo) en anillo; con 7 el septimo va en el centro.
+  function dobbleLayout(n) {
+    var s = DOBBLE_TAM[n];
+    var enAnillo = n === 7 ? 6 : n;
+    var r = 50 - s / 2 - 3;
+    var off = Math.random() * Math.PI * 2;
+    var pos = [];
+    for (var i = 0; i < enAnillo; i++) {
+      var a = off + (i * 2 * Math.PI) / enAnillo;
+      pos.push({ x: 50 + r * Math.cos(a), y: 50 + r * Math.sin(a), s: s });
+    }
+    if (n === 7) pos.push({ x: 50, y: 50, s: s });
+    return shuffle(pos);
+  }
+
+  function dobbleCard(items, n) {
+    var card = document.createElement("div");
+    card.className = "dobble-card";
+    var pos = dobbleLayout(n);
+    items.forEach(function (it, i) {
+      var p = pos[i];
+      var btn = document.createElement("button");
+      btn.className = "dobble-item";
+      btn.setAttribute("data-word", it.word);
+      btn.setAttribute("aria-label", it.word);
+      btn.style.width = p.s + "%";
+      btn.style.height = p.s + "%";
+      btn.style.left = p.x - p.s / 2 + "%";
+      btn.style.top = p.y - p.s / 2 + "%";
+      var img = document.createElement("img");
+      img.src = "assets/pictos/" + it.file;
+      img.alt = "";
+      img.style.transform = "rotate(" + Math.round(Math.random() * 50 - 25) + "deg)";
+      btn.appendChild(img);
+      btn.addEventListener("click", function () { dobbleToque(btn, it); });
+      card.appendChild(btn);
+    });
+    return card;
+  }
+
+  function renderDobble() {
+    var n = Math.min(DOBBLE_MAX, DOBBLE_MIN + dobbleRonda);
+    var pool = shuffle(dobblePool());
+    var previo = dobbleComun ? dobbleComun.word : null;
+    var comun = pool.filter(function (it) { return it.word !== previo; })[0];
+    var resto = pool.filter(function (it) { return it.word !== comun.word; });
+    var a = shuffle([comun].concat(resto.slice(0, n - 1)));
+    var b = shuffle([comun].concat(resto.slice(n - 1, 2 * (n - 1))));
+    dobbleComun = comun;
+    dobbleBloqueado = false;
+    dobbleFeedbackEl.textContent = "";
+    dobbleCardsEl.innerHTML = "";
+    dobbleCardsEl.appendChild(dobbleCard(a, n));
+    dobbleCardsEl.appendChild(dobbleCard(b, n));
+
+    dobbleNivelesEl.innerHTML = "";
+    for (var lvl = DOBBLE_MIN; lvl <= DOBBLE_MAX; lvl++) {
+      var dot = document.createElement("span");
+      dot.className = "dot" + (lvl <= n ? " active" : "");
+      dobbleNivelesEl.appendChild(dot);
+    }
+  }
+
+  function dobbleToque(btn, it) {
+    if (dobbleBloqueado) return;
+    if (it.word === dobbleComun.word) {
+      dobbleBloqueado = true;
+      dobbleCardsEl.querySelectorAll('.dobble-item[data-word="' + it.word + '"]').forEach(function (el) {
+        el.classList.add("correcta");
+      });
+      dobbleFeedbackEl.textContent = "¡Muy bien! " + it.word;
+      speak("¡Muy bien! " + it.word);
+      dobbleRonda++;
+      setTimeout(renderDobble, 2600);
+    } else {
+      btn.classList.remove("incorrecta");
+      void btn.offsetWidth;
+      btn.classList.add("incorrecta");
+      speak("Inténtalo otra vez");
+    }
+  }
+
+  function startDobble() {
+    if (!state.content) return;
+    dobbleRonda = 0;
+    dobbleComun = null;
+    renderDobble();
+  }
 
   // ---------- CONCEPTOS ----------
   var conceptosContentEl = document.getElementById("conceptos-content");

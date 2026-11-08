@@ -45,6 +45,10 @@
           <span class="home-card-emoji" aria-hidden="true">🆚</span>
           <span class="home-card-label">Conceptos</span>
         </button>
+        <button class="home-card card-dobble" data-go="dobble">
+          <span class="home-card-emoji" aria-hidden="true">🔍</span>
+          <span class="home-card-label">Dobble</span>
+        </button>
       </div>
     </div>
     <button class="papas-secreto" id="papas-secreto" data-go="papas" aria-label="Área para papás" title="Área para papás">📊</button>
@@ -182,6 +186,21 @@
       <div class="dots" id="palabra-dots"></div>
       <button class="btn-nav" id="palabra-next" aria-label="Siguiente palabra">⟶</button>
     </footer>
+  </section>
+
+  <!-- DOBBLE -->
+  <section id="screen-dobble" class="screen">
+    <header class="topbar">
+      <button class="btn-back" data-go="home" aria-label="Volver al inicio">⟵</button>
+      <h2 class="topbar-title">Dobble</h2>
+      <button class="btn-mute mute-toggle" aria-label="Silenciar sonido" aria-pressed="false">🔊</button>
+    </header>
+    <div class="dobble-content">
+      <p class="dobble-pregunta">Toca el dibujo que está en las dos tarjetas</p>
+      <div class="dobble-cards" id="dobble-cards"></div>
+      <p class="dobble-feedback" id="dobble-feedback"></p>
+      <div class="dots dobble-niveles" id="dobble-niveles"></div>
+    </div>
   </section>
 
   <!-- AREA PARA PAPAS -->
