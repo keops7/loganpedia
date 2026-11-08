@@ -1009,6 +1009,34 @@
           {
             "word": "bomberos",
             "sound": "bomberos.mp3"
+          },
+          {
+            "word": "autobús",
+            "sound": "autobus.mp3"
+          },
+          {
+            "word": "tractor",
+            "sound": "tractor.mp3"
+          },
+          {
+            "word": "bicicleta",
+            "sound": "bicicleta.mp3"
+          },
+          {
+            "word": "cohete",
+            "sound": "cohete.mp3"
+          },
+          {
+            "word": "tranvía",
+            "sound": "tranvia.mp3"
+          },
+          {
+            "word": "lancha",
+            "sound": "lancha.mp3"
+          },
+          {
+            "word": "coche de carreras",
+            "sound": "carreras.mp3"
           }
         ]
       },

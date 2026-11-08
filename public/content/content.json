@@ -2796,6 +2796,41 @@
             "word": "bomberos",
             "file": "bomberos_6066.png",
             "sound": "bomberos.mp3"
+          },
+          {
+            "word": "autobús",
+            "file": "autobus_2262.png",
+            "sound": "autobus.mp3"
+          },
+          {
+            "word": "tractor",
+            "file": "tractor_2600.png",
+            "sound": "tractor.mp3"
+          },
+          {
+            "word": "bicicleta",
+            "file": "bicicleta_6935.png",
+            "sound": "bicicleta.mp3"
+          },
+          {
+            "word": "cohete",
+            "file": "cohete_2344.png",
+            "sound": "cohete.mp3"
+          },
+          {
+            "word": "tranvía",
+            "file": "tranvia_2602.png",
+            "sound": "tranvia.mp3"
+          },
+          {
+            "word": "lancha",
+            "file": "lancha_3277.png",
+            "sound": "lancha.mp3"
+          },
+          {
+            "word": "coche de carreras",
+            "file": "coche_de_carreras_5070.png",
+            "sound": "carreras.mp3"
           }
         ]
       },
@@ -5161,6 +5196,22 @@
     "timbre": {
       "id": 2592,
       "file": "timbre_2592.png"
+    },
+    "tractor": {
+      "id": 2600,
+      "file": "tractor_2600.png"
+    },
+    "tranvía": {
+      "id": 2602,
+      "file": "tranvia_2602.png"
+    },
+    "lancha": {
+      "id": 3277,
+      "file": "lancha_3277.png"
+    },
+    "coche de carreras": {
+      "id": 5070,
+      "file": "coche_de_carreras_5070.png"
     }
   }
 }
